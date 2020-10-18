@@ -1,0 +1,527 @@
+/* ================================================================ */
+/* App.scss */
+/* ================================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
+.App__logo {
+  pointer-events: none;
+  position: absolute;
+  top: -4%;
+  left: 45px;
+  z-index: 1;
+  width: 120px;
+}
+
+@media screen and (min-height: 1px) and (max-height: 400px) {
+  .sj {
+    font-family: 'Caveat', cursive;
+    font-weight: 100;
+  }
+}
+
+.sj {
+  font-family: 'Caveat', cursive;
+  font-size: 225%;
+  font-weight: 100;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App__header {
+  background-color: #131315;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: calc(10px + 4vmin);
+  color: white;
+}
+
+.App__header .title, .App__header .App-link, .App__header .App__logo, .App__header .nav__button, .App__header .see_work {
+  z-index: 1;
+  -webkit-animation: fadein 0.9s ease 1.5s backwards normal;
+          animation: fadein 0.9s ease 1.5s backwards normal;
+}
+
+.App__header .title {
+  width: 80%;
+  letter-spacing: 0.69231rem;
+  line-height: 1.2;
+}
+
+.App__header .title :first-child {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.App__header .title :nth-child(2) {
+  margin-top: 0;
+  font-size: 100%;
+}
+
+.App__header .aboutMeTop {
+  position: absolute;
+  right: 3em;
+  top: 5em;
+  z-index: 1;
+  width: 30%;
+}
+
+.App__header .aboutMeTop p {
+  font-size: 0.6em;
+}
+
+.App__header .see_work {
+  position: absolute;
+  bottom: 7%;
+  font-size: 20px;
+  letter-spacing: 0.3913rem;
+  color: white;
+  z-index: 1;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.App__header .see_work .arrow {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+}
+
+.App__header .see_work .arrow .arrow__down {
+  border-bottom: white solid 1.5px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 25px;
+  position: relative;
+  top: 11px;
+  right: 2.2px;
+}
+
+.App__header .see_work .arrow .arrow__square {
+  width: 20px;
+  height: 20px;
+  border-right: white solid 2px;
+  border-bottom: white solid 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@-webkit-keyframes App__logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes App__logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* MOBILE BURGER BUTTON */
+.nav__button {
+  -webkit-animation: fadein 0.9s ease 1.5s backwards normal;
+          animation: fadein 0.9s ease 1.5s backwards normal;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 25px;
+  top: 20px;
+  z-index: 3;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav__button .nav_toggle_bar, .nav__button .nav_toggle_bar::after, .nav__button .nav_toggle_bar::before {
+  height: 0.4rem;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  background: white;
+  content: '';
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav__button .nav_toggle_bar {
+  margin-top: 0;
+}
+
+.nav__button .nav_toggle_bar::before {
+  margin-top: 0.8rem;
+  left: 0;
+}
+
+.nav__button .nav_toggle_bar::after {
+  margin-top: -0.8rem;
+  left: 0;
+}
+
+.nav__button.expanded .nav_toggle_bar {
+  background: transparent;
+}
+
+.nav__button.expanded .nav_toggle_bar::after, .nav__button.expanded .nav_toggle_bar::before {
+  background: white;
+  margin-top: 0;
+}
+
+.nav__button.expanded .nav_toggle_bar::after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav__button.expanded .nav_toggle_bar::before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* MOBILE BURGER MENU */
+.nav__menu {
+  -webkit-animation: fadein 0.9s ease 1.5s backwards normal;
+          animation: fadein 0.9s ease 1.5s backwards normal;
+  background: rgba(64, 64, 64, 0.8);
+  -webkit-box-shadow: -15px 15px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: -15px 15px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 4%;
+  width: 100vw;
+  -webkit-transform: translateX(0%) translateY(-200vh) scale(0, 0);
+          transform: translateX(0%) translateY(-200vh) scale(0, 0);
+  -webkit-transition: -webkit-transform 450ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: -webkit-transform 450ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: transform 450ms cubic-bezier(0.5, 0, 0.5, 1);
+  transition: transform 450ms cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 450ms cubic-bezier(0.5, 0, 0.5, 1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__menu .menu__items {
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  position: relative;
+  left: 0em;
+  bottom: 0em;
+}
+
+.nav__menu .menu__items a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.nav__menu .menu__items li {
+  padding: 0.6em 2em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu__expanded {
+  -webkit-transform: translateX(0%) translateY(0%) scale(1, 1);
+          transform: translateX(0%) translateY(0%) scale(1, 1);
+  position: fixed;
+  top: 0;
+}
+
+.animateItems {
+  color: red;
+  -webkit-animation: fadeIn 0.3s ease 2s 1 normal;
+          animation: fadeIn 0.3s ease 2s 1 normal;
+}
+
+/* ========================================== */
+/* ========================================== */
+/* MEDIA QUERIES DESKTOP */
+/* ========================================== */
+/* ========================================== */
+@media screen and (min-width: 1025px) {
+  .App {
+    min-height: 100vh;
+    width: auto;
+  }
+  .title {
+    margin-left: -0em;
+    width: 85%;
+    letter-spacing: 0.9rem;
+    line-height: 1.2;
+  }
+  .title :first-child {
+    font-size: 48px;
+    margin-bottom: 2px;
+  }
+  .title :nth-child(2) {
+    margin-top: 0;
+    font-size: 64px;
+  }
+  .see_work {
+    position: absolute;
+    bottom: 7%;
+    font-size: 0.65em;
+    letter-spacing: 0.3913rem;
+    color: white;
+    z-index: 1;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .see_work .arrow {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+  }
+  .see_work .arrow .arrow__down {
+    border-bottom: white solid 1.5px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 25px;
+    position: relative;
+    top: 11px;
+    right: 2.2px;
+  }
+  .see_work .arrow .arrow__square {
+    width: 20px;
+    height: 20px;
+    border-right: white solid 2px;
+    border-bottom: white solid 2px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .see_work:hover {
+    opacity: 0.5;
+  }
+  /* DESKTOP BURGER BUTTON */
+  .nav__button {
+    -webkit-animation: fadein 0.9s ease 1.5s backwards normal;
+            animation: fadein 0.9s ease 1.5s backwards normal;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 60px;
+    top: 50px;
+    z-index: 3;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .nav__button:hover {
+    opacity: 0.6;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .nav__button .nav_toggle_bar, .nav__button .nav_toggle_bar::after, .nav__button .nav_toggle_bar::before {
+    height: 0.4rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    background: white;
+    content: '';
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+  }
+  .nav__button .nav_toggle_bar {
+    margin-top: 0;
+  }
+  .nav__button .nav_toggle_bar::before {
+    margin-top: 0.8rem;
+    left: 0;
+  }
+  .nav__button .nav_toggle_bar::after {
+    margin-top: -0.8rem;
+    left: 0;
+  }
+  .nav__button.expanded .nav_toggle_bar {
+    background: transparent;
+  }
+  .nav__button.expanded .nav_toggle_bar::after, .nav__button.expanded .nav_toggle_bar::before {
+    background: white;
+    margin-top: 0;
+  }
+  .nav__button.expanded .nav_toggle_bar::after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .nav__button.expanded .nav_toggle_bar::before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  /* DESKTOP BURGER MENU */
+  .nav__menu {
+    -webkit-animation: fadein 0.9s ease 1.5s backwards normal;
+            animation: fadein 0.9s ease 1.5s backwards normal;
+    background: rgba(64, 64, 64, 0.8);
+    -webkit-box-shadow: -15px 15px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: -15px 15px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    height: 107vh;
+    width: 107vh;
+    -webkit-transform: translateX(150%) translateY(-115%) scale(0, 0);
+            transform: translateX(150%) translateY(-115%) scale(0, 0);
+    -webkit-transition: -webkit-transform 450ms cubic-bezier(0.5, 0, 0.5, 1);
+    transition: -webkit-transform 450ms cubic-bezier(0.5, 0, 0.5, 1);
+    transition: transform 450ms cubic-bezier(0.5, 0, 0.5, 1);
+    transition: transform 450ms cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 450ms cubic-bezier(0.5, 0, 0.5, 1);
+    position: fixed;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav__menu .menu__items {
+    color: white;
+    font-size: 3.9vh;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    position: relative;
+    left: -4em;
+    top: 1em;
+  }
+  .nav__menu .menu__items a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+  .nav__menu .menu__items li {
+    width: calc(100% + 1.5em);
+    text-align: left;
+    padding: 0.8em;
+    font-weight: light;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .nav__menu .menu__items li:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .menu__expanded {
+    -webkit-transform: translateX(300px) translateY(-200px) scale(1, 1);
+            transform: translateX(300px) translateY(-200px) scale(1, 1);
+    position: fixed;
+  }
+}
+/*# sourceMappingURL=portfolio.module.css.map */

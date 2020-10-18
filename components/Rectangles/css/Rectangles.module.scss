@@ -1,0 +1,245 @@
+.rectContainer {
+  // animation: animateRects 0.9s ease 0s backwards normal;
+  position: absolute;
+  top: 0;
+  right: 0;
+  // animation: animateRects 0.9s ease 0.4s backwards normal;
+}
+
+.rectangle {
+  height: 100%;
+  width: 110%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #2C2C2C;
+  box-shadow: 15px 15px 3px rgba(0,0,0,0.5);
+  // z-index: -1;
+  // position: fixed;
+  // animation: rotate 1s linear infinite;
+  // animation-play-state: paused;
+  // animation-delay: calc(var(--scroll) * -1s);
+}
+
+
+@keyframes animateRects {
+  0% {top: -100%; opacity: 0}
+  100% {top: 0%; opacity: 1}
+}
+
+@keyframes rotate1 {
+  8% {transform: rotate(360deg) scale(0.83, 0.77) translate(4%, 4%);}
+  66% {box-shadow: -10px 15px 3px rgba(0,0,0,0.5);}
+  100% {
+    transform: rotate(360deg) scale(0.83, 0.77) translate(3%, 0%);
+    box-shadow: -20px 20px 3px rgba(0,0,0,0.5);
+  }
+}
+
+@keyframes rotate2 {
+  8% {transform: rotate(360deg) scale(0.83, 0.77) translate(5%, 0%);}
+  66% {box-shadow: -10px 15px 3px rgba(0,0,0,0.5);}
+  100% {
+    transform: rotate(360deg) scale(0.83, 0.77) translate(5%, -3%);
+    box-shadow: -20px 20px 3px rgba(0,0,0,0.5);
+  }
+}
+
+@keyframes rotate3 {
+  8% {transform: rotate(360deg) scale(0.83, 0.77) translate(6%, -4%);}
+  66% {box-shadow: -10px 15px 3px rgba(0,0,0,0.5);}
+  100% {
+    transform: rotate(360deg) scale(0.83, 0.77) translate(7%, -6%);
+    box-shadow: -20px 20px 3px rgba(0,0,0,0.5);
+  }
+}
+
+.rect1 {
+  // animation: animateRects 0.9s ease 0s backwards normal;
+  transform: translate(15%, -22%) rotate(-7deg);
+
+  position: fixed;
+  animation: rotate1 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+.rect2 {
+  // animation: animateRects 0.9s ease 0.2s backwards normal;
+  transform: translate(12%, -25%) rotate(-7deg);
+
+  position: fixed;
+  animation: rotate2 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1.15s);
+}
+
+.rect3 {
+  // animation: animateRects 0.9s ease 0.4s backwards normal;
+  transform: translate(9%, -28%) rotate(-7deg);
+
+  position: fixed;
+  animation: rotate3 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1.3s);
+}
+
+
+
+.rect4 {
+  animation: animateRects 0.9s ease 0.4s backwards normal;
+  transform: translate(15%, -22%) rotate(-7deg);
+}
+.rect5 {
+  animation: animateRects 0.9s ease 0.6s backwards normal;
+  transform: translate(12%, -25%) rotate(-7deg);
+}
+.rect6 {
+  animation: animateRects 0.9s ease 0.8s backwards normal;
+  transform: translate(9%, -28%) rotate(-7deg);
+}
+
+
+
+
+
+
+// .rect1::before {
+//   animation: animateRects 0.9s ease 0s backwards normal;
+//   content: "BEFORE";
+//   color: white;
+// }
+// .rect2::before {
+//   animation: animateRects 0.9s ease 0.2s backwards normal;
+//   content: "BEFORE";
+//   color: white;
+// }
+// .rect3::before {
+//   animation: animateRects 0.9s ease 0.4s backwards normal;
+//   content: "BEFORE";
+//   color: white;
+// }
+
+// .rect1::after {
+//   animation: animateRects 0.9s ease 0s backwards normal;
+//   content: "after";
+//   color: white;
+// }
+// .rect2::after {
+//   animation: animateRects 0.9s ease 0.2s backwards normal;
+//   content: "after";
+//   color: white;
+// }
+// .rect3::after {
+//   animation: animateRects 0.9s ease 0.4s backwards normal;
+//   content: "after";
+//   color: white;
+// }
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .rectContainer {
+    // animation: animateRects 0.9s ease 0s backwards normal;
+    position: absolute;
+    top: 0;
+    right: 0;
+    // animation: animateRects 0.9s ease 0.4s backwards normal;
+  }
+  
+  .rectangle {
+    height: 100%;
+    width: 110%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #2C2C2C;
+    box-shadow: 15px 15px 3px rgba(0,0,0,0.5);
+    // z-index: -1;
+    // position: fixed;
+    // animation: rotate 1s linear infinite;
+    // animation-play-state: paused;
+    // animation-delay: calc(var(--scroll) * -1s);
+  
+  }
+  
+  
+  @keyframes animateRects {
+    0% {top: -100%; opacity: 0}
+    100% {top: 0%; opacity: 1}
+  }
+  
+  @keyframes rotate1 {
+   18% {transform: rotate(360deg) scale(0.83, 0.77) translate(4%, 4%);}
+    66% {box-shadow: -10px 15px 3px rgba(0,0,0,0.5);}
+    100% {
+      transform: rotate(360deg) scale(0.83, 0.77) translate(3%, 0%);
+      box-shadow: -20px 20px 3px rgba(0,0,0,0.5);
+    }
+  }
+  
+  @keyframes rotate2 {
+   18% {transform: rotate(360deg) scale(0.83, 0.77) translate(5%, 0%);}
+    66% {box-shadow: -10px 15px 3px rgba(0,0,0,0.5);}
+    100% {
+      transform: rotate(360deg) scale(0.83, 0.77) translate(5%, -3%);
+      box-shadow: -20px 20px 3px rgba(0,0,0,0.5);
+    }
+  }
+  
+  @keyframes rotate3 {
+   18% {transform: rotate(360deg) scale(0.83, 0.77) translate(6%, -4%);}
+    66% {box-shadow: -10px 15px 3px rgba(0,0,0,0.5);}
+    100% {
+      transform: rotate(360deg) scale(0.83, 0.77) translate(7%, -6%);
+      box-shadow: -20px 20px 3px rgba(0,0,0,0.5);
+    }
+  }
+  
+  .rect1 {
+    // animation: animateRects 0.9s ease 0s backwards normal;
+    transform: translate(15%, -22%) rotate(-7deg);
+  
+    position: fixed;
+    animation: rotate1 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+  }
+  
+  .rect2 {
+    // animation: animateRects 0.9s ease 0.2s backwards normal;
+    transform: translate(12%, -25%) rotate(-7deg);
+  
+    position: fixed;
+    animation: rotate2 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1.15s);
+  }
+  
+  .rect3 {
+    // animation: animateRects 0.9s ease 0.4s backwards normal;
+    transform: translate(9%, -28%) rotate(-7deg);
+  
+    position: fixed;
+    animation: rotate3 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1.3s);
+  }
+  
+  
+  
+  .rect4 {
+    animation: animateRects 0.9s ease 0.4s backwards normal;
+    transform: translate(15%, -22%) rotate(-7deg);
+  }
+  .rect5 {
+    animation: animateRects 0.9s ease 0.6s backwards normal;
+    transform: translate(12%, -25%) rotate(-7deg);
+  }
+  .rect6 {
+    animation: animateRects 0.9s ease 0.8s backwards normal;
+    transform: translate(9%, -28%) rotate(-7deg);
+  }
+}
