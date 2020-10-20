@@ -59,7 +59,7 @@ export default function Contact() {
               </div>
             </form>
 
-            <div className="backToTopContainer" data-aos="fade-up" data-aos-delay="50">
+            <div className="backToTopContainer" data-aos="fade-right" data-aos-delay="50">
             {/* <div className="backToTopContainer" > */}
               <AnchorLink className="backToTop" href="#top" rel="noopener noreferrer">
                 BACK TO TOP
