@@ -78,6 +78,19 @@ export default function Projects() {
             </div> */}
             
             <div className="project" data-aos="fade-up" data-aos-delay="250">
+              <a href="https://talo-apartments.vercel.app/" alt="talo apartments project" target="_blank" rel="noopener noreferrer">
+                <div className="projectImage">
+                  <img src="project_images/talo-apartments/talo.png" alt="talo apartments image" width="550px"/>
+                </div>
+              </a>
+              <div className="projectText">
+                <h2>TALO APARTMENTS</h2>
+                <p><strong>Responsively designed</strong> static, single landing page for Talo Apartment buildings.<br></br>Made the <strong>SCSS</strong>, <strong>CSS Flexbox</strong>, <strong>CSS Grid</strong>, <strong>BootStrap</strong>, <strong>CSS Animation</strong>, <strong>img srcset</strong>, and, <strong>media queries</strong> to be responsive on desktop and mobile.</p>
+              </div>
+            </div>
+
+          
+            <div className="projectReverse" data-aos="fade-up" data-aos-delay="250">
               <a href="https://stanjdev.github.io/triplebyte/" alt="triplebyte project" target="_blank" rel="noopener noreferrer">
                 <div className="projectImage triplebyte">
                   <img src="project_images/triplebyte.png" alt="Triplebyte image"/>

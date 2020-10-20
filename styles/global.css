@@ -77,9 +77,36 @@ img {
   align-items: center;
 }
 
+.header > h1 {
+  text-align: center;
+}
+
 .header > * {
   margin-bottom: 0;
 }
+
+
+.App__logo {
+  /* pointer-events: none; */
+  position: absolute;
+  top: 0%;
+  left: 1em;
+  z-index: 10;
+  width: 80px;
+}
+
+.sj {
+  font-family: 'Caveat', cursive;
+  font-size: 3em;
+  font-weight: 100;
+  /* border: green solid 1px; */
+}
+
+
+
+
+
+
 
 
 .projectInfo {

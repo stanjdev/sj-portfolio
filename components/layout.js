@@ -50,7 +50,7 @@ export default function Layout({ children, home }) {
 
       
       <main>
-        <Link href="/"><a><h1 className={`${styles.App__logo} ${styles.sj}`}>SJ</h1></a></Link>
+        <Link href="/"><a><h1 className={`${"App__logo"} ${"sj"}`}>SJ</h1></a></Link>
         {children}</main>
       {!home && (
         <div className={styles.backToHome}>
