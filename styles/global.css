@@ -154,13 +154,14 @@ img {
 
 .flex__horizontal {
   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+  /* justify-content: space-evenly; */
+  /* text-align: center; */
   flex-wrap: wrap;
 }
 
 .caseStudyImage {
   width: 35em;
+  padding: 0em 1em;
   /* border: #0070f3 1px solid; */
 }
 
