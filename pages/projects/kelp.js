@@ -175,26 +175,13 @@ export default function Kelp() {
       <section className="container">
         <h2>Final Results:</h2>
         <figure className="center">
-            <img src="/project_images/kelp_tandoori.png" alt="search for tandoori" className="caseStudyImage center"/>
-            <img src="/project_images/kelp_juice.png" alt="search for juice" className="caseStudyImage center"/>
-            <img src="/project_images/kelp_icecream.png" className="caseStudyImage center"/>
+          <img src="/project_images/kelp_tandoori.png" alt="search for tandoori" className="caseStudyImage center"/>
+          <img src="/project_images/kelp_juice.png" alt="search for juice" className="caseStudyImage center"/>
+          <img src="/project_images/kelp_icecream.png" className="caseStudyImage center"/>
           <figcaption>Businesses data imported from <a href="https://www.yelp.com/developers/documentation/v3/business_search" target="_blank">Yelp API</a>. Search for your favorite bites!</figcaption>
         </figure>
       </section>
     
-
-      <section className="container">
-        
-        <figure className="center">
-          <img src="/project_images/kelp-mobile.png" className="center"/>
-          <figcaption>Mobile view of search bar</figcaption>
-        </figure>
-
-        <figure className="center">
-          <img src="/project_images/kelp_map.png" alt="kelp MapBox map view" className="caseStudyImage center"/>
-          <figcaption>Map view provided by MapBox API</figcaption>
-        </figure>
-      </section>
 
     </Layout>
   )

@@ -182,9 +182,7 @@ const pool = new Pool(process.env.NODE_ENV === "production" ? prodConfig : devCo
         <h2>Final Result:</h2>
         <figure className="center">
           <figcaption>Leave a review, edit your review, and delete your review seamlessly!</figcaption>
-          <div className="flex__horizontal">
             <img src="/project_images/gifs/goodreads-reviewing-books.gif" alt="goodreads gif" className="caseStudyImage center"/>
-          </div>
         </figure>
       </section>
       
