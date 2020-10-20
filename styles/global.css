@@ -118,7 +118,7 @@ img {
 .projectInfo {
   display: flex;
   justify-content: space-evenly;
-  text-align: center;
+  /* text-align: center; */
   flex-wrap: wrap;
   /* border: yellow solid 1px; */
 }
@@ -129,6 +129,7 @@ img {
 
 .projectInfo div {
   /* border: dodgerblue solid 1px; */
+  /* flex-basis: 30%; */
   width: 400px;
   margin: 1em;
   padding: 0 3em;
