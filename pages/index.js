@@ -19,12 +19,19 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
 
+
+  const handleClick = () => {
+    document.body.classList.toggle('darkmode');
+  }
+
+
   return (
     <div>
       <Head>
         <title>{siteTitle}</title>
       </Head>
 
+    {/* <button style={{position: "relative", zIndex:100}} id="lightswitch" onClick={handleClick}>light switch</button> */}
 
     <Portfolio />
 

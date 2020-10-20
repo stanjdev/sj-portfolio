@@ -171,7 +171,6 @@ export default function Kelp() {
       </section>
 
 
-
       <section className="container">
         <h2>Final Results:</h2>
         <figure className="center">

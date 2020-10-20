@@ -103,6 +103,7 @@
 
 .Contact form textarea, .Contact form input {
   font-size: 1em;
+  border: none;
 }
 
 .backToTopContainer {
@@ -230,6 +231,7 @@ footer .socialIcons ul li {
   height: 3em;
   padding: 1em;
   color: black;
+  border: none;
 }
 
 .textArea textarea {

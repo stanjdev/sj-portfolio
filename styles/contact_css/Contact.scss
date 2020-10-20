@@ -120,6 +120,7 @@ $letterspacing: 0.9rem;
     }
     textarea, input {
       font-size: 1em;
+      border: none;
     }
   }
   
@@ -254,6 +255,7 @@ footer {
   height: 3em;
   padding: 1em;
   color: black;
+  border: none;
 }
 
 .textArea textarea {

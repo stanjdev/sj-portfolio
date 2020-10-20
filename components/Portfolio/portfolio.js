@@ -20,12 +20,6 @@ function Portfolio() {
   }, []);
 
 
-  const handleClick = () => {
-    alert('clicked!')
-    document.body.classList.toggle('darkmode');
-  }
-
-
   return (
     <div className={styles.App}>
 
@@ -57,7 +51,6 @@ function Portfolio() {
           <AnchorLink className={styles.item} href="#projects"><li>Projects</li></AnchorLink>
           <AnchorLink className={styles.item} href="#contact"><li>Contact</li></AnchorLink>
           <a className={styles.item} href="https://drive.google.com/file/d/1wKmb6asVY1bEmuOYXdJxMzqmR8W6cQSq/view?usp=sharing" target="_blank" rel="noopener noreferrer"><li>Resume</li></a>
-          <button onClick={handleClick}>light switch</button>
         </ul>
       </nav>
 
