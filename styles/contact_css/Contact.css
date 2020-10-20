@@ -123,10 +123,10 @@
 
 .backToTopContainer .backToTop {
   position: relative;
+  z-index: -1;
   font-size: 18px;
   letter-spacing: 0.3913rem;
   color: white;
-  z-index: 1;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -242,6 +242,8 @@ footer .socialIcons ul li {
   background-color: #61DAFB;
   color: white;
   border-radius: 5px;
+  position: relative;
+  z-index: 10;
 }
 
 /* DESKTOP DESIGN */
@@ -354,10 +356,10 @@ footer .socialIcons ul li {
   }
   .backToTopContainer .backToTop {
     position: relative;
+    z-index: 1;
     font-size: 1.1em;
     letter-spacing: 0.3913rem;
     color: white;
-    z-index: 1;
     text-decoration: none;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;

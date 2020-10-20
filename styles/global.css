@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
 html,
 body {
   padding: 0;
@@ -161,7 +163,7 @@ img {
 
 .caseStudyImage {
   width: 35em;
-  padding: 0em 1em;
+  /* padding: 0em 1em; */
   /* border: #0070f3 1px solid; */
 }
 

@@ -138,14 +138,14 @@ $letterspacing: 0.9rem;
 
   .backToTop {
     // border: yellow solid;
-    position: relative;
     // top: 3em;
     // bottom: 7%;
     // font-size: 0.9em;
+    position: relative;
+    z-index: -1;
     font-size: 18px;
     letter-spacing: $letterspacing / 2.3;
     color: white;
-    z-index: 1;
     text-decoration: none;
     transition: all 0.3s ease;
     user-select: none;
@@ -266,6 +266,8 @@ footer {
   background-color: #61DAFB;
   color: white;
   border-radius: 5px;
+  position: relative;
+  z-index: 10;
 }
 
 
@@ -392,14 +394,14 @@ footer {
   
     .backToTop {
       // border: yellow solid;
-      position: relative;
       // top: -2em;
       // bottom: 7%;
       // font-size: 0.9em;
+      position: relative;
+      z-index: 1;
       font-size: 1.1em;
       letter-spacing: $letterspacing / 2.3;
       color: white;
-      z-index: 1;
       text-decoration: none;
       transition: all 0.3s ease;
       user-select: none;

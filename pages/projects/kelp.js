@@ -174,7 +174,7 @@ export default function Kelp() {
 
       <section className="container">
         <h2>Final Results:</h2>
-        <figure className="center">
+        <figure className="">
           <div className="flex__horizontal">
             <img src="/project_images/kelp_tandoori.png" alt="search for tandoori" className="caseStudyImage center"/>
             <img src="/project_images/kelp_juice.png" alt="search for juice" className="caseStudyImage center"/>
