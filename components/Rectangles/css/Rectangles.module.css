@@ -208,7 +208,6 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: #2C2C2C;
     -webkit-box-shadow: 15px 15px 3px rgba(0, 0, 0, 0.5);
             box-shadow: 15px 15px 3px rgba(0, 0, 0, 0.5);
   }

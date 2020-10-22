@@ -7,6 +7,9 @@ import Date from '../components/date'
 import { getSortedPostsData } from '../lib/posts'
 import Portfolio from '../components/Portfolio/portfolio'
 
+import { useContext, useEffect } from 'react';
+import { LightContext } from '../components/LightContext'
+
 // We need this to fetch the data first before the SSG static generation of the page.
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -18,11 +21,34 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
-
+  const { light, setLight } = useContext(LightContext);
 
   const handleClick = () => {
-    document.body.classList.toggle('darkmode');
+    setLight(!light);
   }
+  
+
+  // DARKMODE LIGHT SWITCH, entire code is too tangled to do everything one by one
+  // useEffect(() => {
+  //   console.log(light);
+  //   // !document.body.classList.toggle('darkmode');
+  //   if (light) {
+  //     // backgrounds
+  //     document.querySelector("header").style.backgroundColor = "white";
+  //     document.querySelectorAll("section").forEach(section => section.style.backgroundColor = "white");
+  //     document.querySelectorAll('.lightConnect__bg').forEach(x => x.style.backgroundColor = "white");
+      
+  //     // font
+  //     document.querySelectorAll('p').forEach(p => p.style.color = "black");
+  //     document.querySelectorAll('strong').forEach(w => w.style.color = "black");
+  //     document.querySelectorAll('h1').forEach(h1 => h1.style.color = "black");
+  //     document.querySelectorAll('h2').forEach(h2 => h2.style.color = "black");
+  //     document.querySelectorAll('.lightConnect').forEach(x => x.style.color = "black");
+  //     document.querySelectorAll('.lightConnect__arrows').forEach(x => x.style.borderColor = "black");
+  //   } else {
+
+  //   }
+  // }, [light])
 
 
   return (

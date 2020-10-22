@@ -1,7 +1,22 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useContext } from 'react';
 import styles from './css/Rectangles.module.css'
+import { LightContext } from '../LightContext';
 
 export default function Rectangles() {
+  const { light } = useContext(LightContext);
+
+  // useEffect(() => {
+  //   let first = document.querySelector("#first").childNodes
+  //   let second = document.querySelector("#second").childNodes;
+  //   if (light) {
+  //     first.forEach(rect => rect.style.backgroundColor = "whitesmoke");
+  //     second.forEach(rect => rect.style.backgroundColor = "whitesmoke");
+  //   } else {
+  //     first.forEach(rect => rect.style.backgroundColor = "#2C2C2C");
+  //     second.forEach(rect => rect.style.backgroundColor = "#2C2C2C");
+  //   }
+
+  // }, [light])
 
   useEffect(() => {
     // FIRST ATTEMPT - TOO JAGGED
@@ -62,15 +77,15 @@ export default function Rectangles() {
   return(
     <div className={styles.rectContainer}>
       <div id="first">
-        <div className={`${styles.rectangle} ${styles.rect4} ${styles.first}`}></div>
-        <div className={`${styles.rectangle} ${styles.rect5} ${styles.first}`}></div>
-        <div className={`${styles.rectangle} ${styles.rect6} ${styles.first}`}></div>
+        <div id="rect" className={`${styles.rectangle} ${styles.rect4} ${styles.first}`}></div>
+        <div id="rect" className={`${styles.rectangle} ${styles.rect5} ${styles.first}`}></div>
+        <div id="rect" className={`${styles.rectangle} ${styles.rect6} ${styles.first}`}></div>
       </div>
       
       <div id="second">
-        <div className={`${styles.rectangle} ${styles.rect1} ${styles.second}`}></div>
-        <div className={`${styles.rectangle} ${styles.rect2} ${styles.second}`}></div>
-        <div className={`${styles.rectangle} ${styles.rect3} ${styles.second}`}></div>
+        <div id="rect" className={`${styles.rectangle} ${styles.rect1} ${styles.second}`}></div>
+        <div id="rect" className={`${styles.rectangle} ${styles.rect2} ${styles.second}`}></div>
+        <div id="rect" className={`${styles.rectangle} ${styles.rect3} ${styles.second}`}></div>
       </div>
     </div>
   )

@@ -19,7 +19,6 @@ export default function Projects() {
         <section className="Projects">
           <h1 data-aos="fade-down" data-aos-delay="0">PROJECTS</h1>
 
-
           <div className="project" data-aos="fade-up" data-aos-delay="250">
               <Link href="/projects/kelp" alt="kelp project">
                 <a>
@@ -128,11 +127,11 @@ export default function Projects() {
           
           
           <div className="getInTouchContainer" data-aos="fade-right">
-            <AnchorLink className="getInTouch" href="#contact" rel="noopener noreferrer" >
+            <AnchorLink className="getInTouch lightConnect" href="#contact" rel="noopener noreferrer" >
               GET IN TOUCH
-              <div className="getInTouch-arrow">
-                <div className="getInTouch-arrow-down"></div>
-                <div className="getInTouch-arrow-square"></div>
+              <div className="getInTouch-arrow ">
+                <div className="getInTouch-arrow-down lightConnect__arrows"></div>
+                <div className="getInTouch-arrow-square lightConnect__arrows"></div>
               </div>
             </AnchorLink>
           </div>
