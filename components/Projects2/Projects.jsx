@@ -66,6 +66,46 @@ export default function Projects() {
 
 
 
+            <div className="project" data-aos="fade-up" data-aos-delay="350">
+              <a href="https://realestatedeal.vercel.app/" target="_blank" rel="noopener noreferrer" alt="Real Estate Deal Analyzer project">
+                  <div className="projectImage re-deal-analyzer">
+                    <img src="project_images/re-deal-analyzer/re-deal-analyzer.png" alt="Real Estate Deal Analyzer"/>
+                  </div>
+              </a>
+              <div className="projectText">
+                
+                <a href="https://realestatedeal.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <h2>REAL ESTATE DEAL ANALYZER</h2>
+                </a>
+                <p>Analyze your next Real Estate Property Deal. Calculate your cash on cash, ROI, net operating income, and cash flow for rental, commercial, single-family, multi-family, BRRRR, house hacks, duplex, triplex, and fourplex homes!<br></br> Made with the <strong>React, Redux, Next.js, Javascript</strong>, and <strong>SCSS</strong>.</p>
+                <p><a href="https://realestatedeal.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/re-analyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+              </div>
+            </div>
+
+
+            {/* IF RE DEAL ANALYZER CASE STUDY: */}
+            {/* <div className="project" data-aos="fade-up" data-aos-delay="350">
+              <Link href="https://realestatedeal.vercel.app/" alt="Real Estate Deal Analyzer project">
+                <a>
+                  <div className="projectImage re-deal-analyzer">
+                    <img src="project_images/re-deal-analyzer/re-deal-analyzer.png" alt="Real Estate Deal Analyzer"/>
+                  </div>
+                </a>
+              </Link>
+              <div className="projectText">
+                
+                <Link href="https://realestatedeal.vercel.app/">
+                  <a>
+                    <h2>REAL ESTATE DEAL ANALYZER</h2>
+                  </a>
+                </Link>
+                <p>Analyze your next Real Estate Property Deal. Calculate your cash on cash, ROI, net operating income, and cash flow for rental, commercial, single-family, multi-family, BRRRR, house hacks, duplex, triplex, and fourplex homes!<br></br> Made with the <strong>React, Redux, Next.js, Javascript</strong>, and <strong>SCSS</strong>.</p>
+                <Link href="/projects/real-estate-deal-analyzer">Case Study</Link>
+                <p><a href="https://realestatedeal.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/re-analyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+              </div>
+            </div> */}
+
+
             {/* <div className="project" data-aos="fade-up" data-aos-delay="450">
               <div className="projectImage" >
                 <img src={Logo} alt=""/>
@@ -76,10 +116,10 @@ export default function Projects() {
               </div>
             </div> */}
             
-            <div className="project" data-aos="fade-up" data-aos-delay="250">
+            <div className="projectReverse" data-aos="fade-up" data-aos-delay="250">
               <a href="https://talo-apartments.vercel.app/" alt="talo apartments project" target="_blank" rel="noopener noreferrer">
-                <div className="projectImage">
-                  <img src="project_images/talo-apartments/talo.png" alt="talo apartments image" width="75%"/>
+                <div className="projectImage talo">
+                  <img src="project_images/talo-apartments/talo.png" alt="talo apartments image"/>
                 </div>
               </a>
               <div className="projectText" >
@@ -89,7 +129,7 @@ export default function Projects() {
             </div>
 
           
-            <div className="projectReverse" data-aos="fade-up" data-aos-delay="250">
+            <div className="project" data-aos="fade-up" data-aos-delay="250">
               <a href="https://stanjdev.github.io/triplebyte/" alt="triplebyte project" target="_blank" rel="noopener noreferrer">
                 <div className="projectImage triplebyte">
                   <img src="project_images/triplebyte.png" alt="Triplebyte image" />
