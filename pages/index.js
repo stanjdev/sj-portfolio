@@ -25,6 +25,7 @@ export default function Home({ allPostsData }) {
 
   const handleClick = () => {
     setLight(!light);
+    console.log(light)
   }
   
 
@@ -57,7 +58,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
 
-    {/* <button style={{position: "relative", zIndex:100}} id="lightswitch" onClick={handleClick}>light switch</button> */}
+    {/* <button style={{position: "fixed", zIndex:100, right: "1em", top: "50vh", color: "black"}} id="lightswitch" onClick={handleClick}>lights</button> */}
 
     <Portfolio />
 

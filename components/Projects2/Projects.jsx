@@ -32,12 +32,12 @@ export default function Projects() {
                 <Link href="/projects/kelp">
                   <a>
                     <h2>KELP</h2>
-                    <img src="project_images/kelp-mobile.png" alt="Kelp Image"/>
+                    {/* <img src="project_images/kelp-mobile.png" alt="Kelp Image"/> */}
                   </a>
                 </Link>
                 <p>Search for your favorite restaurant in real time with responsive, interactive map view.<br />Built with the <strong>Yelp API</strong>, <strong>Mapbox API</strong>, <strong>React, Redux, JavaScript, SCSS, CSS Animations,</strong> and <strong>Flexbox.</strong></p>
-                <Link href="/projects/kelp">Case Study</Link>
-                <p><a href="https://kelp-search.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/kelp" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                <Link href="/projects/kelp"><a><button className="caseStudyButton">Case Study</button></a></Link>
+                <p><a href="https://kelp-search.vercel.app/" target="_blank" rel="noopener noreferrer"><button>Live</button></a> | <a href="https://github.com/stanjdev/kelp" target="_blank" rel="noopener noreferrer"><button>GitHub</button></a></p>
               </div>
             </div>
 
@@ -55,30 +55,30 @@ export default function Projects() {
                 <Link href="/projects/goodreads">
                   <a>
                     <h2>GOODREADS REVIEWS</h2>
-                    <img src="project_images/goodreads.png" alt="GoodReads Reviews"/>
+                    {/* <img src="project_images/goodreads.png" alt="GoodReads Reviews"/> */}
                   </a>
                 </Link>
                 <p>Log in, search for, and leave reviews for your favorite books! <br></br><strong>PERN</strong> stack application built with the <strong>GoodReads API</strong>, <strong>React, Redux, Express.js, Node.js, PostgreSQL, Bootstrap, React Router</strong>, and <strong>axios</strong>.</p>
-                <Link href="/projects/goodreads">Case Study</Link>
-                <p><a href="https://react-goodreads.herokuapp.com/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/goodreads" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                <Link href="/projects/goodreads"><a><button>Case Study</button></a></Link>
+                <p><a href="https://react-goodreads.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button>Live</button></a> | <a href="https://github.com/stanjdev/goodreads" target="_blank" rel="noopener noreferrer"><button>GitHub</button></a></p>
               </div>
             </div>
 
 
 
             <div className="project" data-aos="fade-up" data-aos-delay="350">
-              <a href="https://realestatedeal.vercel.app/" target="_blank" rel="noopener noreferrer" alt="Real Estate Deal Analyzer project">
+              <a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer" alt="Realyzer Real Estate Deal Analyzer project">
                   <div className="projectImage re-deal-analyzer">
-                    <img src="project_images/re-deal-analyzer/re-deal-analyzer.png" alt="Real Estate Deal Analyzer"/>
+                    <img src="project_images/re-deal-analyzer/realyzer.png" alt="Realyzer Real Estate Deal Analyzer"/>
                   </div>
               </a>
               <div className="projectText">
                 
-                <a href="https://realestatedeal.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    <h2>REAL ESTATE DEAL ANALYZER</h2>
+                <a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <h2>REALYZER</h2>
                 </a>
-                <p>Analyze your next Real Estate Property Deal. Calculate your cash on cash, ROI, net operating income, and cash flow for rental, commercial, single-family, multi-family, BRRRR, house hacks, duplex, triplex, and fourplex homes!<br></br> Made with the <strong>React, Redux, Next.js, Javascript</strong>, and <strong>SCSS</strong>.</p>
-                <p><a href="https://realestatedeal.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/re-analyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                <p>Created a multi-variable calculator for real-estate investors.<br/> Made with the <strong>React, Redux, Next.js, Javascript</strong>, and <strong>CSS</strong>.</p>
+                <p><a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer"><button>Live</button></a> | <a href="https://github.com/stanjdev/realyzer" target="_blank" rel="noopener noreferrer"><button>GitHub</button></a></p>
               </div>
             </div>
 
@@ -123,7 +123,9 @@ export default function Projects() {
                 </div>
               </a>
               <div className="projectText" >
+              <a href="https://talo-apartments.vercel.app/" alt="talo apartments project" target="_blank" rel="noopener noreferrer">
                 <h2>TALO APARTMENTS</h2>
+              </a>
                 <p><strong>Responsively designed</strong> static, single landing page for Talo Apartment buildings.<br></br>Made the <strong>SCSS</strong>, <strong>CSS Flexbox</strong>, <strong>CSS Grid</strong>, <strong>BootStrap</strong>, <strong>CSS Animation</strong>, <strong>img srcset</strong>, and, <strong>media queries</strong> to be responsive on desktop and mobile.</p>
               </div>
             </div>
@@ -136,7 +138,9 @@ export default function Projects() {
                 </div>
               </a>
               <div className="projectText">
+              <a href="https://stanjdev.github.io/triplebyte/" alt="triplebyte project" target="_blank" rel="noopener noreferrer">
                 <h2>TRIPLEBYTE</h2>
+              </a>
                 <p><strong>Responsively designed</strong> static landing page mockup of a technology business.<br></br>Made the <strong>SCSS</strong>, <strong>CSS Flexbox</strong>, <strong>CSS Grid</strong>, <strong>CSS Animation</strong>, and, <strong>media queries</strong> to be responsive on desktop and mobile.</p>
               </div>
             </div>

@@ -20,7 +20,7 @@
 }
 
 .project {
-  margin: 1em auto;
+  margin: 1em 0.7em;
   padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,6 +36,7 @@
 }
 
 .projectReverse {
+  margin: 1em 0.7em;
   padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,22 +82,45 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
 }
 
 .projectText h2 {
   letter-spacing: 0.42857rem;
-  line-height: 1.1;
+  line-height: 1.4;
 }
 
 .projectText p {
   width: 100%;
   font-size: 1.1em;
   letter-spacing: 0.04286rem;
-  line-height: 1.1;
+  line-height: 1.6;
 }
 
 .projectText a {
   width: 100%;
+}
+
+.projectText button {
+  padding: 0.5em;
+  color: whitesmoke;
+  background-color: #00a6ff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: large;
+  font-family: 'Actor', sans-serif;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.projectText button:hover {
+  background: #00c3ff;
+}
+
+.projectText button:active {
+  background-color: gray;
 }
 
 /* MOBILE */

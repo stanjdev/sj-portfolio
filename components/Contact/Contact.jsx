@@ -55,7 +55,7 @@ export default function Contact() {
                 <textarea name="message" placeholder="Tell me about your project:" rows="7" cols="40"></textarea>
                 {status === "SUCCESS" ? <p>Thanks!</p> : null}
                 {status === "ERROR" && <p>Ooops! There was an error.</p>}
-                <input className="sendButton" type="submit" value="SEND"/>
+                <input className="sendButton" type="submit" value="SUBMIT" style={{fontWeight: 500}}/>
               </div>
             </form>
 

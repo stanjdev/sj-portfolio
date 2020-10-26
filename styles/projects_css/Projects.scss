@@ -44,7 +44,7 @@ $letterspacing: 0.9rem / 1.4;
   // border-radius: 4%;
   // height: 17em;
   // min-width: 17em;
-  margin: 1em auto;
+  margin: 1em 0.7em;
   padding: 1em;
   // box-shadow: 5px 5px 10px 2px black;
   // border: solid orange 1px;
@@ -57,6 +57,7 @@ $letterspacing: 0.9rem / 1.4;
 
 .projectReverse {
   // border: solid lavender 1px;
+  margin: 1em 0.7em;
   padding: 1em;
   display: flex;
   justify-content: space-evenly;
@@ -115,12 +116,12 @@ $letterspacing: 0.9rem / 1.4;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // text-align: right;
+  text-align: left;
 
   h2 {
     // font-size: 1.5em;
     letter-spacing: $letterspacing / 1.5;
-    line-height: 1.1;
+    line-height: 1.4;
   }
 
   p {
@@ -130,12 +131,38 @@ $letterspacing: 0.9rem / 1.4;
     font-size: 1.1em;
     // padding: 1.2em 2em;
     letter-spacing: $letterspacing / 15;
-    line-height: 1.1;
+    line-height: 1.6;
   }
 
   a {
     // border: solid 1px gold;
     width: 100%;
+  }
+
+  .caseStudyButton {
+    
+  }
+
+  button {
+    padding: 0.5em;
+    color: whitesmoke;
+    // color: #131315;
+    background-color: rgb(0, 166, 255);
+    // background-color: #61DAFB;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: large;
+    font-family: 'Actor', sans-serif;
+    transition: all ease 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background: rgb(0, 195, 255);
+    }
+    &:active {
+      background-color: gray;
+    }
   }
 
 }
