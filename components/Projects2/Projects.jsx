@@ -58,7 +58,7 @@ export default function Projects() {
                     {/* <img src="project_images/goodreads.png" alt="GoodReads Reviews"/> */}
                   </a>
                 </Link>
-                <p>Log in, search for, and leave reviews for your favorite books! <br></br><strong>PERN</strong> stack application built with the <strong>GoodReads API</strong>, <strong>React, Redux, Express.js, Node.js, PostgreSQL, Bootstrap, React Router</strong>, and <strong>axios</strong>.</p>
+                <p>Log in, search for, and leave reviews for your favorite books! <br></br><strong>PERN</strong> stack application built with the <strong>GoodReads API</strong>, <strong>React, Redux, Express.js, Node.js, PostgreSQL, Bootstrap, React Router, axios</strong>, and <strong>Heroku</strong>.</p>
                 <Link href="/projects/goodreads"><a><button>Case Study</button></a></Link>
                 <p><a href="https://react-goodreads.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button>Live</button></a> | <a href="https://github.com/stanjdev/goodreads" target="_blank" rel="noopener noreferrer"><button>GitHub</button></a></p>
               </div>
