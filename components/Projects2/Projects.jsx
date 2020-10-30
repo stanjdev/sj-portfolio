@@ -37,7 +37,7 @@ export default function Projects() {
                 </Link>
                 <p>Search for your favorite restaurant in real time with responsive, interactive map view.<br />Built with the <strong>Yelp API</strong>, <strong>Mapbox API</strong>, <strong>React, Redux, JavaScript, SCSS, CSS Animations,</strong> and <strong>Flexbox.</strong></p>
                 <Link href="/projects/kelp"><a><button className="caseStudyButton">Case Study</button></a></Link>
-                <p><a href="https://kelp-search.vercel.app/" target="_blank" rel="noopener noreferrer"><button>Live</button></a> | <a href="https://github.com/stanjdev/kelp" target="_blank" rel="noopener noreferrer"><button>GitHub</button></a></p>
+                <p><a href="https://kelp-search.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/kelp" target="_blank" rel="noopener noreferrer">GitHub</a></p>
               </div>
             </div>
 
@@ -60,7 +60,7 @@ export default function Projects() {
                 </Link>
                 <p>Log in, search for, and leave reviews for your favorite books! <br></br><strong>PERN</strong> stack application built with the <strong>GoodReads API</strong>, <strong>React, Redux, Express.js, Node.js, PostgreSQL, Bootstrap, React Router, axios</strong>, and <strong>Heroku</strong>.</p>
                 <Link href="/projects/goodreads"><a><button>Case Study</button></a></Link>
-                <p><a href="https://react-goodreads.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button>Live</button></a> | <a href="https://github.com/stanjdev/goodreads" target="_blank" rel="noopener noreferrer"><button>GitHub</button></a></p>
+                <p><a href="https://react-goodreads.herokuapp.com/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/goodreads" target="_blank" rel="noopener noreferrer">GitHub</a></p>
               </div>
             </div>
 
@@ -78,7 +78,7 @@ export default function Projects() {
                     <h2>REALYZER</h2>
                 </a>
                 <p>Created a multi-variable calculator for real-estate investors.<br/> Made with the <strong>React, Redux, Next.js, Javascript</strong>, and <strong>CSS</strong>.</p>
-                <p><a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer"><button>Live</button></a> | <a href="https://github.com/stanjdev/realyzer" target="_blank" rel="noopener noreferrer"><button>GitHub</button></a></p>
+                <p><a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/realyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
               </div>
             </div>
 

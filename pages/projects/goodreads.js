@@ -12,7 +12,7 @@ export default function GoodReads() {
         <h1>GoodReads Reviews</h1>
         <h2>Book Reviews Web App</h2>
         <blockquote><em>"Create an account, log in, search for, and leave reviews for your favorite books!"</em></blockquote>
-        <p><a href="https://react-goodreads.herokuapp.com/" target="_blank" rel="noopener noreferrer"><button className="liveButton">Live</button></a> | <a href="https://github.com/stanjdev/goodreads" target="_blank" rel="noopener noreferrer"><button className="liveButton">GitHub</button></a></p>
+        <p><a href="https://react-goodreads.herokuapp.com/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/goodreads" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
 
       <figure className="center">
@@ -100,7 +100,7 @@ export default function GoodReads() {
 
 
       <section className="container readingWidth">
-        <h1 className="challengesHeader">Challenges Faced: </h1>
+        <h2 className="challengesHeader">Challenges Faced: </h2>
       </section>
 
 

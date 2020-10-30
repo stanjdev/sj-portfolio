@@ -145,10 +145,10 @@ $letterspacing: 0.9rem / 1.4;
 
   button {
     padding: 0.5em;
-    color: whitesmoke;
-    // color: #131315;
-    background-color: rgb(0, 166, 255);
-    // background-color: #61DAFB;
+    // color: whitesmoke;
+    color: #131315;
+    // background-color: rgb(0, 166, 255);
+    background-color: whitesmoke;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -158,7 +158,7 @@ $letterspacing: 0.9rem / 1.4;
     cursor: pointer;
 
     &:hover {
-      background: rgb(0, 195, 255);
+      background: rgb(187, 187, 187);
     }
     &:active {
       background-color: gray;

@@ -13,7 +13,7 @@ export default function Kelp() {
         <h1>Kelp</h1>
         <h2>Business Search Web App Tool</h2>
         <blockquote><em>"Search for your favorite coffee shop in real-time with an interactive map view."</em></blockquote>
-        <p><a href="https://kelp-search.vercel.app/" target="_blank" rel="noopener noreferrer"><button className="liveButton">Live</button></a> | <a href="https://github.com/stanjdev/kelp" target="_blank" rel="noopener noreferrer"><button className="liveButton">GitHub</button></a></p>
+        <p><a href="https://kelp-search.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/kelp" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
 
       <figure className="center">
@@ -84,7 +84,7 @@ export default function Kelp() {
 
 
       <section className="container readingWidth">
-        <h1 className="challengesHeader">Challenges Faced: </h1>
+        <h2 className="challengesHeader">Challenges Faced: </h2>
       </section>
 
       <section className="container container__grey">

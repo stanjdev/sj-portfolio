@@ -103,8 +103,8 @@
 
 .projectText button {
   padding: 0.5em;
-  color: whitesmoke;
-  background-color: #00a6ff;
+  color: #131315;
+  background-color: whitesmoke;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -116,7 +116,7 @@
 }
 
 .projectText button:hover {
-  background: #00c3ff;
+  background: #bbbbbb;
 }
 
 .projectText button:active {
