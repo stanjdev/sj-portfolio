@@ -35,7 +35,7 @@ export default function Projects() {
                     {/* <img src="project_images/kelp-mobile.png" alt="Kelp Image"/> */}
                   </a>
                 </Link>
-                <p>Search for your favorite restaurant in real time with responsive, interactive map view.<br />Built with the <strong>Yelp API</strong>, <strong>Mapbox API</strong>, <strong>React, Redux, JavaScript, SCSS, CSS Animations,</strong> and <strong>Flexbox.</strong></p>
+                <p>Search for your favorite restaurant in real time with responsive, interactive map.<br />Built with the <strong>Yelp API</strong>, <strong>Mapbox API</strong>, <strong>React, Redux, JavaScript, SCSS, CSS Animations,</strong> and <strong>Flexbox.</strong></p>
                 <Link href="/projects/kelp"><a><button className="caseStudyButton">Case Study</button></a></Link>
                 <p><a href="https://kelp-search.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/kelp" target="_blank" rel="noopener noreferrer">GitHub</a></p>
               </div>
@@ -58,7 +58,7 @@ export default function Projects() {
                     {/* <img src="project_images/goodreads.png" alt="GoodReads Reviews"/> */}
                   </a>
                 </Link>
-                <p>Log in, search for, and leave reviews for your favorite books! <br></br><strong>PERN</strong> stack application built with the <strong>GoodReads API</strong>, <strong>React, Redux, Express.js, Node.js, PostgreSQL, Bootstrap, React Router, axios</strong>, and <strong>Heroku</strong>.</p>
+                <p>Create an account, search for, and leave reviews for your favorite books. <br></br><strong>PERN</strong> stack application built with the <strong>GoodReads API</strong>, <strong>React, Redux, Express.js, Node.js, PostgreSQL, Bootstrap, React Router, axios</strong>, and <strong>Heroku</strong>.</p>
                 <Link href="/projects/goodreads"><a><button>Case Study</button></a></Link>
                 <p><a href="https://react-goodreads.herokuapp.com/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/goodreads" target="_blank" rel="noopener noreferrer">GitHub</a></p>
               </div>
@@ -69,7 +69,7 @@ export default function Projects() {
             <div className="project" data-aos="fade-up" data-aos-delay="350">
               <a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer" alt="Realyzer Real Estate Deal Analyzer project">
                   <div className="projectImage re-deal-analyzer">
-                    <img src="project_images/re-deal-analyzer/realyzer.png" alt="Realyzer Real Estate Deal Analyzer"/>
+                    <img src="project_images/realyzer/realyzer-light.png" alt="Realyzer Real Estate Deal Analyzer"/>
                   </div>
               </a>
               <div className="projectText">
@@ -77,7 +77,8 @@ export default function Projects() {
                 <a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <h2>REALYZER</h2>
                 </a>
-                <p>Created a multi-variable calculator for real-estate investors.<br/> Made with the <strong>React, Redux, Next.js, Javascript</strong>, and <strong>CSS</strong>.</p>
+                <p>Created a multi-variable calculator for real-estate investors.<br/> Made with the <strong>React, Redux, Next.js, JavaScript, CSS, Mapbox API</strong>, and <strong>Cheerio.js</strong>.</p>
+                {/* • React, Redux, JavaScript, SCSS, CSS keyframe animations, Yelp API and Mapbox API */}
                 <p><a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/realyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
               </div>
             </div>

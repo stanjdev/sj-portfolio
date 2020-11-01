@@ -69,6 +69,42 @@ export default function Kelp() {
           <li>Responsive business search tool created with an interactive Mapbox map view to find businesses from retrieved Yelp API data</li>
           <li>Client-side fetch of Yelp API endpoints implemented using <a href="https://cors-anywhere.herokuapp.com/" target="_blank">CORS Anywhere</a></li>
 
+          <p>
+            This application started off as a Codecademy Pro React course project that I further developed to have an interactive map experience 
+            as well as a responsive, mobile experience.
+          </p>
+          <p>
+          The biggest challenges I faced dealt with connecting the map markers to behave according to my vision. I only had access to 
+          the Yelp API data of each search result, which gave me the address and coordinates for each business found. I then hooked 
+          up that data to Mapbox, and made sure the results and the map markers communicated bi-directionally whenever clicking or pressing 
+          on either or.
+          </p>
+          <span>How I did it: </span>
+          <ul>
+            <li>
+              In my Map component, on the map markers side, whenever you click or press any map marker, I used React-Redux to dispatch an 
+              action type of <code>“MARKER_CLICKED”</code> with a payload of <code>marker.properties.id</code> that stored that info 
+              in my global Redux state. Using the <code>useEffect()</code> hook in the parent component, this event would trigger 
+              the actual business from the search results list to be scrolled into view automatically using the <code>scrollIntoView()</code> 
+              method and the DOM manipulation <code>classList.add()</code> method to add highlighting styling to the selected result.
+            </li>
+            <br/>
+            <li>
+              In my individual Business component, on the BusinessList side, whenever you click on an image of a business from the 
+              search results, it extracts the Yelp coordinates data from that business, sends it back up to the parent component, 
+              and then sets the current state of the <code>clickedOnBusiness</code>, and finally sends that back down to the Map 
+              component to fly into the actual map marker with the matching coordinates using the Mapbox API's <code>flyTo()</code> method.
+            </li>
+          </ul>
+
+          <p>
+            Another challenge I faced was making sure to clear the map markers from previous search results whenever querying 
+            for new searches so they wouldn’t pile up (the previous map markers did not clear automatically after running a new search). 
+            I used the <code>useRef()</code> hook and the <code>.current</code> property to keep track of the current search results 
+            data in an array, and compared that array against the next, new search results. If they didn’t match, I looped through the 
+            current array of existing map markers and removed them in order to empty the array and make room for the new incoming search results.
+          </p>
+
         <figure className="center">
           <img src="/project_images/kelp-mobile.png" className="center"/>
           <figcaption>Mobile view of search bar</figcaption>

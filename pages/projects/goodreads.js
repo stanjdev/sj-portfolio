@@ -80,6 +80,29 @@ export default function GoodReads() {
           <li>Books imported from a CSV file of 5000 books</li>
           <li>Environment variables stored via Heroku</li>
 
+          <p>
+            Started as a course project from a Harvard Web Development course called CS50W, I originally created this 
+            application with Python, Flask, and Jinja2 according to the course. I then remade it using the PERN stack 
+            (PostgreSQL, Express.js, React, and Node.js). I used PostrgreSQL to store the users, books, and user reviews data. 
+            I set up Express.js for the GET, POST, PUT, DELETE CRUD capabilities for when the users leave reviews for 
+            individual books. 
+          </p>
+          <p>
+            One large challenge for this project was figuring out how to overcome some of React Router’s 
+            limitations when it came to dynamically pre-rendering pages when working with retrieved data. 
+            I had to figure out how to display the HTML template for the user reviews page first, before fetching 
+            the database and API data so that it can render that data onto the HTML page. I needed something 
+            that would work whenever the users refresh the page, navigate backwards and forwards, and type in the URL 
+            route directly to that specific book’s details page.
+          </p>
+          <p>
+            In hindsight, I figured something like Gatsby or Next.js' getStaticProps for Static Generation would 
+            have been great for this, but I decided to test a few hypotheses with Express and found a workaround 
+            using the <code>res.sendFile()</code> response method to serve up the index.html file first, along with the necessary fetched 
+            data included in the <code>options</code> argument of the response. That way, the template HTML page is always served and 
+            rendered first in order for the data to be painted onto.
+          </p>
+
         <figure className="center">
           <img src="/project_images/goodreads/goodreads_search.png" className="center"/>
           <figcaption>Search via ISBN, title, or author of your favorite book!</figcaption>
@@ -113,7 +136,7 @@ export default function GoodReads() {
           response data for that book. My Express.js routes were catching all of the GET requests before React could load the index.html page, 
           therefore the application had no webpage to display the API data onto.</p>
           <p>I wanted my HTML to be pre-rendered in order for the fetched GoodReads API and database data to successfully "hydrate" and display on the page.</p>
-          <p> To remedy this, I found a work-around on my server-side using the Express.js <code>res.sendFile(path, options)</code> method to pre-render 
+          <p> To remedy this, I found a work-around on my server-side using the Express.js <code><a href="https://expressjs.com/en/api.html#res.sendFile" target="_blank">res.sendFile(path, options)</a></code> method to pre-render 
           the template index.html file as the <code>path</code> argument, along with the API response data object in the <code>options</code> argument.</p>
           {/* 
           I needed to generate HTML for each page in advance, instead of having it all done by client-side JavaScript.
