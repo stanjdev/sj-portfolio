@@ -64,7 +64,7 @@ function Portfolio() {
           <AnchorLink className={styles.item} href="#top"><li>Home</li></AnchorLink>
           <AnchorLink className={styles.item} href="#projects"><li>Projects</li></AnchorLink>
           <AnchorLink className={styles.item} href="#contact"><li>Contact</li></AnchorLink>
-          <a className={styles.item} href="https://drive.google.com/file/d/1041mT2Xbbft-AIV03jJlNCUFs76o7do2/view?usp=sharing" target="_blank" rel="noopener noreferrer"><li>Resume</li></a>
+          <a className={styles.item} href="https://drive.google.com/file/d/1dv0Sro_rTATZ0IjeL7wlhf3NBbbLdiSb/view?usp=sharing" target="_blank" rel="noopener noreferrer"><li>Resume</li></a>
         </ul>
       </nav>
 
