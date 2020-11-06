@@ -19,27 +19,26 @@ export default function Projects() {
         <section className="Projects">
           <h1 data-aos="fade-down" data-aos-delay="0">PROJECTS</h1>
 
-          <div className="project" data-aos="fade-up" data-aos-delay="250">
-              <Link href="/projects/kelp" alt="kelp project">
-                <a>
-                  <div className="projectImage kelp">
-                    <img src="project_images/gifs/kelp-interactive-map.gif" alt="Kelp GIF"/>
+
+          <div className="project" data-aos="fade-up" data-aos-delay="350">
+              <a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer" alt="Realyzer Real Estate Deal Analyzer project">
+                  <div className="projectImage re-deal-analyzer">
+                    <img src="project_images/realyzer/realyzer-light.png" alt="Realyzer Real Estate Deal Analyzer"/>
                   </div>
-                </a>
-              </Link>
+              </a>
               <div className="projectText">
                 
-                <Link href="/projects/kelp">
-                  <a>
-                    <h2>KELP</h2>
-                    {/* <img src="project_images/kelp-mobile.png" alt="Kelp Image"/> */}
-                  </a>
-                </Link>
-                <p>Search for your favorite restaurant in real time with responsive, interactive map.<br />Built with the <strong>Yelp API</strong>, <strong>Mapbox API</strong>, <strong>React, Redux, JavaScript, SCSS, CSS Animations,</strong> and <strong>Flexbox.</strong></p>
-                <Link href="/projects/kelp"><a><button className="caseStudyButton">Case Study</button></a></Link>
-                <p><a href="https://kelp-search.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/kelp" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                <a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <h2>REALYZER</h2>
+                </a>
+                <p>Created a multi-variable calculator for real-estate investors.<br/> Made with the <strong>React, Redux, Next.js, JavaScript, CSS, Mapbox API</strong>, and <strong>Cheerio.js</strong>.</p>
+                {/* • React, Redux, JavaScript, SCSS, CSS keyframe animations, Yelp API and Mapbox API */}
+                <Link href="/projects/realyzer"><a><button className="caseStudyButton">Case Study</button></a></Link>
+                <p><a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/realyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
               </div>
             </div>
+
+
 
 
             <div className="projectReverse" data-aos="fade-up" data-aos-delay="350">
@@ -66,21 +65,25 @@ export default function Projects() {
 
 
 
-            <div className="project" data-aos="fade-up" data-aos-delay="350">
-              <a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer" alt="Realyzer Real Estate Deal Analyzer project">
-                  <div className="projectImage re-deal-analyzer">
-                    <img src="project_images/realyzer/realyzer-light.png" alt="Realyzer Real Estate Deal Analyzer"/>
+            <div className="project" data-aos="fade-up" data-aos-delay="250">
+              <Link href="/projects/kelp" alt="kelp project">
+                <a>
+                  <div className="projectImage kelp">
+                    <img src="project_images/gifs/kelp-interactive-map.gif" alt="Kelp GIF"/>
                   </div>
-              </a>
+                </a>
+              </Link>
               <div className="projectText">
                 
-                <a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    <h2>REALYZER</h2>
-                </a>
-                <p>Created a multi-variable calculator for real-estate investors.<br/> Made with the <strong>React, Redux, Next.js, JavaScript, CSS, Mapbox API</strong>, and <strong>Cheerio.js</strong>.</p>
-                {/* • React, Redux, JavaScript, SCSS, CSS keyframe animations, Yelp API and Mapbox API */}
-                <Link href="/projects/realyzer"><a><button className="caseStudyButton">Case Study</button></a></Link>
-                <p><a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/realyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                <Link href="/projects/kelp">
+                  <a>
+                    <h2>KELP</h2>
+                    {/* <img src="project_images/kelp-mobile.png" alt="Kelp Image"/> */}
+                  </a>
+                </Link>
+                <p>Search for your favorite restaurant in real time with responsive, interactive map.<br />Built with the <strong>Yelp API</strong>, <strong>Mapbox API</strong>, <strong>React, Redux, JavaScript, SCSS, CSS Animations,</strong> and <strong>Flexbox.</strong></p>
+                <Link href="/projects/kelp"><a><button className="caseStudyButton">Case Study</button></a></Link>
+                <p><a href="https://kelp-search.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/kelp" target="_blank" rel="noopener noreferrer">GitHub</a></p>
               </div>
             </div>
 

@@ -68,7 +68,7 @@ export default function Realyzer() {
 
         <h3>Realyzer:</h3>
           <ul>
-            <li>Provides a clean and simple-to-use interface that keeps the user focused on gaining their insights. Designed in collaboration with Full-Stack Product Designer, Casey Tang.</li>
+            <li>Provides a clean and simple-to-use interface that keeps the user focused on gaining their insights. Designed in collaboration with a Full-Stack Product Designer</li>
             <li>Eliminates the need to visit external web sites and tools for property tax or mortgage calculations</li>
             <li>Provides the user with an optional, clean and simple PDF report of their property analysis</li>
           </ul>
@@ -218,16 +218,13 @@ const uploadPropertyPhotos = e => {
       </section>
      
 
-      <section className="container container__grey">
+      {/* <section className="container container__grey">
         <div className="readingWidth">
           <h2>Loading JS script into the React project on mount</h2>
           <p>In order for the Mapbox API to create and load the map on mount, I had to figure out how to load the Javascript <code>{`<script>`}</code> file from a CDN, 
           (as you would normally insert the <code>{`<script>`}</code> tag right before the closing <code>{`<body>`}</code> tag of an HTML file). </p>
 
           <p>I used this custom <code>loadScript</code> function that takes in any CDN URL and injects it into the React-rendered HTML page on mount, similarly to placing the <code>{`<script>`}</code> tag in the HTML file manually. </p>
-
-          {/* The script needs to look at the <code>window</code> level, i.e. <code>window.document.body</code> or <code>window.initMap = this.initMap</code> */}
-          {/* LIFESAVER video: https://www.youtube.com/watch?v=W5LhLZqj76s (initMap is not a function error: because the script needs to look at the 'window' level. so at window.document.body.. etc. window.initMap = this.initMap) https://www.elharony.com/initmap-is-not-a-function/ - HUGE: SETTING UP JS SCRIPT IN REACT PROJECT! */}
           
           <pre className="pre">
             <code >
@@ -241,7 +238,7 @@ const uploadPropertyPhotos = e => {
             </code>
           </pre>
         </div>
-      </section>
+      </section> */}
 
 
 
