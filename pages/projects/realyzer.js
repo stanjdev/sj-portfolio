@@ -18,8 +18,13 @@ export default function Realyzer() {
       </div>
 
       <figure className="center">
-      <img src="/project_images/realyzer/realyzer-banner.png" alt="{name}" className="center"/>
+        <img src="/project_images/realyzer/realyzer-banner.png" alt="{name}" className="center"/>
         <figcaption>Simple header banner with optional "dark-mode" toggle for user's choice of experience</figcaption>
+      </figure>
+
+      <figure className="center">
+        <img src="/project_images/gifs/realyzer-walkthrough.gif" alt="realyzer rental property calculator walkthrough usage" className="center"/>
+        <figcaption>Walkthrough usage of the app</figcaption>
       </figure>
 
 
@@ -68,7 +73,7 @@ export default function Realyzer() {
 
         <h3>Realyzer:</h3>
           <ul>
-            <li>Provides a clean and simple-to-use interface that keeps the user focused on gaining their insights. Designed in collaboration with a Full-Stack Product Designer</li>
+            <li>Provides a clean and simple-to-use interface that keeps the user focused on gaining their insights.</li>
             <li>Eliminates the need to visit external web sites and tools for property tax or mortgage calculations</li>
             <li>Provides the user with an optional, clean and simple PDF report of their property analysis</li>
           </ul>
@@ -111,12 +116,12 @@ export default function Realyzer() {
 
 
         <figure className="center">
-          <img src="/project_images/realyzer/realyzer-light.png" className="center" alt="realyzer rental property calculator"/>
+          <img src="/project_images/realyzer/realyzer-light.png" alt="realyzer rental property calculator" className="center"/>
           <figcaption>Light Mode</figcaption>
         </figure>
 
         <figure className="center">
-          <img src="/project_images/realyzer/realyzer-dark.png" alt="kelp MapBox map view" alt="realyzer rental property calculator dark mode" className="center"/>
+          <img src="/project_images/realyzer/realyzer-dark.png" alt="realyzer rental property calculator dark mode" className="center"/>
           <figcaption>Dark Mode</figcaption>
         </figure>
       </section>
@@ -137,7 +142,7 @@ export default function Realyzer() {
             with the Mapbox Geocoding API to retrieve the coordinates based off the address. With the response data,
             the U.S. state name (e.g. Alabama) from that data is used to query the previously scraped property tax data from 
             an external source to determine the average property tax rate for that particular state. 
-            The same coordinates are also used to place the map marker directly on the home address of the property for the user's convenience.
+            The same coordinates are also used to place the map marker directly on the home address of the property for the user's convenience. Example usage shown below.
           </p>
 
           <figure className="center">

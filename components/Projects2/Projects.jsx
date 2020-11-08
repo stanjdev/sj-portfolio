@@ -21,16 +21,20 @@ export default function Projects() {
 
 
           <div className="project" data-aos="fade-up" data-aos-delay="350">
-              <a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer" alt="Realyzer Real Estate Deal Analyzer project">
+            <Link href="projects/realyzer" alt="Realyzer Real Estate Deal Analyzer project">
+              <a>
                   <div className="projectImage re-deal-analyzer">
-                    <img src="project_images/realyzer/realyzer-light.png" alt="Realyzer Real Estate Deal Analyzer"/>
+                    <img src="project_images/gifs/realyzer-walkthrough.gif" alt="Realyzer Real Estate Deal Analyzer"/>
                   </div>
               </a>
+            </Link>
               <div className="projectText">
                 
-                <a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    <h2>REALYZER</h2>
-                </a>
+                <Link href="projects/realyzer">
+                  <a>
+                      <h2>REALYZER</h2>
+                  </a>
+                </Link>
                 <p>Created a multi-variable calculator for real-estate investors.<br/> Made with the <strong>React, Redux, Next.js, JavaScript, CSS, Mapbox API</strong>, and <strong>Cheerio.js</strong>.</p>
                 {/* • React, Redux, JavaScript, SCSS, CSS keyframe animations, Yelp API and Mapbox API */}
                 <Link href="/projects/realyzer"><a><button className="caseStudyButton">Case Study</button></a></Link>

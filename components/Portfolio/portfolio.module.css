@@ -82,7 +82,7 @@
 
 .App__header .title :nth-child(2) {
   margin-top: 0;
-  font-size: 100%;
+  font-size: 85%;
 }
 
 .App__header .aboutMeTop {
@@ -134,7 +134,7 @@
   width: 25px;
   position: relative;
   top: 11px;
-  right: 2.2px;
+  right: 2.1px;
 }
 
 .App__header .see_work .arrow .arrow__square {
@@ -381,7 +381,7 @@
     width: 25px;
     position: relative;
     top: 11px;
-    right: 2.2px;
+    right: 2.1px;
   }
   .see_work .arrow .arrow__square {
     width: 20px;
