@@ -14,12 +14,25 @@ export default function Realyzer() {
         <h2>Multi-Variable Calculator for Real Estate Investors</h2>
         {/* <blockquote><em>"Calculate the cash-on-cash return on your next real estate investment property."</em></blockquote> */}
         <blockquote style={{maxWidth: "700px"}}><em>"An investment analytics tool helping users gain insights through property analysis, dynamically sourced tax rates, and a custom, comprehensive mortgage calculator"</em></blockquote>
-        <p><a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/realyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p><a href="https://realyzer.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/realyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
 
       <figure className="center">
         <img src="/project_images/realyzer/realyzer-banner.png" alt="{name}" className="center"/>
         <figcaption>Simple header banner with optional "dark-mode" toggle for user's choice of experience</figcaption>
+      </figure>
+
+      <figure className="center" style={{maxWidth: "600px"}}>
+        <iframe 
+          width="100%" 
+          height="315" 
+          src="https://www.youtube.com/embed/YppX0bXFMQ0" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen="true"
+        >
+        </iframe>
+        <figcaption>Example property deal analysis</figcaption>
       </figure>
 
       <figure className="center">
@@ -248,15 +261,15 @@ const uploadPropertyPhotos = e => {
 
 
       <section className="container">
-      <div className="readingWidth">
-        <h2>Final Results:</h2>
-        <figure className="center">
-          <img src="/project_images/realyzer/pdf-results/pdf1.png" alt="Realyzer rental property calculator PDF page 1 cash on cash return net cash flow" className="caseStudyImage center"/>
-          <img src="/project_images/realyzer/pdf-results/pdf2.png" alt="Realyzer rental property calculator PDF page 2 monthly expenses down payment closing costs" className="caseStudyImage center"/>
-          <img src="/project_images/realyzer/pdf-results/pdf3.png" alt="Realyzer rental property calculator PDF page 3 mapbox api zillow redfin map marker" className="caseStudyImage center"/>
-          <figcaption>Final result pages of user's inputted data available to save as a PDF or print!</figcaption>
-        </figure>
-      </div>
+        <div className="readingWidth">
+          <h2>Final Results:</h2>
+          <figure className="center">
+            <img src="/project_images/realyzer/pdf-results/pdf1.png" alt="Realyzer rental property calculator PDF page 1 cash on cash return net cash flow" className="caseStudyImage center"/>
+            <img src="/project_images/realyzer/pdf-results/pdf2.png" alt="Realyzer rental property calculator PDF page 2 monthly expenses down payment closing costs" className="caseStudyImage center"/>
+            <img src="/project_images/realyzer/pdf-results/pdf3.png" alt="Realyzer rental property calculator PDF page 3 mapbox api zillow redfin map marker" className="caseStudyImage center"/>
+            <figcaption>Final result pages of user's inputted data available to save as a PDF or print!</figcaption>
+          </figure>
+        </div>
       </section>
   
     </Layout>

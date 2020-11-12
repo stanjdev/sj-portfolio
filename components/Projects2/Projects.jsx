@@ -38,7 +38,7 @@ export default function Projects() {
                 <p>A multi-variable calculator for real-estate investors.<br/> Made with the <strong>React, Redux, Next.js, JavaScript, CSS, Mapbox API</strong>, and <strong>Cheerio.js</strong>.</p>
                 {/* • React, Redux, JavaScript, SCSS, CSS keyframe animations, Yelp API and Mapbox API */}
                 <Link href="/projects/realyzer"><a><button className="caseStudyButton">Case Study</button></a></Link>
-                <p><a href="https://realyzer.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/realyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                <p><a href="https://realyzer.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/realyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
               </div>
             </div>
 
