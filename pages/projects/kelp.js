@@ -33,6 +33,7 @@ export default function Kelp() {
           <div className=" projectInfo__block">
             <h2>Timeline:</h2>
             <p>August 2020 - September 2020</p>
+            <p>41 Hours Total</p>
           </div>
 
           <div className=" projectInfo__block">

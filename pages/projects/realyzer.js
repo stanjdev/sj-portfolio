@@ -52,6 +52,7 @@ export default function Realyzer() {
           <div className=" projectInfo__block">
             <h2>Timeline:</h2>
             <p>September 2020 - November 2020</p>
+            <p>85 Hours Total</p>
           </div>
 
           <div className=" projectInfo__block">
