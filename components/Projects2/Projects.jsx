@@ -19,33 +19,33 @@ export default function Projects() {
         <section className="Projects">
           <h1 data-aos="fade-down" data-aos-delay="0">PROJECTS</h1>
 
+          <ProjectComponent 
+            title="MEMOIR" 
+            name="memoir" 
+            description={"Breathing & Meditation Mobile Application for iOS and Android."} 
+            createdWith={"Created using React Native, Expo, JavaScript, CSS, and Google Firebase."}
+            imgLink="memoir/app-icon.png"
+            linkAlt="Memoir Breathing Meditation App Image Link"
+            imgAlt="Memoir Breathing Meditation App Icon"
+            liveLink="https://expo.io/@stan.dev/projects/Memoir"
+            ghLink="https://github.com/stanjdev/memoir"
+          />
 
-          <div className="project" data-aos="fade-up" data-aos-delay="350">
-            <Link href="projects/realyzer" alt="Realyzer Real Estate Deal Analyzer project">
-              <a>
-                  <div className="projectImage re-deal-analyzer">
-                    <img src="project_images/gifs/realyzer-walkthrough.gif" alt="Realyzer Real Estate Deal Analyzer"/>
-                  </div>
-              </a>
-            </Link>
-              <div className="projectText">
-                
-                <Link href="projects/realyzer">
-                  <a>
-                      <h2>REALYZER</h2>
-                  </a>
-                </Link>
-                <p>A multi-variable calculator for real-estate investors.<br/> Made with the <strong>React, Redux, Next.js, JavaScript, CSS, Mapbox API</strong>, and <strong>Cheerio.js</strong>.</p>
-                {/* • React, Redux, JavaScript, SCSS, CSS keyframe animations, Yelp API and Mapbox API */}
-                <Link href="/projects/realyzer"><a><button className="caseStudyButton">Case Study</button></a></Link>
-                <p><a href="https://realyzer.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/realyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-              </div>
-            </div>
+          <ProjectComponent 
+            title="REALYZER" 
+            name="realyzer" 
+            description={"A multi-variable calculator for real-estate investors."} 
+            createdWith={"Made with the React, Redux, Next.js, JavaScript, CSS, Mapbox API, and Cheerio.js."}
+            imgLink="gifs/realyzer-walkthrough.gif"
+            linkAlt="Realyzer Real Estate Deal Analyzer project"
+            imgAlt="Realyzer Real Estate Deal Analyzer gif image"
+            liveLink="https://realyzer.app/"
+            ghLink="https://github.com/stanjdev/realyzer"
+            reverseAlign
+          />
 
 
-
-
-            <div className="projectReverse" data-aos="fade-up" data-aos-delay="350">
+            <div className="project" data-aos="fade-up" data-aos-delay="350">
               <Link href="projects/goodreads" alt="goodreads project">
                 <a>
                   <div className="projectImage goodreads">
@@ -69,7 +69,7 @@ export default function Projects() {
 
 
 
-            <div className="project" data-aos="fade-up" data-aos-delay="250">
+            <div className="projectReverse" data-aos="fade-up" data-aos-delay="250">
               <Link href="/projects/kelp" alt="kelp project">
                 <a>
                   <div className="projectImage kelp">
@@ -125,7 +125,7 @@ export default function Projects() {
               </div>
             </div> */}
             
-            <div className="projectReverse" data-aos="fade-up" data-aos-delay="250">
+            <div className="project" data-aos="fade-up" data-aos-delay="250">
               <a href="https://talo-apartments.vercel.app/" alt="talo apartments project" target="_blank" rel="noopener noreferrer">
                 <div className="projectImage talo">
                   <img src="project_images/talo-apartments/talo.png" alt="talo apartments image"/>
@@ -140,7 +140,7 @@ export default function Projects() {
             </div>
 
           
-            <div className="project" data-aos="fade-up" data-aos-delay="250">
+            <div className="projectReverse" data-aos="fade-up" data-aos-delay="250">
               <a href="https://stanjdev.github.io/triplebyte/" alt="triplebyte project" target="_blank" rel="noopener noreferrer">
                 <div className="projectImage triplebyte">
                   <img src="project_images/triplebyte.png" alt="Triplebyte image" />
@@ -176,7 +176,6 @@ export default function Projects() {
 
 
 
-
           
           
           <div className="getInTouchContainer" data-aos="fade-right">
@@ -188,7 +187,47 @@ export default function Projects() {
               </div>
             </AnchorLink>
           </div>
+
         </section>
       </div>
+  )
+}
+
+/* 
+<ProjectComponent 
+  title="MEMOIR" 
+  name="memoir" 
+  description={"Breathing & Meditation Mobile Application for iOS and Android."} 
+  createdWith={"Created using React Native, Expo, JavaScript, CSS, and Google Firebase."}
+  imgLink="memoir/app-icon.png"
+  linkAlt="Memoir Breathing Meditation App Image Link"
+  imgAlt="Memoir Breathing Meditation App Icon"
+  liveLink="https://expo.io/@stan.dev/projects/Memoir"
+  ghLink="https://github.com/stanjdev/memoir"
+/>
+*/
+
+
+function ProjectComponent({ title, name, description, createdWith, imgLink, linkAlt, imgAlt, reverseAlign, liveLink, ghLink }) {
+  return (
+    <div className={reverseAlign? "projectReverse" : "project"} data-aos="fade-up" data-aos-delay="350">
+      <Link href={`projects/${name}`} alt={linkAlt}>
+        <a>
+          <div className="projectImage re-deal-analyzer">
+            <img src={`project_images/${imgLink}`} alt={imgAlt}/>
+          </div>
+        </a>
+      </Link>
+      <div className="projectText">
+        <Link href={`projects/${name}`}>
+          <a>
+            <h2>{title}</h2>
+          </a>
+        </Link>
+        <p>{description} <br/> {createdWith}</p>
+        <Link href={`/projects/${name}`}><a><button className="caseStudyButton">Case Study</button></a></Link>
+        <p><a href={liveLink} target="_blank" rel="noopener noreferrer">Live</a> | <a href={ghLink} target="_blank" rel="noopener noreferrer">GitHub</a></p>
+      </div>
+    </div>
   )
 }

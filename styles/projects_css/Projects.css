@@ -70,6 +70,10 @@
   margin: 1em auto;
 }
 
+.projectImage img {
+  border-radius: 4px;
+}
+
 .projectText {
   max-width: 350px;
   display: -webkit-box;
@@ -88,6 +92,7 @@
 .projectText h2 {
   letter-spacing: 0.42857rem;
   line-height: 1.4;
+  margin-bottom: 5px;
 }
 
 .projectText p {

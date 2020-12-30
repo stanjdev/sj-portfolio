@@ -70,7 +70,7 @@ export default function Layout({ children, home }) {
                       alt="react logo" 
                       style={{height: "1.7em", position: "relative", bottom: "-0.47em"}}
                 />
-                © 2020 STAN JEONG
+                © 2021 STAN JEONG
               </span>
             </section>
 
