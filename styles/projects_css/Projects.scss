@@ -70,17 +70,18 @@ $letterspacing: 0.9rem / 1.4;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all ease 0.3s;
+  transition: all ease 0.4s;
   margin: 1em auto;
   
   img {
     border-radius: 4px;
   }
 
-  // &:hover {
-  //   transform: scale(1.1);
-  //   cursor: pointer;
-  // }
+  &:hover {
+    // transform: scale(1.1);
+    // cursor: pointer;
+    opacity: 0.75;
+  }
 }
 
 .talo {

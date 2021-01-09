@@ -10,6 +10,7 @@ export default function Memoir() {
       </Head>
 
       <div className="header">
+        <img src="/project_images/memoir/app-icon.png" alt="{name}" className="center" width={150} style={{borderRadius: 7}}/>
         <h1>Memoir</h1>
         <h2>Breathing &#38; Meditation Mobile Application for iOS and Android</h2>
         <blockquote style={{maxWidth: "700px"}}><em>"Breathing, Meditation app for iOS &#38; Android promoting mindfulness through breathing exercises and personal progress tracking"</em></blockquote>
@@ -17,23 +18,9 @@ export default function Memoir() {
       </div>
 
       <figure className="center">
-        <img src="/project_images/memoir/app-icon.png" alt="{name}" className="center"/>
-        <figcaption>Memoir app icon</figcaption>
+        <img src="/project_images/memoir/memoir-thumbnail.gif" alt="{name}" className="center" width={600} style={{borderRadius: 7}}/>
+        <figcaption>Memoir</figcaption>
       </figure>
-
-
-      {/* <figure className="center" style={{maxWidth: "600px"}}>
-        <iframe 
-          width="100%" 
-          height="315" 
-          src="https://www.youtube.com/embed/YppX0bXFMQ0" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen="true"
-        >
-        </iframe>
-        <figcaption>Example property deal analysis</figcaption>
-      </figure> */}
 
 
       <figure className="center">
@@ -47,7 +34,7 @@ export default function Memoir() {
         <section className="projectInfo">
           <div className=" projectInfo__block">
             <h2>Project Brief:</h2>
-            <p>Mobile application promoting mindfulness through breathing and meditation exercises as well as personalized user progress tracking</p>
+            <p>Mobile application promoting mindfulness through breathing and meditation exercises. Users can track their progress and favorites</p>
           </div>
 
           <div className=" projectInfo__block">
@@ -85,7 +72,7 @@ export default function Memoir() {
 
       <h1 style={{textAlign: 'center'}}>In Progress...</h1>
 
-      {/* <section className="container readingWidth">
+      <section className="container readingWidth">
 
         <h3>Memoir:</h3>
           <ul>
@@ -114,20 +101,28 @@ export default function Memoir() {
 
 
         <figure className="center">
-          <img src="/project_images/realyzer/realyzer-light.png" alt="realyzer rental property calculator" className="center"/>
-          <figcaption>Light Mode</figcaption>
+          <img src="/project_images/memoir/memoir-exercises.jpeg" alt="realyzer rental property calculator" className="center"/>
+          <figcaption>Memoir Breathing Exercises Variety</figcaption>
         </figure>
 
-        <figure className="center">
-          <img src="/project_images/realyzer/realyzer-dark.png" alt="realyzer rental property calculator dark mode" className="center"/>
-          <figcaption>Dark Mode</figcaption>
-        </figure>
+
+
+        <div style={{display: "flex", width: "100%", flexWrap: "wrap"}}>
+          <Interaction fileName="Memoir Home Screen.mp4" caption="Home Screen with Horizontal Scrolling Libraries"/>
+          <Interaction fileName="Memoir_Exercise 1.mp4" caption="Breathing Exercise Player"/>
+          <Interaction fileName="Memoir_Exercise 2.mp4" caption="Setting a Timer"/>
+          <Interaction fileName="Memoir_Favorites.mp4" caption="Favorites Library"/>
+          <Interaction fileName="Memoir Meditation Dial.mp4" caption="Meditation Dial"/>
+          <Interaction fileName="Memoir_Signup.mp4" caption="Sign Up Prompts"/>
+
+          <Interaction fileName="Memoir_Stats.mp4" caption="User Stats"/>
+        </div>
+
       </section>
 
 
 
-
-      <section className="container readingWidth">
+      {/* <section className="container readingWidth">
         <h2 className="challengesHeader">Challenges Faced: </h2>
       </section>
 
@@ -148,10 +143,10 @@ export default function Memoir() {
             <figcaption>Geocoding a Property Address to Retrieve Coordinates using Mapbox API</figcaption>
           </figure>
         </div>
-      </section> */}
+      </section>
 
 
-      {/* <section className="container container__grey">
+      <section className="container container__grey">
         <div className="readingWidth">
           <h2>Rendering Image Previews of Multiple User-Uploaded Property Photos</h2>
           <p>
@@ -185,10 +180,10 @@ const uploadPropertyPhotos = e => {
             </code>
           </pre>
         </div>
-      </section> */}
+      </section>
 
 
-      {/* <section className="container container__grey">
+      <section className="container container__grey">
         <div className="readingWidth">
           <h1>Mortgage Calculation Formula</h1>
           <p>
@@ -214,10 +209,10 @@ const uploadPropertyPhotos = e => {
             <figcaption>Simple, Adjustable Mortgage Calculator</figcaption>
           </figure>
         </div>
-      </section> */}
+      </section>
      
 
-      {/* <section className="container container__grey">
+      <section className="container container__grey">
         <div className="readingWidth">
           <h2>Loading JS script into the React project on mount</h2>
           <p>In order for the Mapbox API to create and load the map on mount, I had to figure out how to load the Javascript <code>{`<script>`}</code> file from a CDN, 
@@ -237,11 +232,11 @@ const uploadPropertyPhotos = e => {
             </code>
           </pre>
         </div>
-      </section> */}
+      </section>
 
 
 
-      {/* <section className="container">
+      <section className="container">
         <div className="readingWidth">
           <h2>Final Results:</h2>
           <figure className="center">
@@ -254,5 +249,23 @@ const uploadPropertyPhotos = e => {
       </section> */}
   
     </Layout>
+  )
+}
+
+
+
+function Interaction({ fileName, caption }) {
+  return (
+    <figure className="center">
+      <video 
+        autostart 
+        autoPlay 
+        loop
+        muted 
+        style={{borderRadius: 10}}
+        src={`/project_images/memoir/memoir-portfolio-motion/${fileName}`}
+      />
+      <figcaption>{caption}</figcaption>
+    </figure>
   )
 }

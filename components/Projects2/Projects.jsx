@@ -24,7 +24,9 @@ export default function Projects() {
             name="memoir" 
             description={"Breathing & Meditation Mobile Application for iOS and Android."} 
             createdWith={"Created using React Native, Expo, JavaScript, CSS, and Google Firebase."}
-            imgLink="memoir/app-icon.png"
+            // imgLink="memoir/app-icon.png"
+            imgWidth={600}
+            imgLink="memoir/memoir-thumbnail.gif"
             linkAlt="Memoir Breathing Meditation App Image Link"
             imgAlt="Memoir Breathing Meditation App Icon"
             liveLink="https://expo.io/@stan.dev/projects/Memoir"
@@ -44,139 +46,56 @@ export default function Projects() {
             reverseAlign
           />
 
+          <ProjectComponent 
+            title="GOODREADS REVIEWS" 
+            name="goodreads" 
+            description={"Create an account, search for, and leave reviews for your favorite books."} 
+            createdWith={"PERN stack application built with the GoodReads API, React, Redux, Express.js, Node.js, PostgreSQL, Bootstrap, React Router, axios, and Heroku."}
+            imgLink="gifs/goodreads-reviewing-books.gif"
+            linkAlt="goodreads project"
+            imgAlt="GoodReads Reviews GIF image"
+            liveLink="https://react-goodreads.herokuapp.com/"
+            ghLink="https://github.com/stanjdev/goodreads"
+          />
 
-            <div className="project" data-aos="fade-up" data-aos-delay="350">
-              <Link href="projects/goodreads" alt="goodreads project">
-                <a>
-                  <div className="projectImage goodreads">
-                    <img src="project_images/gifs/goodreads-reviewing-books.gif" alt="GoodReads Reviews GIF"/>
-                  </div>
-                </a>
-              </Link>
-              <div className="projectText">
-                
-                <Link href="/projects/goodreads">
-                  <a>
-                    <h2>GOODREADS REVIEWS</h2>
-                    {/* <img src="project_images/goodreads.png" alt="GoodReads Reviews"/> */}
-                  </a>
-                </Link>
-                <p>Create an account, search for, and leave reviews for your favorite books. <br></br><strong>PERN</strong> stack application built with the <strong>GoodReads API</strong>, <strong>React, Redux, Express.js, Node.js, PostgreSQL, Bootstrap, React Router, axios</strong>, and <strong>Heroku</strong>.</p>
-                <Link href="/projects/goodreads"><a><button>Case Study</button></a></Link>
-                <p><a href="https://react-goodreads.herokuapp.com/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/goodreads" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-              </div>
-            </div>
+          <ProjectComponent 
+            title="KELP" 
+            name="kelp" 
+            description={"Search for your favorite restaurant in real time with responsive, interactive map."} 
+            createdWith={"Built with the Yelp API, Mapbox API, React, Redux, JavaScript, SCSS, CSS Animations, and Flexbox."}
+            imgLink="gifs/kelp-interactive-map.gif"
+            linkAlt="kelp project"
+            imgAlt="Kelp GIF"
+            liveLink="https://kelp-search.vercel.app/"
+            ghLink="https://github.com/stanjdev/kelp"
+            reverseAlign
+          />
 
+          <ProjectComponent 
+            title="TALO APARTMENTS" 
+            name="" 
+            description={"Responsively designed static, single landing page for Talo Apartment buildings."} 
+            createdWith={"Made the SCSS, CSS Flexbox, CSS Grid, BootStrap, CSS Animation, img srcset, and, media queries to be responsive on desktop and mobile."}
+            imgLink="talo-apartments/talo.png"
+            linkAlt="talo apartments project"
+            imgAlt="talo apartments image"
+            liveLink="https://talo-apartments.vercel.app/"
+            ghLink="https://github.com/stanjdev/talo-real-estate"
+          />
+ 
+          <ProjectComponent 
+            title="TRIPLEBYTE" 
+            name="" 
+            description={"Responsively designed static landing page mockup of a technology business."} 
+            createdWith={"Made the SCSS, CSS Flexbox, CSS Grid, CSS Animation, and, media queries to be responsive on desktop and mobile."}
+            imgLink="triplebyte.png"
+            linkAlt="triplebyte project"
+            imgAlt="Triplebyte image"
+            liveLink="https://stanjdev.github.io/triplebyte/"
+            ghLink="https://github.com/stanjdev/triplebyte"
+            reverseAlign
+          />
 
-
-            <div className="projectReverse" data-aos="fade-up" data-aos-delay="250">
-              <Link href="/projects/kelp" alt="kelp project">
-                <a>
-                  <div className="projectImage kelp">
-                    <img src="project_images/gifs/kelp-interactive-map.gif" alt="Kelp GIF"/>
-                  </div>
-                </a>
-              </Link>
-              <div className="projectText">
-                
-                <Link href="/projects/kelp">
-                  <a>
-                    <h2>KELP</h2>
-                    {/* <img src="project_images/kelp-mobile.png" alt="Kelp Image"/> */}
-                  </a>
-                </Link>
-                <p>Search for your favorite restaurant in real time with responsive, interactive map.<br />Built with the <strong>Yelp API</strong>, <strong>Mapbox API</strong>, <strong>React, Redux, JavaScript, SCSS, CSS Animations,</strong> and <strong>Flexbox.</strong></p>
-                <Link href="/projects/kelp"><a><button className="caseStudyButton">Case Study</button></a></Link>
-                <p><a href="https://kelp-search.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/kelp" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-              </div>
-            </div>
-
-
-            {/* IF RE DEAL ANALYZER CASE STUDY: */}
-            {/* <div className="project" data-aos="fade-up" data-aos-delay="350">
-              <Link href="https://realestatedeal.vercel.app/" alt="Real Estate Deal Analyzer project">
-                <a>
-                  <div className="projectImage re-deal-analyzer">
-                    <img src="project_images/re-deal-analyzer/re-deal-analyzer.png" alt="Real Estate Deal Analyzer"/>
-                  </div>
-                </a>
-              </Link>
-              <div className="projectText">
-                
-                <Link href="https://realestatedeal.vercel.app/">
-                  <a>
-                    <h2>REAL ESTATE DEAL ANALYZER</h2>
-                  </a>
-                </Link>
-                <p>Analyze your next Real Estate Property Deal. Calculate your cash on cash, ROI, net operating income, and cash flow for rental, commercial, single-family, multi-family, BRRRR, house hacks, duplex, triplex, and fourplex homes!<br></br> Made with the <strong>React, Redux, Next.js, Javascript</strong>, and <strong>SCSS</strong>.</p>
-                <Link href="/projects/real-estate-deal-analyzer">Case Study</Link>
-                <p><a href="https://realestatedeal.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/re-analyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-              </div>
-            </div> */}
-
-
-            {/* <div className="project" data-aos="fade-up" data-aos-delay="450">
-              <div className="projectImage" >
-                <img src={Logo} alt=""/>
-              </div>
-              <div className="projectText">
-                <h2>REAL ESTATE ANALYZER</h2>
-                <p>Use this calculator to see if your new home is a good purchase! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga doloremque quo impedit illum voluptate deserunt deleniti porro ducimus quas quasi ut eius inventore quidem tenetur, et minus sit consequatur.</p>
-              </div>
-            </div> */}
-            
-            <div className="project" data-aos="fade-up" data-aos-delay="250">
-              <a href="https://talo-apartments.vercel.app/" alt="talo apartments project" target="_blank" rel="noopener noreferrer">
-                <div className="projectImage talo">
-                  <img src="project_images/talo-apartments/talo.png" alt="talo apartments image"/>
-                </div>
-              </a>
-              <div className="projectText" >
-              <a href="https://talo-apartments.vercel.app/" alt="talo apartments project" target="_blank" rel="noopener noreferrer">
-                <h2>TALO APARTMENTS</h2>
-              </a>
-                <p><strong>Responsively designed</strong> static, single landing page for Talo Apartment buildings.<br></br>Made the <strong>SCSS</strong>, <strong>CSS Flexbox</strong>, <strong>CSS Grid</strong>, <strong>BootStrap</strong>, <strong>CSS Animation</strong>, <strong>img srcset</strong>, and, <strong>media queries</strong> to be responsive on desktop and mobile.</p>
-              </div>
-            </div>
-
-          
-            <div className="projectReverse" data-aos="fade-up" data-aos-delay="250">
-              <a href="https://stanjdev.github.io/triplebyte/" alt="triplebyte project" target="_blank" rel="noopener noreferrer">
-                <div className="projectImage triplebyte">
-                  <img src="project_images/triplebyte.png" alt="Triplebyte image" />
-                </div>
-              </a>
-              <div className="projectText">
-              <a href="https://stanjdev.github.io/triplebyte/" alt="triplebyte project" target="_blank" rel="noopener noreferrer">
-                <h2>TRIPLEBYTE</h2>
-              </a>
-                <p><strong>Responsively designed</strong> static landing page mockup of a technology business.<br></br>Made the <strong>SCSS</strong>, <strong>CSS Flexbox</strong>, <strong>CSS Grid</strong>, <strong>CSS Animation</strong>, and, <strong>media queries</strong> to be responsive on desktop and mobile.</p>
-              </div>
-            </div>
-
-            {/* <div className="project" data-aos="fade-up" data-aos-delay="350">
-              <div className="projectImage">
-                <img src={Logo} alt=""/>
-              </div>
-              <div className="projectText">
-                <h2>MOVIE BROWSER MOBILE APP</h2>
-                <p>Search for your favorite movie and navigate to see who starred, directed, and other information! <br></br> Built with <strong>React Native</strong> and <strong>Expo</strong></p>
-              </div>
-            </div>
-
-            <div className="project" data-aos="fade-up" data-aos-delay="450">
-              <div className="projectImage" >
-                <img src={Logo} alt=""/>
-              </div>
-              <div className="projectText">
-                <h2>PROJECT NAME</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga doloremque quo impedit illum voluptate deserunt deleniti porro ducimus quas quasi ut eius inventore quidem tenetur, et minus sit consequatur.</p>
-              </div>
-            </div> */}
-
-
-
-          
           
           <div className="getInTouchContainer" data-aos="fade-right">
             <AnchorLink className="getInTouch lightConnect" href="#contact" rel="noopener noreferrer" >
@@ -207,25 +126,24 @@ export default function Projects() {
 />
 */
 
-
-function ProjectComponent({ title, name, description, createdWith, imgLink, linkAlt, imgAlt, reverseAlign, liveLink, ghLink }) {
+function ProjectComponent({ title, name, description, createdWith, imgLink, imgWidth, linkAlt, imgAlt, reverseAlign, liveLink, ghLink }) {
   return (
     <div className={reverseAlign? "projectReverse" : "project"} data-aos="fade-up" data-aos-delay="350">
-      <Link href={`projects/${name}`} alt={linkAlt}>
+      <Link href={name && `projects/${name}` || liveLink} alt={linkAlt} target={!name && "_blank"} rel="noopener noreferrer">
         <a>
           <div className="projectImage re-deal-analyzer">
-            <img src={`project_images/${imgLink}`} alt={imgAlt}/>
+            <img src={`project_images/${imgLink}`} alt={imgAlt} width={imgWidth || null}/>
           </div>
         </a>
       </Link>
       <div className="projectText">
-        <Link href={`projects/${name}`}>
+        <Link href={name && `projects/${name}` || liveLink} target={!name && "_blank"} rel="noopener noreferrer">
           <a>
             <h2>{title}</h2>
           </a>
         </Link>
         <p>{description} <br/> {createdWith}</p>
-        <Link href={`/projects/${name}`}><a><button className="caseStudyButton">Case Study</button></a></Link>
+        {name && <Link href={`/projects/${name}`}><a><button className="caseStudyButton">Case Study</button></a></Link> || null}
         <p><a href={liveLink} target="_blank" rel="noopener noreferrer">Live</a> | <a href={ghLink} target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
     </div>

@@ -78,7 +78,7 @@ export default function Layout({ children, home }) {
               <ul>
                 <a href="https://www.linkedin.com/in/jeongstanley/" target="_blank" rel="noopener noreferrer"><li><img src="/social_icons/linkedin.svg" alt="linkedin" style={{height: "1.3em"}}/></li></a>
                 <a href="https://github.com/stanjdev" target="_blank" rel="noopener noreferrer"><li><img src="/social_icons/github.svg" alt="github" style={{height: "1.3em"}}/></li></a>
-                <a href="https://www.instagram.com/stan.wav/" target="_blank" rel="noopener noreferrer"><li><img src="/social_icons/instagram.svg" alt="instagram" style={{height: "1.3em"}}/></li></a>
+                <a href="https://www.instagram.com/stanjdev/" target="_blank" rel="noopener noreferrer"><li><img src="/social_icons/instagram.svg" alt="instagram" style={{height: "1.3em"}}/></li></a>
               </ul>
             </section>
           </footer>
