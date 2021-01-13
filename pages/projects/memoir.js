@@ -34,19 +34,25 @@ export default function Memoir() {
         <section className="projectInfo">
           <div className=" projectInfo__block">
             <h2>Project Brief:</h2>
-            <p>Mobile application promoting mindfulness through breathing and meditation exercises. Users can track their progress and favorites</p>
-          </div>
-
-          <div className=" projectInfo__block">
-            <h2>Timeline:</h2>
-            <p>November 2020 - January 2021</p>
-            <p>170 Hours Total</p>
+            <p>Mobile app promoting mindfulness through breathing and meditation exercises. Users can track their progress and favorites</p>
           </div>
 
           <div className=" projectInfo__block">
             <h2>Role / Skills:</h2>
-            <p>Lead React Native Mobile Developer</p>
+            <p>React Native Mobile Developer</p>
           </div>
+
+          <div className=" projectInfo__block">
+            <h2>Team Size:</h2>
+            <p>Two: Myself + 1 <a style={{color: 'white', textDecoration: 'none'}} href="https://www.caseytang.me/memoir" target="_blank" rel="noopener noreferrer">Product Designer</a></p>
+          </div>
+
+          <div className=" projectInfo__block">
+            <h2>Time Frame:</h2>
+            <p>November 2020 - January 2021</p>
+            <p>200 Hours Total</p>
+          </div>
+
         </section>
       </div>
 
@@ -75,6 +81,7 @@ export default function Memoir() {
       <section className="container readingWidth">
 
         <h3>Memoir:</h3>
+        <p>Memoir promotes mindfulness and serenity through breathing and meditation exercises. Users can sign in with their Facebook, Apple ID, or email to save their favorite exercises and track their exercise progress.</p>
           <ul>
             <li>Provides a clean and simple-to-use interface that keeps the user focused on gaining their insights.</li>
             <li>Eliminates the need to visit external web sites and tools for property tax or mortgage calculations</li>
@@ -112,10 +119,9 @@ export default function Memoir() {
           <Interaction fileName="Memoir_Exercise 1.mp4" caption="Breathing Exercise Player"/>
           <Interaction fileName="Memoir_Exercise 2.mp4" caption="Setting a Timer"/>
           <Interaction fileName="Memoir_Favorites.mp4" caption="Favorites Library"/>
-          <Interaction fileName="Memoir Meditation Dial.mp4" caption="Meditation Dial"/>
-          <Interaction fileName="Memoir_Signup.mp4" caption="Sign Up Prompts"/>
-
-          <Interaction fileName="Memoir_Stats.mp4" caption="User Stats"/>
+          <Interaction fileName="Memoir Meditation Dial.mp4" caption="Meditation Exercise Settings"/>
+          <Interaction fileName="Memoir_Signup.mp4" caption="Delayed Signup Prompts"/>
+          <Interaction fileName="Memoir_Stats.mp4" caption="User Progress / Milestones"/>
         </div>
 
       </section>

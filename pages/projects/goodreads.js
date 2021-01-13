@@ -30,7 +30,7 @@ export default function GoodReads() {
           </div>
 
           <div className="projectInfo__block">
-            <h2>Timeline:</h2>
+            <h2>Time Frame:</h2>
             <p>August 2020 - October 2020</p>
             <p>73.5 Hours Total</p>
           </div>

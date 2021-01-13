@@ -123,9 +123,9 @@ img {
 .projectInfo__block {
   /* border: dodgerblue solid 1px; */
   /* flex-basis: 30%; */
-  width: 300px;
-  margin: 1em;
-  padding: 0 3em;
+  width: 15em;
+  margin: 1em 0 1em 0em;
+  padding: 0 2em;
 }
 
 .technologies {
@@ -160,7 +160,7 @@ img {
   /* border: solid orange 1px; */
   max-width: 1100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   /* text-align: center; */
   flex-wrap: wrap;
 }
