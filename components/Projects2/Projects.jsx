@@ -73,7 +73,7 @@ export default function Projects() {
 
           <ProjectComponent 
             title="TALO APARTMENTS" 
-            name="" 
+            name=""
             description={"Responsively designed static, single landing page for Talo Apartment buildings."} 
             createdWith={"Made the SCSS, CSS Flexbox, CSS Grid, BootStrap, CSS Animation, img srcset, and, media queries to be responsive on desktop and mobile."}
             imgLink="talo-apartments/talo.png"
@@ -85,7 +85,7 @@ export default function Projects() {
  
           <ProjectComponent 
             title="TRIPLEBYTE" 
-            name="" 
+            name=""
             description={"Responsively designed static landing page mockup of a technology business."} 
             createdWith={"Made the SCSS, CSS Flexbox, CSS Grid, CSS Animation, and, media queries to be responsive on desktop and mobile."}
             imgLink="triplebyte.png"
@@ -129,16 +129,16 @@ export default function Projects() {
 function ProjectComponent({ title, name, description, createdWith, imgLink, imgWidth, linkAlt, imgAlt, reverseAlign, liveLink, ghLink }) {
   return (
     <div className={reverseAlign? "projectReverse" : "project"} data-aos="fade-up" data-aos-delay="350">
-      <Link href={name && `projects/${name}` || liveLink} alt={linkAlt} target={!name && "_blank"} rel="noopener noreferrer">
-        <a>
+      <Link href={name && `projects/${name}` || liveLink} alt={linkAlt}>
+        <a target={!name ? "_blank" : undefined} rel="noopener noreferrer">
           <div className="projectImage re-deal-analyzer">
             <img src={`project_images/${imgLink}`} alt={imgAlt} width={imgWidth || null}/>
           </div>
         </a>
       </Link>
       <div className="projectText">
-        <Link href={name && `projects/${name}` || liveLink} target={!name && "_blank"} rel="noopener noreferrer">
-          <a>
+        <Link href={name && `projects/${name}` || liveLink}>
+          <a target={!name ? "_blank" : undefined} rel="noopener noreferrer">
             <h2>{title}</h2>
           </a>
         </Link>

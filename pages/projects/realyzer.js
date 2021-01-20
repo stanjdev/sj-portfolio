@@ -27,9 +27,9 @@ export default function Realyzer() {
           width="100%" 
           height="315" 
           src="https://www.youtube.com/embed/YppX0bXFMQ0" 
-          frameborder="0" 
+          frameBorder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen="true"
+          allowFullScreen={true}
         >
         </iframe>
         <figcaption>Example property deal analysis</figcaption>

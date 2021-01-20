@@ -176,6 +176,7 @@ img {
   margin-top: 3em;
   text-align: center;
   font-size: xx-large;
+  text-decoration: underline;
 }
 
 .container__grey {
@@ -232,8 +233,22 @@ img {
   background-color: gray;
 }
 
+.challengeParagraph {
+  padding: 15px 30px 0 0;
+  line-height: 1.8;
+}
 
 
+.challengeResponsive {
+  display: flex;
+  /* align-items: center; */
+}
+
+@media screen and (max-width: 800px) {
+  .challengeResponsive {
+    display: block;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .container {
@@ -255,4 +270,6 @@ img {
   .technologies {
     justify-content: flex-start;
   }
+
+
 }
