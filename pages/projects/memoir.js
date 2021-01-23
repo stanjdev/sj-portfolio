@@ -81,7 +81,8 @@ export default function Memoir() {
             <li>Memoir promotes mindfulness and serenity through deep breathing and meditation exercises. Users can sign in with their Facebook, Apple ID, or email to save their favorite exercises and track their personal exercise progress.</li>
             <li>Users have a clean and simple-to-use UI to play and pause exercise videos, set timers, and save favorites.</li>
             <li>Users have access to a variety of breathing exercises and daily recommendations.</li>
-            <li>Available on the iOS App Store and works on Android via <a href="https://expo.io/@stan.dev/projects/Memoir" target="_blank" rel="noopener noreferrer">Expo</a>.</li>
+            {/* <li>Available on the iOS App Store and works on Android via <a href="https://expo.io/@stan.dev/projects/Memoir" target="_blank" rel="noopener noreferrer">Expo</a>.</li> */}
+            <li>Currently in beta testing on TestFlight for iOS, and works on Android via <a href="https://expo.io/@stan.dev/projects/Memoir" target="_blank" rel="noopener noreferrer">Expo</a>.</li>
           </ul>
 
           <h3>Project Summary:</h3>
