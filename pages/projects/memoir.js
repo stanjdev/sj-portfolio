@@ -12,8 +12,8 @@ export default function Memoir() {
       <div className="header">
         <img src="/project_images/memoir/app-icon.png" alt="{name}" className="center" width={150} style={{borderRadius: 7}}/>
         <h1>Memoir</h1>
-        <h2>Mindfulness Mobile App for iOS and Android</h2>        
-        <blockquote style={{maxWidth: "700px"}}><em>"A language-independent breathing exercise app to ease the world's anxiety"</em></blockquote>
+        <h2>Deep Breathing &#38; Mindfulness on iOS and Android</h2>
+        <blockquote style={{maxWidth: "700px"}}><em>"A language-independent meditation app to help ease the world's anxiety"</em></blockquote>
         <p><a href="https://expo.io/@stan.dev/projects/Memoir" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/memoir" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
 
@@ -38,7 +38,7 @@ export default function Memoir() {
 
           <div className=" projectInfo__block">
             <h2>Time Frame:</h2>
-            <h3>November 2020 - January 2021: <br></br>200 Hours Total</h3>
+            <h3>November 2020 - February 2021: <br></br>200 Hours Total</h3>
           </div>
 
           <div className=" projectInfo__block">
@@ -121,6 +121,68 @@ export default function Memoir() {
         <h2 className="challengesHeader">Challenges Faced: </h2>
       </section>
 
+      <section className="container container__grey">
+        <div className="readingWidth">
+          <h2>Caching the Downloaded Image and Video Assets from Firebase Storage using Expo FileSystem API</h2>
+
+          <div className="challengeResponsive">
+            <div className="challengeParagraph">
+              <p>The following code gist was shrunken from the original code for simplification. The original uses a regular expression checker to categorize assets as "images" or "videos".</p>
+              <ul>
+                <li>Firstly, the specifically requested <code>image</code> and <code>videoFile</code> assets are passed down as props to the individual <code>Exercise</code> components. </li>
+                <li><code>useState()</code> hooks are then initialized to set the actual image and videos to be rendered for later on. The <code>useEffect()</code> hook will run the initial caching function on mount. </li>
+                <li><code>cacheAsset</code> is an <code>async</code> function, that first checks if the file already exists within the cache to prevent unnecessary download requests, saving bandwidth.</li>
+                <li>If it wasn’t cached, the download URL of the file is retrieved from Firebase Storage. The URL is used to download the file to the device’s cache using the Expo FileSystem API. The <code>useState()</code> states are then stored using the newly downloaded assets. </li>
+                <li>Finally, with the stored states, the <code>cachedImage</code> is used to render the exercise image. When you press on that image, it navigates to the <code>ExerciseVideo</code> screen along with the <code>cachedVideo</code> passed down as a <code>route.param</code>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <pre className="pre">
+            <code>
+{`import React, { useState, useEffect } from 'react';
+import * as FileSystem from 'expo-file-system';
+import firebase from 'firebase';
+const storage = firebase.storage();
+
+export default function Exercise({ image }) {
+  const [cachedImg, setCachedImg] = useState();
+
+  useEffect(() => {
+    cacheAsset(image);
+  }, [])
+
+  const cacheAsset = async (asset) => {
+    const path = FileSystem.cacheDirectory + "/" + asset;
+    const file = await FileSystem.getInfoAsync(path);
+
+    // If image was already cached, read from previous cache and return.
+    if (file.exists) {
+      setCachedImg( {uri: file.uri} );
+      return;
+    }
+
+    // Else if it wasn't cached, get the download URL for the new file from Firebase Storage
+    const ref = storage.ref("/" + "exercise-images" + "/" + asset);
+    const uri = await ref.getDownloadURL();
+    
+    // Download that new file into the device's cache using the FileSystem API
+    const newAsset = await FileSystem.downloadAsync(uri, path);
+    setCachedImg( {uri: newAsset.uri} );
+    return;
+  }
+
+  return <Image 
+            source={ cachedImg }
+            style={{ height: height * 0.4, width: width * 0.9 }}
+            resizeMode="contain"
+          />
+};
+`}
+            </code>
+          </pre>
+        </div>
+      </section>
 
       <section className="container container__grey">
         <div className="readingWidth">
