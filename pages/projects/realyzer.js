@@ -13,7 +13,8 @@ export default function Realyzer() {
         <h1>Realyzer</h1>
         <h2>Multi-Variable Calculator for Real Estate Investors</h2>
         {/* <blockquote><em>"Calculate the cash-on-cash return on your next real estate investment property."</em></blockquote> */}
-        <blockquote style={{maxWidth: "700px"}}><em>"An investment analytics tool helping users gain insights through property analysis, dynamically sourced tax rates, and a custom, comprehensive mortgage calculator"</em></blockquote>
+        {/* <blockquote style={{maxWidth: "700px"}}><em>"An investment analytics tool helping users gain insights through property analysis, dynamically sourced tax rates, and a custom, comprehensive mortgage calculator"</em></blockquote> */}
+        <blockquote style={{maxWidth: "700px"}}><em>"Web application for real estate investors to determine a rental property's profitability (ROI). Creates a printable PDF report with images and a map of the property"</em></blockquote>
         <p><a href="https://realyzer.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/realyzer" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
 
@@ -40,24 +41,21 @@ export default function Realyzer() {
         <figcaption>Walkthrough usage of the app</figcaption>
       </figure>
 
-
-
       <div className="container container__grey">
         <section className="projectInfo">
           <div className=" projectInfo__block">
             <h2>Project Brief:</h2>
-            <p>Custom web application created for Real Estate Professionals</p>
+            <h3>Custom web application created for Real Estate Professionals</h3>
           </div>
 
           <div className=" projectInfo__block">
             <h2>Time Frame:</h2>
-            <p>September 2020 - November 2020</p>
-            <p>85 Hours Total</p>
+            <h3>September 2020 - November 2020 <br></br>85 Hours</h3>
           </div>
 
           <div className=" projectInfo__block">
-            <h2>Role / Skills:</h2>
-            <p>Lead Developer</p>
+            <h2>My Role:</h2>
+            <h3>Lead Developer</h3>
           </div>
         </section>
       </div>

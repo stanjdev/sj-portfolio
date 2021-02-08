@@ -27,8 +27,8 @@ export default function Memoir() {
         <section className="projectInfo">
 
           <div className=" projectInfo__block">
-            <h2>My Role/Skills:</h2>
-            <h3>React Native Mobile Developer</h3>
+            <h2>My Role:</h2>
+            <h3>Lead Developer / Cofounder</h3>
           </div>
 
           <div className=" projectInfo__block">
@@ -38,7 +38,7 @@ export default function Memoir() {
 
           <div className=" projectInfo__block">
             <h2>Time Frame:</h2>
-            <h3>November 2020 - February 2021: <br></br>200 Hours Total</h3>
+            <h3>November 2020 - February 2021: <br></br>200 Hours</h3>
           </div>
 
           <div className=" projectInfo__block">
