@@ -1,3 +1,5 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Stan Jeong Portfolio
 
-npm run dev
+[My Portfolio](stanjeong.vercel.app)
+
+Showcasing a few of my web and mobile development projects.

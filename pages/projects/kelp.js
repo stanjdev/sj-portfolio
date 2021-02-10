@@ -203,7 +203,7 @@ export default function Kelp() {
           <p>I used this custom <code>loadScript</code> function that takes in any CDN URL and injects it into the React-rendered HTML page on mount, similarly to placing the <code>{`<script>`}</code> tag in the HTML file manually. </p>
 
           {/* The script needs to look at the <code>window</code> level, i.e. <code>window.document.body</code> or <code>window.initMap = this.initMap</code> */}
-          {/* LIFESAVER video: https://www.youtube.com/watch?v=W5LhLZqj76s (initMap is not a function error: because the script needs to look at the 'window' level. so at window.document.body.. etc. window.initMap = this.initMap) https://www.elharony.com/initmap-is-not-a-function/ - HUGE: SETTING UP JS SCRIPT IN REACT PROJECT! */}
+          {/* Video: https://www.youtube.com/watch?v=W5LhLZqj76s (initMap is not a function error: because the script needs to look at the 'window' level. so at window.document.body.. etc. window.initMap = this.initMap) https://www.elharony.com/initmap-is-not-a-function/ - SETTING UP JS SCRIPT IN REACT PROJECT! */}
           
           <pre className="pre">
             <code >

@@ -8,10 +8,8 @@ import Head from 'next/head';
 
 import { LightContext } from '../LightContext';
 
-function Portfolio() {
-
+export default function Portfolio() {
   const { light } = useContext(LightContext);
-
 
   useEffect(() => {
     // if (light) {
@@ -85,77 +83,4 @@ function Portfolio() {
 
     </div>
   );
-}
-
-export default Portfolio;
-
-
-
-
-// OLD CLASS BASED COMPONENT:
-
-// class App extends React.Component {
-//   constructor() {
-//     super();
-//     this.state = {}
-//   }
-
-//   render() {
-
-//     // (function() {
-//     //   var hamburger = {
-//     //     navToggle: document.querySelector('.nav-button'),
-//     //     // navmenu: document.querySelector('.nav-menu'),
-//     //     doToggle: function(e) {
-//     //     e.preventDefault();
-//     //     this.navToggle.classList.toggle('expanded');
-//     //     // this.navmenu.classList.toggle('expanded');
-//     //     }
-//     //   };
-
-//     //     hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-//     //     // hamburger.navmenu.addEventListener('click', function(e) { hamburger.doToggle(e); });
-//     //   }());
-
-
-    // return (
-    //   <div className="App">
-    //     <header className="App-header">
-    //       {/* <img src={logo} className="App-logo" alt="logo" /> */}
-    //       <h1 className="App-logo sj">SJ</h1>
-    //       <div className="title">
-    //         <p>STAN JEONG,</p>
-    //         <p>WEB DEVELOPER</p>
-    //       </div>
-    //       <a className="see-work" href="/" rel="noopener noreferrer">
-    //         SEE MY WORK
-    //         <div className="arrow">
-    //           <div className="arrow-down"></div>
-    //           <div className="arrow-square"></div>
-    //         </div>
-    //       </a>
-    //     </header>
-  
-    //     <nav className="nav-menu">
-    //       <ul>
-    //         <li>Home</li>
-    //         <li>Projects</li>
-    //         <li>Contact</li>
-    //         <li>Resume</li>
-    //       </ul>
-    //     </nav>
-
-    //     <div className="nav-button">
-    //       <div className="nav-toggle-bar"></div>
-    //     </div>
-
-
-    //     <div className="rectangle rect1"></div>
-    //     <div className="rectangle rect2"></div>
-    //     <div className="rectangle rect3"></div>
-    //   </div>
-    // );
-//   }
-// }
-
-
+};

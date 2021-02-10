@@ -112,7 +112,9 @@ export default function Projects() {
   )
 }
 
+
 /* 
+EXAMPLE:
 <ProjectComponent 
   title="MEMOIR" 
   name="memoir" 

@@ -208,10 +208,6 @@ const pool = new Pool(process.env.NODE_ENV === "production" ? prodConfig : devCo
 
 
 
-{/* User login stuff? */}
-{/* CATCH ALL for dynamic routes, error page or login/search page redirection */}
-
-
 
       <section className="container readingWidth">
         <h2>Final Result:</h2>
@@ -226,24 +222,7 @@ const pool = new Pool(process.env.NODE_ENV === "production" ? prodConfig : devCo
 
 
 
-
-
-      {/* <p>- screen recordings gifs as the thumbnails.</p>
-      <p>- Code gists of interesting workarounds, yada yada</p>
-      <p>
-      show the best parts of it, write about it.
-
-      present the important parts of the project.
-      how much of did he do, etc. how much did previous developer or owner of website do
-      they’ll be more confident of my capabilities,
-      
-      explain small things like user login permissions.
-      single pages
-      https://caseytang.myportfolio.com/
-      https://marisachentakul.co/
-      guide them through it. gists. snippets of code instead of design images, etc. to prove I’ve been thinking
-      </p>
-
+      {/* 
     <p>
     - Discuss anything written on your resume, and be able to go in-depth
     - Provide specific examples about what you did and the resulting impact

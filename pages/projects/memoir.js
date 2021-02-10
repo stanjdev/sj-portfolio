@@ -115,8 +115,6 @@ export default function Memoir() {
       </section>
 
 
-      {/* <h1 style={{textAlign: 'center'}}>In Progress...</h1> */}
-
       <section className="container readingWidth">
         <h2 className="challengesHeader">Challenges Faced: </h2>
       </section>
@@ -341,13 +339,6 @@ useEffect(() => {
 
       <section className="container">
         <div className="readingWidth">
-          {/* <h2>Final Results:</h2>
-          <figure className="center">
-            <img src="/project_images/realyzer/pdf-results/pdf1.png" alt="Realyzer rental property calculator PDF page 1 cash on cash return net cash flow" className="caseStudyImage center"/>
-            <img src="/project_images/realyzer/pdf-results/pdf2.png" alt="Realyzer rental property calculator PDF page 2 monthly expenses down payment closing costs" className="caseStudyImage center"/>
-            <img src="/project_images/realyzer/pdf-results/pdf3.png" alt="Realyzer rental property calculator PDF page 3 mapbox api zillow redfin map marker" className="caseStudyImage center"/>
-            <figcaption>Final result pages of user's inputted data available to save as a PDF or print!</figcaption>
-          </figure> */}
           <figure className="center">
             <img src="/project_images/memoir/memoir-splash.png" alt="Memoir Splash intro screen" className="center" width="400" style={{borderRadius: 7}}/>
             <figcaption>Thanks for visiting!</figcaption>
@@ -357,7 +348,7 @@ useEffect(() => {
   
     </Layout>
   )
-}
+};
 
 
 
@@ -375,4 +366,4 @@ function Interaction({ fileName, caption }) {
       <figcaption>{caption}</figcaption>
     </figure>
   )
-}
+};

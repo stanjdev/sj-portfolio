@@ -119,7 +119,7 @@ export default function Realyzer() {
 
 
           - collaborated with a full stack product designer via figma wireframes to bring the design to life.
-          Product designer Casey Tang mocked up an entire wireframe for the light-mode skin of the application using Figma. Utilizing Figma's
+          Product designer mocked up an entire wireframe for the light-mode skin of the application using Figma. Utilizing Figma's
           collaborative capabilities, I was then able to successfully develop the design of the application into a more user-friendly, and well-designed application.
 
 
