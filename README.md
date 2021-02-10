@@ -1,5 +1,5 @@
 # Stan Jeong Portfolio
 
-[My Portfolio](stanjeong.vercel.app)
+[My portfolio](https://stanjeong.vercel.app) 
 
-Showcasing a few of my web and mobile development projects.
+Showcasing a few of my web and mobile development projects :) 
