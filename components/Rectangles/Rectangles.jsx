@@ -40,7 +40,7 @@ export default function Rectangles() {
 
 
     // SECOND ATTEMPT - Intro animation
-    let first = document.querySelector("#first").childNodes
+    let first = document.querySelector("#first").childNodes;
     let second = document.querySelector("#second").childNodes;
     // console.log(first)
     // console.log(second)
@@ -66,7 +66,7 @@ export default function Rectangles() {
     //   }, 0)
     // }
 
-    window.addEventListener('scroll', switcheroo)
+    window.addEventListener('scroll', switcheroo);
 
     window.addEventListener('scroll', () => {
       document.body.style.setProperty('--scroll', (window.pageYOffset / 1.2) / (document.body.offsetHeight - (window.innerHeight / 30)));

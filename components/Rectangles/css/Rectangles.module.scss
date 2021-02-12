@@ -1,5 +1,5 @@
 .rectContainer {
-  // animation: animateRects 0.9s ease 0s backwards normal;
+  animation: animateRects 0.9s ease 0.5s backwards normal;
   position: absolute;
   top: 0;
   right: 0;
@@ -30,7 +30,7 @@
 
 @keyframes rotate1 {
   8% {transform: rotate(360deg) scale(0.83, 0.77) translate(4%, 4%);}
-  66% {box-shadow: -10px 15px 3px rgba(0,0,0,0.5);}
+  66% {box-shadow: -10px 15px 3px rgba(67, 47, 47, 0.5);}
   100% {
     transform: rotate(360deg) scale(0.83, 0.77) translate(3%, 0%);
     box-shadow: -20px 20px 3px rgba(0,0,0,0.5);
@@ -89,7 +89,12 @@
 
 .rect4 {
   animation: animateRects 0.9s ease 0.4s backwards normal;
+  -webkit-animation: animateRects 0.9s ease 0.4s backwards normal;
+  -moz-animation: animateRects 0.9s ease 0.4s backwards normal;
+  -ms-animation: animateRects 0.9s ease 0.4s backwards normal;
+  -o-animation: animateRects 0.9s ease 0.4s backwards normal;
   transform: translate(15%, -22%) rotate(-7deg);
+  -webkit-transform: translate(15%, -22%) rotate(-7deg);
 }
 .rect5 {
   animation: animateRects 0.9s ease 0.6s backwards normal;
@@ -166,10 +171,7 @@
   }
   
   
-  @keyframes animateRects {
-    0% {top: -100%; opacity: 0}
-    100% {top: 0%; opacity: 1}
-  }
+
   
   @keyframes rotate1 {
    10% {transform: rotate(360deg) scale(0.83, 0.77) translate(4%, 4%);}

@@ -1,4 +1,6 @@
 .rectContainer {
+  -webkit-animation: animateRects 0.9s ease 0.5s backwards normal;
+          animation: animateRects 0.9s ease 0.5s backwards normal;
   position: absolute;
   top: 0;
   right: 0;
@@ -43,8 +45,8 @@
             transform: rotate(360deg) scale(0.83, 0.77) translate(4%, 4%);
   }
   66% {
-    -webkit-box-shadow: -10px 15px 3px rgba(0, 0, 0, 0.5);
-            box-shadow: -10px 15px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -10px 15px 3px rgba(67, 47, 47, 0.5);
+            box-shadow: -10px 15px 3px rgba(67, 47, 47, 0.5);
   }
   100% {
     -webkit-transform: rotate(360deg) scale(0.83, 0.77) translate(3%, 0%);
@@ -60,8 +62,8 @@
             transform: rotate(360deg) scale(0.83, 0.77) translate(4%, 4%);
   }
   66% {
-    -webkit-box-shadow: -10px 15px 3px rgba(0, 0, 0, 0.5);
-            box-shadow: -10px 15px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -10px 15px 3px rgba(67, 47, 47, 0.5);
+            box-shadow: -10px 15px 3px rgba(67, 47, 47, 0.5);
   }
   100% {
     -webkit-transform: rotate(360deg) scale(0.83, 0.77) translate(3%, 0%);
@@ -176,10 +178,13 @@
 }
 
 .rect4 {
+  animation: animateRects 0.9s ease 0.4s backwards normal;
   -webkit-animation: animateRects 0.9s ease 0.4s backwards normal;
-          animation: animateRects 0.9s ease 0.4s backwards normal;
+  -moz-animation: animateRects 0.9s ease 0.4s backwards normal;
+  -ms-animation: animateRects 0.9s ease 0.4s backwards normal;
+  -o-animation: animateRects 0.9s ease 0.4s backwards normal;
+  transform: translate(15%, -22%) rotate(-7deg);
   -webkit-transform: translate(15%, -22%) rotate(-7deg);
-          transform: translate(15%, -22%) rotate(-7deg);
 }
 
 .rect5 {
@@ -210,26 +215,6 @@
     right: 0;
     -webkit-box-shadow: 15px 15px 3px rgba(0, 0, 0, 0.5);
             box-shadow: 15px 15px 3px rgba(0, 0, 0, 0.5);
-  }
-  @-webkit-keyframes animateRects {
-    0% {
-      top: -100%;
-      opacity: 0;
-    }
-    100% {
-      top: 0%;
-      opacity: 1;
-    }
-  }
-  @keyframes animateRects {
-    0% {
-      top: -100%;
-      opacity: 0;
-    }
-    100% {
-      top: 0%;
-      opacity: 1;
-    }
   }
   @-webkit-keyframes rotate1 {
     10% {
