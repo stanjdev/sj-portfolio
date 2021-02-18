@@ -11,14 +11,17 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/sj.png" />
-        <meta
-          name="description"
-          content="Project Portfolio of Developer, Stan Jeong"
-        />
         <meta name="image" content="https://stanjeong.vercel.app/project_images/memoir/app-icon.png" />
-        <meta name="og:title" content={siteTitle} />
+        <meta name="description" content="Project Portfolio of Developer, Stan Jeong" />
+        <meta property="og:title" content={siteTitle} />
         <meta property="og:url" content="https://stanjeong.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Project Portfolio of Developer, Stan Jeong" />
+        <meta property="og:image" content="https://stanjeong.vercel.app/project_images/memoir/app-icon.png" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={siteTitle} />
+        <meta name="twitter:description" content="Project Portfolio of Developer, Stan Jeong" />
+        <meta name="twitter:url" content="https://stanjeong.vercel.app/" />
         <meta name="twitter:image" content="https://stanjeong.vercel.app/project_images/memoir/app-icon.png" />
       </Head>
       {/* <header className={styles.header}>
