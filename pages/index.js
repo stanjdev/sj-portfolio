@@ -18,7 +18,7 @@ export async function getStaticProps() {
       allPostsData
     }
   }
-}
+};
 
 export default function Home({ allPostsData }) {
   const { light, setLight } = useContext(LightContext);

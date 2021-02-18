@@ -5,13 +5,10 @@ import 'aos/dist/aos.css';
 
 import { LightContextProvider } from '../components/LightContext'
 
-
-
 export default function App({ Component, pageProps }) {
-
   return (
       <LightContextProvider>
         <Component {...pageProps} />
       </LightContextProvider>
   )
-}
+};

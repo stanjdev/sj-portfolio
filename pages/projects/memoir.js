@@ -1,12 +1,26 @@
 import Head from 'next/head';
 import Link from 'next/link'
 import Layout from '../../components/layout';
+import Gist from 'react-gist';
 
 export default function Memoir() {
   return (
     <Layout>
       <Head>
         <title>Memoir: Case Study</title>
+        <link rel="icon" href="/sj.png" />
+        <meta name="description" content="Memoir, an app to help ease the world's anxiety." />
+        <meta name="image" content="https://stanjeong.vercel.app/project_images/memoir/app-icon.png" />
+        <meta property="og:title" content="Memoir: Case Study" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content="https://stanjeong.vercel.app/projects/memoir" />
+        <meta property="og:image" content="https://stanjeong.vercel.app/project_images/memoir/app-icon.png" />
+        <meta property="og:description" content="Memoir, an app to help ease the world's anxiety." />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@stan_jeong" />
+        <meta name="twitter:title" content="Memoir: Case Study" />
+        <meta name="twitter:description" content="Memoir, an app to help ease the world's anxiety." />
+        <meta name="twitter:image" content="https://stanjeong.vercel.app/project_images/memoir/app-icon.png" />
       </Head>
 
       <div className="header">
@@ -136,7 +150,7 @@ export default function Memoir() {
             </div>
           </div>
 
-          <pre className="pre">
+          {/* <pre className="pre">
             <code>
 {`import React, { useState, useEffect } from 'react';
 import * as FileSystem from 'expo-file-system';
@@ -178,9 +192,15 @@ export default function Exercise({ image }) {
 };
 `}
             </code>
-          </pre>
+          </pre> */}
+
+          <Gist 
+            id="261a720d9e4a16e982ffa518b7f916a4"
+          />
+
         </div>
       </section>
+
 
       <section className="container container__grey">
         <div className="readingWidth">
@@ -222,7 +242,7 @@ export default function Exercise({ image }) {
           </div>
 
 
-          <pre className="pre">
+          {/* <pre className="pre">
             <code >
 {`const timeConditions = practiceTime < 1800 ? 1800 : 
 practiceTime >= 1800 && practiceTime < 7200 ? 7200 :
@@ -249,8 +269,9 @@ useEffect(() => {
 }, [isFocused])
 `}
             </code>
-          </pre>
+          </pre> */}
 
+            <Gist id="f8ce14bac0348f74e49facafc267e96b" />
         </div>
       </section>
 
@@ -298,7 +319,7 @@ useEffect(() => {
           </div>
 
 
-          <pre className="pre">
+          {/* <pre className="pre">
             <code>
 {`const timerDurationsOptions = {
     "30s": {mins: 0, secs: 30},
@@ -329,8 +350,9 @@ useEffect(() => {
   };
 `}
             </code>
-          </pre>
+          </pre> */}
 
+          <Gist id="f6c8bf50b88fa212377b626274ee1f1a"/>
         </div>
       </section>
      
