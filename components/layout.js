@@ -15,11 +15,11 @@ export default function Layout({ children, home }) {
           name="description"
           content="Project Portfolio of Developer, Stan Jeong"
         />
-        <meta name="image" content="/sj.png" />
+        <meta name="image" content="https://stanjeong.vercel.app/project_images/memoir/app-icon.png" />
         <meta name="og:title" content={siteTitle} />
         <meta property="og:url" content="https://stanjeong.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/sj.png" />
+        <meta name="twitter:image" content="https://stanjeong.vercel.app/project_images/memoir/app-icon.png" />
       </Head>
       {/* <header className={styles.header}>
         {home ? (

@@ -16,7 +16,7 @@ export default function Memoir() {
         <meta property="og:url" content="https://stanjeong.vercel.app/projects/memoir" />
         <meta property="og:image" content="https://stanjeong.vercel.app/project_images/memoir/app-icon.png" />
         <meta property="og:description" content="Memoir, an app to help ease the world's anxiety." />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@stan_jeong" />
         <meta name="twitter:title" content="Memoir: Case Study" />
         <meta name="twitter:description" content="Memoir, an app to help ease the world's anxiety." />
