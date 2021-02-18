@@ -56,6 +56,18 @@ export default function Home({ allPostsData }) {
     <div>
       <Head>
         <title>{siteTitle}</title>
+        <meta name="image" content="https://stanjeong.vercel.app/project_images/memoir/app-icon.png" />
+        <meta name="description" content="Project Portfolio of Developer, Stan Jeong" />
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:url" content="https://stanjeong.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Project Portfolio of Developer, Stan Jeong" />
+        <meta property="og:image" content="https://stanjeong.vercel.app/project_images/memoir/app-icon.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={siteTitle} />
+        <meta name="twitter:description" content="Project Portfolio of Developer, Stan Jeong" />
+        <meta name="twitter:url" content="https://stanjeong.vercel.app/" />
+        <meta name="twitter:image" content="https://stanjeong.vercel.app/project_images/memoir/app-icon.png" />
       </Head>
 
     {/* <button style={{position: "fixed", zIndex:100, right: "1em", top: "50vh", color: "black"}} id="lightswitch" onClick={handleClick}>lights</button> */}
@@ -64,7 +76,7 @@ export default function Home({ allPostsData }) {
 
 
       {/* <section className={utilStyles.headingMd}>
-        <p>Sup, I'm <strong>Stan</strong></p>
+        <p>I'm <strong>Stan</strong></p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
