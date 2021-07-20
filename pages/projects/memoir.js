@@ -52,12 +52,12 @@ export default function Memoir() {
 
           <div className=" projectInfo__block">
             <h2>Time Frame:</h2>
-            <h3>November 2020 - February 2021: <br></br>200 Hours</h3>
+            <h3>November 2020 - March 2021: <br></br>{`> 200 Hours`}</h3>
           </div>
 
           <div className=" projectInfo__block">
             <h2>User Testing:</h2>
-            <h3>5.9 Million views on <a style={{color: "lightblue", textDecoration: "none" }} href="https://www.tiktok.com/@memoir_moment" target="_blank" rel="noopener noreferrer">Tiktok</a><br></br> 163,000 followers</h3>
+            <h3>5.9 Million views on <a style={{color: "lightblue", textDecoration: "none" }} href="https://www.tiktok.com/@memoir_moment" target="_blank" rel="noopener noreferrer">Tiktok</a><br></br> 158,000 followers</h3>
             <p></p>
           </div>
 

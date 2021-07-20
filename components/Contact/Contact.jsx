@@ -44,7 +44,7 @@ export default function Contact() {
               <div className="aboutMe">
                 <h2>About Me</h2>
                 {/* <p>Hi! I'm Stan, a freelance web developer from Los Angeles, CA. I aim to bring design concepts to life and create memorable user experiences.</p> */}
-                <p>I’m Stan, a frontend developer from LA. I like turning ideas into reality with memorable user experiences. Currently focused on continual growth and improving the lives of others through programming.</p>
+                <p>I’m Stan, a software developer from LA. I like turning ideas into reality with memorable user experiences. Currently focused on continual growth and improving the lives of others through programming.</p>
               </div>
               <div className="inputs">
                 <label htmlFor="name">Name: </label>
@@ -93,7 +93,7 @@ export default function Contact() {
               <ul>
                 <a href="https://www.linkedin.com/in/jeongstanley/" target="_blank" rel="noopener noreferrer"><li><img src="/social_icons/linkedin.svg" alt="linkedin" style={{height: "1.3em"}}/></li></a>
                 <a href="https://github.com/stanjdev" target="_blank" rel="noopener noreferrer"><li><img src="/social_icons/github.svg" alt="github" style={{height: "1.3em"}}/></li></a>
-                <a href="https://www.instagram.com/stanjdev/" target="_blank" rel="noopener noreferrer"><li><img src="/social_icons/instagram.svg" alt="instagram" style={{height: "1.3em"}}/></li></a>
+                <a href="https://www.instagram.com/stan_jeong/" target="_blank" rel="noopener noreferrer"><li><img src="/social_icons/instagram.svg" alt="instagram" style={{height: "1.3em"}}/></li></a>
               </ul>
             </section>
           </footer>
