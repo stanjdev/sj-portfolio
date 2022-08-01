@@ -24,12 +24,12 @@ export default function Realyzer() {
       </figure>
 
       <figure className="center" style={{maxWidth: "600px"}}>
-        <iframe 
-          width="100%" 
-          height="315" 
-          src="https://www.youtube.com/embed/YppX0bXFMQ0" 
-          frameBorder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/YppX0bXFMQ0"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen={true}
         >
         </iframe>
@@ -48,10 +48,10 @@ export default function Realyzer() {
             <h3>Custom web application created for Real Estate Professionals</h3>
           </div>
 
-          <div className=" projectInfo__block">
+          {/* <div className=" projectInfo__block">
             <h2>Time Frame:</h2>
             <h3>September 2020 - November 2020 <br></br>85 Hours</h3>
-          </div>
+          </div> */}
 
           <div className=" projectInfo__block">
             <h2>My Role:</h2>
@@ -92,11 +92,11 @@ export default function Realyzer() {
 
           <h3>Project Summary:</h3>
           <p>
-            This application was created to help real estate investors and professionals analyze residential and commercial 
-            properties, providing metrics in order to determine profitability. It analyzes and assesses any given property's 
-            net operating income and cash-on-cash return based on the property's value (the purchase price), down payment, the potential rental income, 
+            This application was created to help real estate investors and professionals analyze residential and commercial
+            properties, providing metrics in order to determine profitability. It analyzes and assesses any given property's
+            net operating income and cash-on-cash return based on the property's value (the purchase price), down payment, the potential rental income,
             and the overall expenses of the property, including mortgage payments, property taxes, property insurance, and more.
-          </p> 
+          </p>
           <ul>
             <li>Responsive analysis tool designed for real estate investors to determine a rental property's profitability</li>
             <li>Retrieved average Property Tax rates from 50 different U.S. states using Cheerio.js, providing users with calculated Property Tax estimates</li>
@@ -108,13 +108,13 @@ export default function Realyzer() {
 
 
 
-{/* 
-          
+{/*
+
           - Property taxes cheerio scraper, my scraper api endpoint to make it happen.
-          using axios to send a GET request to a website URL that hosted an article about average U.S. property taxes, I retrieved 
-          the html data in order to implement Cheerio.js for its data scraping capabilties and selected certain table elements from 
-          a specific information table that laid out the 50 states and their corresponding average property tax rates. After successfully 
-          scraping this data, my API endpoint would then respond back to the client with this data object to then store it in the Redux 
+          using axios to send a GET request to a website URL that hosted an article about average U.S. property taxes, I retrieved
+          the html data in order to implement Cheerio.js for its data scraping capabilties and selected certain table elements from
+          a specific information table that laid out the 50 states and their corresponding average property tax rates. After successfully
+          scraping this data, my API endpoint would then respond back to the client with this data object to then store it in the Redux
           global state to be used for property tax calculations later on.
 
 
@@ -149,11 +149,11 @@ export default function Realyzer() {
         <div className="readingWidth">
           <h2>Mapbox's Geocoding API to Retrieve Coordinates From a Given Property Address</h2>
           <p>
-            Using the property address the user inputs into the "Property Address" input field, 
-            that address is then dispatched to the global Redux state to be stored. The address is then used in conjunction 
+            Using the property address the user inputs into the "Property Address" input field,
+            that address is then dispatched to the global Redux state to be stored. The address is then used in conjunction
             with the Mapbox Geocoding API to retrieve the coordinates based off the address. With the response data,
-            the U.S. state name (e.g. Alabama) from that data is used to query the previously scraped property tax data from 
-            an external source to determine the average property tax rate for that particular state. 
+            the U.S. state name (e.g. Alabama) from that data is used to query the previously scraped property tax data from
+            an external source to determine the average property tax rate for that particular state.
             The same coordinates are also used to place the map marker directly on the home address of the property for the user's convenience. Example usage shown below.
           </p>
 
@@ -169,15 +169,15 @@ export default function Realyzer() {
         <div className="readingWidth">
           <h2>Rendering Image Previews of Multiple User-Uploaded Property Photos</h2>
           <p>
-            Using an input element with attributes <code>type="file"</code> and <code>multiple</code> , users can upload multiple property photos at once. 
+            Using an input element with attributes <code>type="file"</code> and <code>multiple</code> , users can upload multiple property photos at once.
             These files are then processed and converted into individual image URLs using <code>URL.createObjectURL()</code> in order to be rendered
-            into actual <code>{`<img/>`}</code> elements right next to the input element to be previewed by the user, as well as rendered onto the 
+            into actual <code>{`<img/>`}</code> elements right next to the input element to be previewed by the user, as well as rendered onto the
             PDF report page.
           </p>
 
           <pre className="pre">
             <code >
-{`<input 
+{`<input
   name="uploadedPhotos" type="file"
   onChange={uploadPropertyPhotos}
   multiple
@@ -205,13 +205,13 @@ const uploadPropertyPhotos = e => {
       <section className="container container__grey">
         <div className="readingWidth">
           <h1>Mortgage Calculation Formula</h1>
-          {/* 
+          {/*
             - Mortgage calculation writeup, actual formula, my implemented code formula, link to video that helped me
 
           */}
           <p>
-            For the mortgage calculation, the key variables to keep track of were the Property Value, the user's Down Payment Percentage (e.g. 20% down), 
-            the Interest Rate (e.g. 4%), and the Length of the Loan (e.g. 30 years). These numbers were then plugged into a complex mortgage calculation formula 
+            For the mortgage calculation, the key variables to keep track of were the Property Value, the user's Down Payment Percentage (e.g. 20% down),
+            the Interest Rate (e.g. 4%), and the Length of the Loan (e.g. 30 years). These numbers were then plugged into a complex mortgage calculation formula
             to determine the user's monthly mortgage payment. The user then has the freedom to adjust the Down Payment and Interest Rate via range inputs
             to dynamically adjust the monthly payments.
           </p>
@@ -233,16 +233,16 @@ const uploadPropertyPhotos = e => {
           </figure>
         </div>
       </section>
-     
+
 
       {/* <section className="container container__grey">
         <div className="readingWidth">
           <h2>Loading JS script into the React project on mount</h2>
-          <p>In order for the Mapbox API to create and load the map on mount, I had to figure out how to load the Javascript <code>{`<script>`}</code> file from a CDN, 
+          <p>In order for the Mapbox API to create and load the map on mount, I had to figure out how to load the Javascript <code>{`<script>`}</code> file from a CDN,
           (as you would normally insert the <code>{`<script>`}</code> tag right before the closing <code>{`<body>`}</code> tag of an HTML file). </p>
 
           <p>I used this custom <code>loadScript</code> function that takes in any CDN URL and injects it into the React-rendered HTML page on mount, similarly to placing the <code>{`<script>`}</code> tag in the HTML file manually. </p>
-          
+
           <pre className="pre">
             <code >
 {`function loadScript(url) {
@@ -270,7 +270,7 @@ const uploadPropertyPhotos = e => {
           </figure>
         </div>
       </section>
-  
+
     </Layout>
   )
 }
