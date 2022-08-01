@@ -19,7 +19,7 @@ export default function Post({ postData }) {
       </article>
     </Layout>
   )
-} 
+}
 
 export async function getStaticPaths() {
   const paths = getAllPostIds()
