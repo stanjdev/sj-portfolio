@@ -27,7 +27,7 @@ export default function Home({ allPostsData }) {
     setLight(!light);
     console.log(light)
   }
-  
+
 
   // DARKMODE LIGHT SWITCH, entire code is too tangled to do everything one by one
   // useEffect(() => {
@@ -38,7 +38,7 @@ export default function Home({ allPostsData }) {
   //     document.querySelector("header").style.backgroundColor = "white";
   //     document.querySelectorAll("section").forEach(section => section.style.backgroundColor = "white");
   //     document.querySelectorAll('.lightConnect__bg').forEach(x => x.style.backgroundColor = "white");
-      
+
   //     // font
   //     document.querySelectorAll('p').forEach(p => p.style.color = "black");
   //     document.querySelectorAll('strong').forEach(w => w.style.color = "black");
@@ -90,7 +90,7 @@ export default function Home({ allPostsData }) {
             <Link href="/projects/first-post"><a>My First Post</a></Link>
             <br />
               <small className={utilStyles.lightText}>
-                Whatever the date is 
+                Whatever the date is
               </small>
           </li>
           {allPostsData.map(({ id, date, title }) => (
