@@ -14,7 +14,7 @@ export default function Contact() {
 
   const [status, setStatus] = useState();
 
-  
+
   // https://formspree.io/forms
   const handleSubmit = e => {
     e.preventDefault();
@@ -70,22 +70,22 @@ export default function Contact() {
                 </div>
               </AnchorLink>
             </div>
-            
+
           </section>
-          
+
           {/* <MyForm /> */}
 
           <footer>
             <section className="footerLeftSpace"></section>
-            
+
             <section className="copyright">
               <span>
                 HANDCRAFTED
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" 
-                      alt="react logo" 
-                      style={{height: "1.7em", position: "relative", bottom: "-0.47em"}}
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                      alt="react logo"
+                      style={{height: "1.7em", position: "relative", bottom: "-0.47em", margin: "0 0.4em 0 0.2em"}}
                 />
-                © 2021 STAN JEONG
+                © STAN JEONG
               </span>
             </section>
 
@@ -93,7 +93,7 @@ export default function Contact() {
               <ul>
                 <a href="https://www.linkedin.com/in/jeongstanley/" target="_blank" rel="noopener noreferrer"><li><img src="/social_icons/linkedin.svg" alt="linkedin" style={{height: "1.3em"}}/></li></a>
                 <a href="https://github.com/stanjdev" target="_blank" rel="noopener noreferrer"><li><img src="/social_icons/github.svg" alt="github" style={{height: "1.3em"}}/></li></a>
-                <a href="https://www.instagram.com/stan_jeong/" target="_blank" rel="noopener noreferrer"><li><img src="/social_icons/instagram.svg" alt="instagram" style={{height: "1.3em"}}/></li></a>
+                {/* <a href="https://www.instagram.com/stan_jeong/" target="_blank" rel="noopener noreferrer"><li><img src="/social_icons/instagram.svg" alt="instagram" style={{height: "1.3em"}}/></li></a> */}
               </ul>
             </section>
           </footer>

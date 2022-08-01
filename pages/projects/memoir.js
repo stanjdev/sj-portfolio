@@ -50,10 +50,10 @@ export default function Memoir() {
             <h3>Myself + <a style={{color: 'white', textDecoration: 'none'}} href="https://www.caseytang.me/memoir" target="_blank" rel="noopener noreferrer">1 Product Designer</a></h3>
           </div>
 
-          <div className=" projectInfo__block">
+          {/* <div className=" projectInfo__block">
             <h2>Time Frame:</h2>
             <h3>November 2020 - March 2021: <br></br>{`> 200 Hours`}</h3>
-          </div>
+          </div> */}
 
           <div className=" projectInfo__block">
             <h2>User Testing:</h2>
@@ -90,7 +90,7 @@ export default function Memoir() {
         <h3 style={{textDecoration: "underline"}} >Memoir</h3>
           <p>
             This mobile app was developed to help ease the world's stress and anxiety.
-          </p> 
+          </p>
           <ul>
             <li>Memoir promotes mindfulness and serenity through deep breathing and meditation exercises. Users can sign in with their Facebook, Apple ID, or email to save their favorite exercises and track their personal exercise progress.</li>
             <li>Users have a clean and simple-to-use UI to play and pause exercise videos, set timers, and save favorites.</li>
@@ -122,7 +122,7 @@ export default function Memoir() {
           <Interaction fileName="Memoir_Favorites.mp4" caption="Favorites Library"/>
           {/* <Interaction fileName="Memoir Meditation Dial.mp4" caption="Meditation Exercise Settings"/> */}
           <Interaction fileName="Memoir_Signup.mp4" caption="Delayed Signup Prompts"/>
-          
+
           <Interaction fileName="Memoir_Stats.mp4" caption="Animated User Stats"/>
         </div>
 
@@ -177,14 +177,14 @@ export default function Exercise({ image }) {
     // Else if it wasn't cached, get the download URL for the new file from Firebase Storage
     const ref = storage.ref("/" + "exercise-images" + "/" + asset);
     const uri = await ref.getDownloadURL();
-    
+
     // Download that new file into the device's cache using the FileSystem API
     const newAsset = await FileSystem.downloadAsync(uri, path);
     setCachedImg( {uri: newAsset.uri} );
     return;
   }
 
-  return <Image 
+  return <Image
             source={ cachedImg }
             style={{ height: height * 0.4, width: width * 0.9 }}
             resizeMode="contain"
@@ -194,7 +194,7 @@ export default function Exercise({ image }) {
             </code>
           </pre> */}
 
-          <Gist 
+          <Gist
             id="261a720d9e4a16e982ffa518b7f916a4"
           />
 
@@ -205,11 +205,11 @@ export default function Exercise({ image }) {
       <section className="container container__grey">
         <div className="readingWidth">
           <h2>UI: User Stats Scroll-Up Numbers Animation</h2>
-          
+
           <div className="challengeResponsive">
             <div className="challengeParagraph">
               <p>
-                How I implemented the custom animation for the numbers scrolling up: 
+                How I implemented the custom animation for the numbers scrolling up:
               </p>
               <ul>
                 <li>I first made a function to render a short vertical bar of numbers by dividing each specific stat number by 5.</li>
@@ -237,14 +237,14 @@ export default function Exercise({ image }) {
                 <li>The "dismissed" state of the alert begins as 'false' and is then set to 'true' when the user dismisses it.</li>
               </ul>
             </div>
-            
+
             <Interaction fileName="congrats-alert.mov" caption="Congratulations Alert!"/>
           </div>
 
 
           {/* <pre className="pre">
             <code >
-{`const timeConditions = practiceTime < 1800 ? 1800 : 
+{`const timeConditions = practiceTime < 1800 ? 1800 :
 practiceTime >= 1800 && practiceTime < 7200 ? 7200 :
 practiceTime >= 7200 && practiceTime < 18000 ? 18000 :
 practiceTime >= 18000 ? fiveHrGoal.current : null;
@@ -296,13 +296,13 @@ useEffect(() => {
       </section>
 
 
-      
+
 
 
       <section className="container container__grey">
         <div className="readingWidth">
           <h1>UI/UX Solution: Horizontal ScrollViews used for Custom Option Selectors</h1>
-          
+
           <div className="challengeResponsive">
             <div className="challengeParagraph">
               <p>
@@ -337,9 +337,9 @@ useEffect(() => {
     const options = [];
     for (let time in timerDurationsOptions) {
       options.push(
-        <TouchableOpacity 
+        <TouchableOpacity
           onPress={() => pressTimerChoice(time)}
-          key={time} 
+          key={time}
           style={{ padding: 10, paddingRight: 27, paddingLeft: 27}}
         >
           <Text style={{fontFamily: "Assistant-SemiBold", fontSize: 19, color: "white"}}>{time}</Text>
@@ -355,7 +355,7 @@ useEffect(() => {
           <Gist id="f6c8bf50b88fa212377b626274ee1f1a"/>
         </div>
       </section>
-     
+
 
 
 
@@ -367,7 +367,7 @@ useEffect(() => {
           </figure>
         </div>
       </section>
-  
+
     </Layout>
   )
 };
@@ -377,11 +377,11 @@ useEffect(() => {
 function Interaction({ fileName, caption }) {
   return (
     <figure className="center" style={{marginTop: "2em", marginBottom: "2em"}}>
-      <video 
+      <video
         autostart="true"
-        autoPlay 
+        autoPlay
         loop
-        muted 
+        muted
         style={{borderRadius: 50, width: "300px"}}
         src={`/project_images/memoir/memoir-portfolio-motion/${fileName}`}
       />
