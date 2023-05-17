@@ -8,21 +8,23 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/native-stack": "^6.9.12",
     "aos": "^2.3.4",
-    "date-fns": "^2.16.1",
-    "gray-matter": "^4.0.2",
-    "next": "^12.2.3",
-    "react": "^18.2.0",
+    "date-fns": "^2.30.0",
+    "gray-matter": "^4.0.3",
+    "next": "^13.4.2",
+    "react": "^17.0.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
-    "react-gist": "^1.2.2",
-    "remark": "^14.0.2",
-    "remark-html": "^13.0.1",
-    "sass": "^1.27.0"
+    "react-gist": "^1.2.4",
+    "remark": "^14.0.3",
+    "remark-html": "^15.0.2",
+    "sass": "^1.62.1"
   },
   "devDependencies": {
-    "css-loader": "^5.0.0",
-    "file-loader": "^6.1.1",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
     "url-loader": "^4.1.1"
   }
 }
