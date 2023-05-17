@@ -11,14 +11,14 @@ import { useContext, useEffect } from 'react';
 import { LightContext } from '../components/LightContext'
 
 // We need this to fetch the data first before the SSG static generation of the page.
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-};
+// export async function getStaticProps() {
+//   const allPostsData = getSortedPostsData()
+//   return {
+//     props: {
+//       allPostsData
+//     }
+//   }
+// };
 
 export default function Home({ allPostsData }) {
   const { light, setLight } = useContext(LightContext);
