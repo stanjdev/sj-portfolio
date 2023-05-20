@@ -1,7 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Actor } from 'next/font/google'
+import { Caveat } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const actor = Actor({ subsets: ['latin'], weight: '400' })
+const caveat = Caveat({ subsets: ['latin'], weight: '500' })
+
 
 export const metadata = {
   title: 'Stan Jeong Portfolio',
@@ -11,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={actor.className}>{children}</body>
     </html>
   )
 }

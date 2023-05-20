@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import Layout from '../../components/layout';
+import { Fragment } from "react"
 
 export default function GoodReads() {
   return (
@@ -105,7 +106,7 @@ export default function GoodReads() {
             rendered first in order for the data to be painted onto.
           </p>
 
-        <figure className="center">
+        <figure className="center">
           <img src="/project_images/goodreads/goodreads_search.png" alt="search window" className="center"/>
           <figcaption>Search via ISBN, title, or author of your favorite book!</figcaption>
         </figure>

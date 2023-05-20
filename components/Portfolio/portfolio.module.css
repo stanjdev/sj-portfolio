@@ -6,7 +6,7 @@
 .App__logo {
   pointer-events: none;
   position: absolute;
-  top: -1%;
+  top: -4%;
   left: 45px;
   z-index: 1;
   width: 120px;
