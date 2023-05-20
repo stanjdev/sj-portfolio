@@ -101,9 +101,9 @@ export default function Kelp() {
 
           <p>
             Another challenge I faced was making sure to clear the map markers from previous search results whenever querying
-            for new searches so they wouldn’t pile up (the previous map markers did not clear automatically after running a new search).
+            for new searches so they wouldn&apos;t pile up (the previous map markers did not clear automatically after running a new search).
             I used the <code>useRef()</code> hook and the <code>.current</code> property to keep track of the current search results
-            data in an array, and compared that array against the next, new search results. If they didn’t match, I looped through the
+            data in an array, and compared that array against the next, new search results. If they didn&apos;t match, I looped through the
             current array of existing map markers and removed them in order to empty the array and make room for the new incoming search results.
           </p>
 
