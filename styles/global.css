@@ -5,12 +5,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue , sans-serif; */
   line-height: 1.6;
   font-size: 18px;
   font-family: 'Actor', Helvetica, sans-serif;
-  /* font-family: Helvetica, sans-serif; */
   scroll-behavior: smooth;
   background-color: #131315;
 }
@@ -25,7 +22,7 @@ body {
 * {
   box-sizing: border-box;
   color: white;
-  font-family: 'Actor', Helvetica Neue , sans-serif;
+  font-family: 'Actor', Helvetica Neue, sans-serif;
 }
 
 ::selection {
