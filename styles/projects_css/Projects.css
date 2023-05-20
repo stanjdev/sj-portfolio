@@ -1,0 +1,158 @@
+:root {
+  --footerHeight: 7vh;
+}
+
+.Projects {
+  text-align: center;
+  color: white;
+  padding-bottom: 3.4em;
+}
+.Projects h1 {
+  font-size: 2em;
+  letter-spacing: 0.6428571429rem;
+  padding-top: 1em;
+}
+.Projects h1, .Projects div {
+  z-index: 1;
+  position: relative;
+}
+
+.project {
+  margin: 1em 0.7em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projectReverse {
+  margin: 1em 0.7em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.projectImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.4s;
+  margin: 1em auto;
+}
+.projectImage img {
+  border-radius: 4px;
+}
+.projectImage:hover {
+  opacity: 0.75;
+}
+
+.projectText {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.projectText h2 {
+  letter-spacing: 0.4285714286rem;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+.projectText p {
+  width: 100%;
+  font-size: 1.1em;
+  letter-spacing: 0.0428571429rem;
+  line-height: 1.6;
+  margin: 1em 0 0 0;
+}
+.projectText a {
+  width: 100%;
+}
+.projectText .caseStudyButton {
+  margin: 1em 0 0 0;
+}
+.projectText button {
+  padding: 0.5em;
+  color: #131315;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: large;
+  font-family: "Actor", Helvetica Neue, sans-serif;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+.projectText button:hover {
+  background: rgb(187, 187, 187);
+}
+.projectText button:active {
+  background-color: gray;
+}
+
+/* MOBILE */
+.getInTouchContainer {
+  display: flex;
+  justify-content: center;
+  height: var(--footerHeight);
+  margin-top: -1em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.getInTouch {
+  padding-top: 1.5em;
+  font-size: 20px;
+  letter-spacing: 0.2795031056rem;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.getInTouch .getInTouch-arrow {
+  position: relative;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.getInTouch .getInTouch-arrow .getInTouch-arrow-down {
+  border-bottom: white solid 1.5px;
+  transform: rotate(90deg);
+  width: 25px;
+  position: relative;
+  top: 11px;
+  right: 2.2px;
+}
+.getInTouch .getInTouch-arrow .getInTouch-arrow-square {
+  width: 20px;
+  height: 20px;
+  border-right: white solid 2px;
+  border-bottom: white solid 2px;
+  transform: rotate(45deg);
+}
+.getInTouch ::-moz-selection {
+  background: none;
+}
+.getInTouch ::selection {
+  background: none;
+}
+.getInTouch:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+@media screen and (min-height: 1px) and (max-height: 700px) {
+  .Projects {
+    height: 100%;
+  }
+}/*# sourceMappingURL=Projects.css.map */
