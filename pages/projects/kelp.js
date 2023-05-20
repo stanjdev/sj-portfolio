@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import Link from 'next/link'
 import Layout from '../../components/layout';
@@ -12,13 +13,13 @@ export default function Kelp() {
       <div className="header">
         <h1>Kelp</h1>
         <h2>Business Search Web App Tool</h2>
-        <blockquote><em>"Search for your favorite coffee shop in real-time with an interactive map view."</em></blockquote>
+        <blockquote><em>&quot;Search for your favorite coffee shop in real-time with an interactive map view.&quot;</em></blockquote>
         <p><a href="https://kelp-search.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/kelp" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
 
       <figure className="center">
         <img src="/project_images/kelp_searchbar.png" alt="{name}" className="center"/>
-        <figcaption>Search bar with 3 different "Sort By" options</figcaption>
+        <figcaption>Search bar with 3 different &quot;Sort By&quot; options</figcaption>
       </figure>
 
 
@@ -94,7 +95,7 @@ export default function Kelp() {
               In my individual Business component, on the BusinessList side, whenever you click on an image of a business from the
               search results, it extracts the Yelp coordinates data from that business, sends it back up to the parent component,
               and then sets the current state of the <code>clickedOnBusiness</code>, and finally sends that back down to the Map
-              component to fly into the actual map marker with the matching coordinates using the Mapbox API's <code>flyTo()</code> method.
+              component to fly into the actual map marker with the matching coordinates using the Mapbox API&apos;s <code>flyTo()</code> method.
             </li>
           </ul>
 
@@ -106,12 +107,12 @@ export default function Kelp() {
             current array of existing map markers and removed them in order to empty the array and make room for the new incoming search results.
           </p>
 
-        <figure className="center">
-          <img src="/project_images/kelp-mobile.png" className="center"/>
+        <figure className="center">
+          <img src="/project_images/kelp-mobile.png" alt="mobile-view kelp" className="center"/>
           <figcaption>Mobile view of search bar</figcaption>
         </figure>
 
-        <figure className="center">
+        <figure className="center">
           <img src="/project_images/kelp_map.png" alt="kelp MapBox map view" className="caseStudyImage center"/>
           <figcaption>Map view provided by MapBox API</figcaption>
         </figure>
@@ -129,14 +130,14 @@ export default function Kelp() {
           <h2>Creating a Custom, Interactive Map</h2>
           {/* https://github.com/stanjdev/kelp/issues/14 - ultimately ended with scrollIntoView(), check actual code.  */}
           <p>
-            Using the React Hook, <code>useEffect()</code>, I created a function to toggle an "active" CSS class,
+            Using the React Hook, <code>useEffect()</code>, I created a function to toggle an &quot;active&quot; CSS class,
             adding or removing highlighting styling whenever users click on any map markers.
-            Concurrently, I used <code>scrollIntoView</code> with <code>behavior: "smooth"</code> to effortlessly glide to
+            Concurrently, I used <code>scrollIntoView</code> with <code>behavior: &quot;smooth&quot;</code> to effortlessly glide to
             the business listing of the selected map marker.
           </p>
 
           <figure className="center">
-            <img src="/project_images/gifs/kelp-interactive-map.gif" className="center"/>
+            <img src="/project_images/gifs/kelp-interactive-map.gif" alt="interactive-map kelp" className="center"/>
             <figcaption>2-way interactive map! <br/> Fixed/sticky map that scrolls with you!</figcaption>
           </figure>
         </div>
@@ -153,7 +154,7 @@ export default function Kelp() {
             the new array of businesses populated by Yelp from running a new search.
           </p>
           <p>
-            If those two arrays weren't exactly alike, I used the built-in MapBox
+            If those two arrays weren&apos;t exactly alike, I used the built-in MapBox
             <code> marker.remove() </code> function to clear all markers from the map.
           </p>
 
@@ -174,11 +175,11 @@ export default function Kelp() {
           <h2>Map resizing bug: Required automatic triggering of window-resizing event </h2>
           {/* https://github.com/stanjdev/kelp/issues/13 clearing the markers before loading new search results every new search render */}
           <p>
-            For my map's display/hide toggle, I came across a bug where the Mapbox map displayed inconveniently at 1/4th the
-            container's size when toggling to display. The only way to set the size back to normal was by resizing the window manually.
+            For my map&apos;s display/hide toggle, I came across a bug where the Mapbox map displayed inconveniently at 1/4th the
+            container&apos;s size when toggling to display. The only way to set the size back to normal was by resizing the window manually.
           </p>
           <p>
-            In my map toggle button's <code>handleClick</code> function, I included this <code>setTimeout()</code> function to dispatch
+            In my map toggle button&apos;s <code>handleClick</code> function, I included this <code>setTimeout()</code> function to dispatch
             a window resize trigger event to automatically cause a resize AFTER the map displayed from invisible to visible.
           </p>
 
@@ -226,7 +227,7 @@ export default function Kelp() {
         <figure className="center">
           <img src="/project_images/kelp_tandoori.png" alt="search for tandoori" className="caseStudyImage center"/>
           <img src="/project_images/kelp_juice.png" alt="search for juice" className="caseStudyImage center"/>
-          <img src="/project_images/kelp_icecream.png" className="caseStudyImage center"/>
+          <img src="/project_images/kelp_icecream.png" alt="search for ice cream" className="caseStudyImage center"/>
           <figcaption>Businesses data imported from <a href="https://www.yelp.com/developers/documentation/v3/business_search" target="_blank">Yelp API</a>. Search for your favorite bites!</figcaption>
         </figure>
       </div>

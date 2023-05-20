@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, {useEffect, useState} from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 // import './css/Contact.css'
@@ -38,7 +39,7 @@ export default function Contact() {
   return(
         <div>
           <section className="Contact">
-            <h1 data-aos="fade-down">LET'S CREATE</h1>
+            <h1 data-aos="fade-down">LET&apos;S CREATE</h1>
 
             <form onSubmit={handleSubmit} data-aos="fade-up" action="https://formspree.io/mjvpvlrr" method="POST">
               <div className="aboutMe">

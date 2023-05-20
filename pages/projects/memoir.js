@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import Link from 'next/link'
 import Layout from '../../components/layout';
@@ -27,7 +28,7 @@ export default function Memoir() {
         <img src="/project_images/memoir/app-icon.png" alt="{name}" className="center" width={150} style={{borderRadius: 7}}/>
         <h1>Memoir</h1>
         <h2>Deep Breathing &#38; Mindfulness on iOS and Android</h2>
-        <blockquote style={{maxWidth: "700px"}}><em>"A language-independent meditation app to help ease the world's anxiety"</em></blockquote>
+        <blockquote style={{maxWidth: "700px"}}><em>&quot;A language-independent meditation app to help ease the world&apos;s anxiety&quot;</em></blockquote>
         <p><a href="https://expo.io/@stan.dev/projects/Memoir" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/memoir" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
 
@@ -89,7 +90,7 @@ export default function Memoir() {
 
         <h3 style={{textDecoration: "underline"}} >Memoir</h3>
           <p>
-            This mobile app was developed to help ease the world's stress and anxiety.
+            This mobile app was developed to help ease the world&apos;s stress and anxiety.
           </p>
           <ul>
             <li>Memoir promotes mindfulness and serenity through deep breathing and meditation exercises. Users can sign in with their Facebook, Apple ID, or email to save their favorite exercises and track their personal exercise progress.</li>
@@ -108,7 +109,7 @@ export default function Memoir() {
 
 
 
-        <figure className="center" style={{margin: "5em 0 0 0"}}>
+        <figure className="center" style={{margin: "5em 0 0 0"}}>
           <img src="/project_images/memoir/memoir-exercises.jpeg" alt="realyzer rental property calculator" className="center"/>
           <figcaption>Variety of Breathing Exercises Content</figcaption>
         </figure>
@@ -139,12 +140,12 @@ export default function Memoir() {
 
           <div className="challengeResponsive">
             <div className="challengeParagraph">
-              <p>The following code gist was shrunken from the original code for simplification. The original uses a regular expression checker to categorize assets as "images" or "videos".</p>
+              <p>The following code gist was shrunken from the original code for simplification. The original uses a regular expression checker to categorize assets as &quot;images&quot; or &quot;videos&quot;.</p>
               <ul>
                 <li>Firstly, the specifically requested <code>image</code> and <code>videoFile</code> assets are passed down as props to the individual <code>Exercise</code> components. </li>
                 <li><code>useState()</code> hooks are then initialized to set the actual image and videos to be rendered for later on. The <code>useEffect()</code> hook will run the initial caching function on mount. </li>
                 <li><code>cacheAsset</code> is an <code>async</code> function, that first checks if the file already exists within the cache to prevent unnecessary download requests, saving bandwidth.</li>
-                <li>If it wasn’t cached, the download URL of the file is retrieved from Firebase Storage. The URL is used to download the file to the device’s cache using the Expo FileSystem API. The <code>useState()</code> states are then stored using the newly downloaded assets. </li>
+                <li>If it wasn&apos;t cached, the download URL of the file is retrieved from Firebase Storage. The URL is used to download the file to the device’s cache using the Expo FileSystem API. The <code>useState()</code> states are then stored using the newly downloaded assets. </li>
                 <li>Finally, with the stored states, the <code>cachedImage</code> is used to render the exercise image. When you press on that image, it navigates to the <code>ExerciseVideo</code> screen along with the <code>cachedVideo</code> passed down as a <code>route.param</code>.</li>
               </ul>
             </div>
@@ -230,11 +231,11 @@ export default function Exercise({ image }) {
 
           <div className="challengeResponsive">
             <div className="challengeParagraph">
-              <p>An alert dialog pops up whenever the user hits their "moving target" goals, which would always increase as the current benchmarks were met.</p>
+              <p>An alert dialog pops up whenever the user hits their &quot;moving target&quot; goals, which would always increase as the current benchmarks were met.</p>
               <ul>
                 <li>The practice time goals increase from a 30 minute goal, to a 2 hour goal, to a 5 hour goal, and then increments by 5 hours indefinitely.</li>
                 <li>Those conditional rules were stored in a variable and used to trigger the alerts whenever the goals were met and the user visited the stats page.</li>
-                <li>The "dismissed" state of the alert begins as 'false' and is then set to 'true' when the user dismisses it.</li>
+                <li>The &quot;dismissed&quot; state of the alert begins as &lsquo;false&lsquo; and is then set to &lsquo;true&lsquo; when the user dismisses it.</li>
               </ul>
             </div>
 
@@ -277,20 +278,20 @@ useEffect(() => {
 
       <section className="container container__grey">
         <div className="readingWidth">
-          <h2>Used Google Firebase’s Realtime Database to Store Personalized Favorites and Progress Objects</h2>
+          <h2>Used Google Firebase&lsquo;s Realtime Database to Store Personalized Favorites and Progress Objects</h2>
           <p>
           Users can keep track of their exercise goals and progress such as hours completed, sessions completed, and best streaks achieved.
           </p>
           <ul>
             <li>The number of seconds a user spends on any timed exercises are incremented, which are then converted to minutes and hours as the user progresses.</li>
-            <li>The user's "Sessions Completed" tracker increments whenever a user finishes a timed exercise.</li>
-            <li>The user's "Current Streak" and "Best Streak" are incremented whenever they start any exercise on the next calendar day. This is determined by comparing the last tracked date with a current <code>new Date()</code> Object.</li>
+            <li>The user&lsquo;s &quot;Sessions Completed&quot; tracker increments whenever a user finishes a timed exercise.</li>
+            <li>The user&lsquo;s &quot;Current Streak&quot; and &quot;Best Streak&quot; are incremented whenever they start any exercise on the next calendar day. This is determined by comparing the last tracked date with a current <code>new Date()</code> Object.</li>
           </ul>
 
           <figure className="center">
             <img width="500" src="https://miro.medium.com/max/2400/1*HFlYgB6gVLc4Su9HsB9MZg.png" className="center" alt="rental property calculator mapbox geocoding address to coordinates feature"/>
             <img src="/project_images/memoir/realtime-database.png" className="center" alt="rental property calculator mapbox geocoding address to coordinates feature"/>
-            <figcaption>Favorites and progress correspond to each user's unique user ID</figcaption>
+            <figcaption>Favorites and progress correspond to each user&lsquo;s unique user ID</figcaption>
           </figure>
         </div>
       </section>
@@ -307,12 +308,12 @@ useEffect(() => {
             <div className="challengeParagraph">
               <p>
                 In order to set timers for breathing exercises, I implemented a horizontal options selector to choose timed intervals.
-                My function renders an array of <code>TouchableOpacity</code>'s onto the screen and is hidden/revealed when the user presses the timer icon.
+                My function renders an array of <code>TouchableOpacity</code>&lsquo;s onto the screen and is hidden/revealed when the user presses the timer icon.
                 Selecting a time option starts the timer and hides the options automatically.
               </p>
               <p>Another horizontal ScrollView was used to set the timer for the Meditation Timer Screen.</p>
-              <p>I created a custom "scroll wheel" by gathering the measurements for the <code>contentOffset.x</code>, the <code>contentSize.width</code>, and the <code>layoutMeasurement.width</code> and calculating the percentage of space used within the entire <code>ScrollView</code>.</p>
-              <p>This homemade "scroll wheel" includes haptic feedback to ensure the user is interacting with the adjuster.</p>
+              <p>I created a custom &quot;scroll wheel&quot; by gathering the measurements for the <code>contentOffset.x</code>, the <code>contentSize.width</code>, and the <code>layoutMeasurement.width</code> and calculating the percentage of space used within the entire <code>ScrollView</code>.</p>
+              <p>This homemade &quot;scroll wheel&quot; includes haptic feedback to ensure the user is interacting with the adjuster.</p>
               {/* <Interaction fileName="Memoir Meditation Dial.mp4" caption="Meditation Exercise Settings"/> */}
             </div>
             <Interaction fileName="Memoir_Exercise 2.mp4" caption="Horizontal 'Wheel' to Set Timer"/>
@@ -361,7 +362,7 @@ useEffect(() => {
 
       <section className="container">
         <div className="readingWidth">
-          <figure className="center">
+          <figure className="center">
             <img src="/project_images/memoir/memoir-splash.png" alt="Memoir Splash intro screen" className="center" width="400" style={{borderRadius: 7}}/>
             <figcaption>Thanks for visiting!</figcaption>
           </figure>
@@ -376,7 +377,7 @@ useEffect(() => {
 
 function Interaction({ fileName, caption }) {
   return (
-    <figure className="center" style={{marginTop: "2em", marginBottom: "2em"}}>
+    <figure className="center" style={{marginTop: "2em", marginBottom: "2em"}}>
       <video
         autostart="true"
         autoPlay

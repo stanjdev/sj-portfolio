@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, {useEffect} from 'react';
 // import './css/Projects.css';
 import AOS from 'aos';

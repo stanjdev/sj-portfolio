@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import Layout from '../../components/layout';
 
@@ -11,7 +12,7 @@ export default function GoodReads() {
       <div className="header">
         <h1>GoodReads Reviews</h1>
         <h2>Book Reviews Web App</h2>
-        <blockquote><em>"Create an account, log in, search for, and leave reviews for your favorite books!"</em></blockquote>
+        <blockquote><em>&quot;Create an account, log in, search for, and leave reviews for your favorite books!&quot;</em></blockquote>
         <p><a href="https://react-goodreads.herokuapp.com/" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/goodreads" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
 
@@ -94,10 +95,10 @@ export default function GoodReads() {
             I had to figure out how to display the HTML template for the user reviews page first, before fetching
             the database and API data so that it can render that data onto the HTML page. I needed something
             that would work whenever the users refresh the page, navigate backwards and forwards, and type in the URL
-            route directly to that specific book’s details page.
+            route directly to that specific book&apos;s details page.
           </p>
           <p>
-            In hindsight, I figured something like Gatsby or Next.js' getStaticProps for Static Generation would
+            In hindsight, I figured something like Gatsby or Next.js&apos; getStaticProps for Static Generation would
             have been great for this, but I decided to test a few hypotheses with Express and found a workaround
             using the <code>res.sendFile()</code> response method to serve up the index.html file first, along with the necessary fetched
             data included in the <code>options</code> argument of the response. That way, the template HTML page is always served and
@@ -105,16 +106,16 @@ export default function GoodReads() {
           </p>
 
         <figure className="center">
-          <img src="/project_images/goodreads/goodreads_search.png" className="center"/>
+          <img src="/project_images/goodreads/goodreads_search.png" alt="search window" className="center"/>
           <figcaption>Search via ISBN, title, or author of your favorite book!</figcaption>
         </figure>
 
-        <figure className="center">
+        <figure className="center">
           <img src="/project_images/goodreads/goodreads_results.png" alt="results page" className="caseStudyImage center"/>
           <figcaption>Results page loaded</figcaption>
         </figure>
 
-        <figure className="center">
+        <figure className="center">
           <img src="/project_images/goodreads/goodreads_book.png" alt="book details page" className="caseStudyImage center"/>
           <figcaption>Details per individual book imported from fetching from both PostgreSQL database and <a href="https://www.goodreads.com/api" target="_blank">GoodReads API</a> data</figcaption>
         </figure>
@@ -131,12 +132,12 @@ export default function GoodReads() {
       <section className="container container__grey">
         <section className="readingWidth">
 
-          <h2>Pre-rendering the "Details" HTML page first to display external fetched data</h2>
-          <p>After deploying the production version to Heroku, when refreshing or GET requesting the 'details' page of
+          <h2>Pre-rendering the &quot;Details&quot; HTML page first to display external fetched data</h2>
+          <p>After deploying the production version to Heroku, when refreshing or GET requesting the &apos;details&apos; page of
           any book (/details/9958 route for example), I was stuck with a plain, white screen with only a JSON object of the API
           response data for that book. My Express.js routes were catching all of the GET requests before React could load the index.html page,
           therefore the application had no webpage to display the API data onto.</p>
-          <p>I wanted my HTML to be pre-rendered in order for the fetched GoodReads API and database data to successfully "hydrate" and display on the page.</p>
+          <p>I wanted my HTML to be pre-rendered in order for the fetched GoodReads API and database data to successfully &quot;hydrate&quot; and display on the page.</p>
           <p> To remedy this, I found a work-around on my server-side using the Express.js <code><a href="https://expressjs.com/en/api.html#res.sendFile" target="_blank">res.sendFile(path, options)</a></code> method to pre-render
           the template index.html file as the <code>path</code> argument, along with the API response data object in the <code>options</code> argument.</p>
           {/*
@@ -179,10 +180,10 @@ res.sendFile(path.join(__dirname, "../client/build/index.html"), options);
           <p>
             Before finally deploying the application on Heroku for production, I installed the Heroku Postgres add-on to host the
             PostgreSQL database for my users, books, and reviews. I made sure to include the <code>DATABASE_URL</code> environment variable
-            provided by Heroku to link to the app's <code>process.env</code> and used conditional boolean logic to select either "deployment" or "production"
+            provided by Heroku to link to the app&apos;s <code>process.env</code> and used conditional boolean logic to select either &quot;deployment&quot; or &quot;production&quot;
             mode configuration.
           </p>
-          <p>This ensured the application was using either the "development mode" local database, or the "production mode" heroku hosted database.</p>
+          <p>This ensured the application was using either the &quot;development mode&quot; local database, or the &quot;production mode&quot; heroku hosted database.</p>
 
           <pre className="pre">
             <code >
