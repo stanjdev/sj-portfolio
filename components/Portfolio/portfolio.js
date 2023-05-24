@@ -10,6 +10,12 @@ import Head from 'next/head';
 
 // import { LightContext } from '../LightContext';
 
+export const metadata = {
+  icons: {
+    icon: '/sj.png',
+  },
+};
+
 const RESUME_LINK = "https://drive.google.com/file/d/1Kbd-aNaFh7PDNjoNKeE5gnO6iA5_3oCX/view?usp=share_link";
 // GoogleDrive View Only Link = "https://docs.google.com/document/d/1JR8OtXLSfYqQdodWUOoOOwwICYwSxFn5g1LptM8H0j0/edit?usp=sharing"
 
@@ -34,6 +40,7 @@ export default function Portfolio() {
 
       <Head>
         <link rel="icon" href="/sj.png" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
       <header className={styles.App__header} id="top">
