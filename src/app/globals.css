@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Caveat:wght@400;500;600&display=swap');
+
+/* From Public Directory */
+@font-face {
+  font-family: 'Caveat';
+  src: url('../../public/Caveat/Caveat-VariableFont_wght.ttf');
+  font-style: medium;
+  font-weight: normal;
+  font-display: swap;
+}
+
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;

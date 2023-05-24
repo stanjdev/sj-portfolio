@@ -1,4 +1,5 @@
 import '../styles/global.css'
+import './globals.css'
 import '../styles/contact_css/Contact.css'
 import '../styles/projects_css/Projects.css'
 import 'aos/dist/aos.css';
