@@ -7,6 +7,7 @@ import Contact from '../Contact/Contact';
 import Rectangles from '../Rectangles/Rectangles';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Head from 'next/head';
+import Image from 'next/image';
 
 // import { LightContext } from '../LightContext';
 
@@ -16,7 +17,7 @@ export const metadata = {
   },
 };
 
-const RESUME_LINK = "https://drive.google.com/file/d/14f02GjncDXft2WuinxmWoIKlMTrVgmQe/view?usp=sharing";
+const RESUME_LINK = "https://drive.google.com/file/d/1_4NeOkGlTbWTyMijgRHXQza93MgnB0Vb/view?usp=sharing";
 // GoogleDrive View Only Link = "https://docs.google.com/document/d/1JR8OtXLSfYqQdodWUOoOOwwICYwSxFn5g1LptM8H0j0/edit?usp=sharing"
 
 export default function Portfolio() {
@@ -48,10 +49,11 @@ export default function Portfolio() {
         <div className={styles.title}>
           <p>STAN JEONG,</p>
           <p>DEVELOPER</p>
+          <div className={styles.title_icon_container}>
+            <Image className={styles.title_icon} src='/project_images/shopify/shopify-logo.png' alt='' width={60} height={60} draggable={false} />
+            <Image className={styles.title_icon} src='/project_images/memoir/app-icon.png' alt='' width={60} height={60} draggable={false} />
+          </div>
         </div>
-        {/* <div className={styles.aboutMeTop}>
-          <p>Hi! I'm Stan, a freelance web developer from Los Angeles, CA. I aim to bring design concepts to life and create memorable user experiences.</p>
-        </div> */}
           <AnchorLink className={`${styles.see_work} lightConnect`} href="#projects" rel="noopener noreferrer">
             SEE MY WORK
             <div className={`${styles.arrow} lightConnect__arrows`}>

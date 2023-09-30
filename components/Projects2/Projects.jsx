@@ -21,6 +21,17 @@ export default function Projects() {
           <h1 data-aos="fade-down" data-aos-delay="0">PROJECTS</h1>
 
           <ProjectComponent
+            title="SHOP CASH - SHOPIFY"
+            name="shopify"
+            description={"Rewards points on Shopify's Shop Cash mobile app."}
+            createdWith={"Created using React Native, TypeScript, GraphQL, and Jest"}
+            imgWidth={600}
+            imgLink="shopify/shop-cash.webp"
+            liveLink="https://shop.app/"
+            reverseAlign
+          />
+          
+          <ProjectComponent
             title="MEMOIR"
             name="memoir"
             description={"Breathing & Meditation Mobile Application for iOS and Android."}
@@ -147,7 +158,11 @@ function ProjectComponent({ title, name, description, createdWith, imgLink, imgW
         </Link>
         <p>{description} <br/> {createdWith}</p>
         {name && <Link legacyBehavior href={`/projects/${name}`}><a><button className="caseStudyButton">Case Study</button></a></Link> || null}
-        <p><a href={liveLink} target="_blank" rel="noopener noreferrer">Live</a> | <a href={ghLink} target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p>
+          <a href={liveLink} target="_blank" rel="noopener noreferrer">Live</a> 
+          {ghLink && ' | '} 
+          <a href={ghLink} target="_blank" rel="noopener noreferrer">{ghLink && 'GitHub'}</a>
+        </p>
       </div>
     </div>
   )
