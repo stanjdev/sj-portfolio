@@ -21,10 +21,10 @@ export default function Projects() {
           <h1 data-aos="fade-down" data-aos-delay="0">PROJECTS</h1>
 
           <ProjectComponent
-            title="SHOP CASH - SHOPIFY"
+            title="SHOPIFY, SHOP CASH"
             name="shopify"
-            description={"Rewards points on Shopify's Shop Cash mobile app."}
-            createdWith={"Created using React Native, TypeScript, GraphQL, and Jest"}
+            description={"Shop Cash rewards points on Shopify's Shop mobile app."}
+            createdWith={"Built with React Native, TypeScript, GraphQL, and Jest"}
             imgWidth={600}
             imgLink="shopify/shop-cash.webp"
             liveLink="https://shop.app/"
