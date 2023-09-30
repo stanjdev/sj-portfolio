@@ -21,6 +21,20 @@ export default function Projects() {
           <h1 data-aos="fade-down" data-aos-delay="0">PROJECTS</h1>
 
           <ProjectComponent
+<<<<<<< Updated upstream
+=======
+            title="SHOPIFY, SHOP CASH"
+            name="shopify"
+            description={"Shop Cash rewards points on Shopify's Shop mobile app."}
+            createdWith={"Built with React Native, TypeScript, GraphQL, and Jest"}
+            imgWidth={600}
+            imgLink="shopify/shop-cash.webp"
+            liveLink="https://shop.app/"
+            reverseAlign
+          />
+          
+          <ProjectComponent
+>>>>>>> Stashed changes
             title="MEMOIR"
             name="memoir"
             description={"Breathing & Meditation Mobile Application for iOS and Android."}
