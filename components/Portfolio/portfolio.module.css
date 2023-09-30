@@ -58,6 +58,24 @@
 .App__header .title :nth-child(2) {
   margin-top: 0;
   font-size: 85%;
+  margin-bottom: 0;
+}
+.App__header .title .title_icon_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 150px;
+  height: 70px;
+  margin-top: 10px;
+  padding: 0;
+}
+.App__header .title .title_icon_container .title_icon {
+  border-radius: 8px;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .App__header .aboutMeTop {
   position: absolute;
@@ -252,6 +270,10 @@
   .title :nth-child(2) {
     margin-top: 0;
     font-size: 64px;
+  }
+  .title .title_icons {
+    display: flex;
+    flex-direction: row;
   }
   .see_work {
     position: absolute;

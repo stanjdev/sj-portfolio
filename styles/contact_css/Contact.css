@@ -266,8 +266,6 @@ footer .socialIcons ul li {
   .Contact form .textArea input:active {
     transform: scale(0.9);
   }
-}
-@media screen and (min-width: 1024px) {
   .backToTopContainer {
     display: flex;
     justify-content: left;
@@ -313,8 +311,6 @@ footer .socialIcons ul li {
   .backToTopContainer .backToTop:hover {
     opacity: 0.5;
   }
-}
-@media screen and (min-width: 1024px) {
   footer {
     color: white;
     background-color: transparent;
