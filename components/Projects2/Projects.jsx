@@ -21,8 +21,6 @@ export default function Projects() {
           <h1 data-aos="fade-down" data-aos-delay="0">PROJECTS</h1>
 
           <ProjectComponent
-<<<<<<< Updated upstream
-=======
             title="SHOPIFY, SHOP CASH"
             name="shopify"
             description={"Shop Cash rewards points on Shopify's Shop mobile app."}
@@ -34,7 +32,6 @@ export default function Projects() {
           />
           
           <ProjectComponent
->>>>>>> Stashed changes
             title="MEMOIR"
             name="memoir"
             description={"Breathing & Meditation Mobile Application for iOS and Android."}
@@ -161,7 +158,11 @@ function ProjectComponent({ title, name, description, createdWith, imgLink, imgW
         </Link>
         <p>{description} <br/> {createdWith}</p>
         {name && <Link legacyBehavior href={`/projects/${name}`}><a><button className="caseStudyButton">Case Study</button></a></Link> || null}
-        <p><a href={liveLink} target="_blank" rel="noopener noreferrer">Live</a> | <a href={ghLink} target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p>
+          <a href={liveLink} target="_blank" rel="noopener noreferrer">Live</a> 
+          {ghLink && ' | '} 
+          <a href={ghLink} target="_blank" rel="noopener noreferrer">{ghLink && 'GitHub'}</a>
+        </p>
       </div>
     </div>
   )
