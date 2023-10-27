@@ -74,6 +74,10 @@ img {
   margin-top: 2em;
 }
 
+.mg-top {
+  margin-top: 2em;
+}
+
 /* figure {
   margin-left: auto;
   margin-right: auto;
@@ -166,13 +170,25 @@ img {
 
 .readingWidth {
   margin: 0 auto;
-  /* border: solid orange 1px; */
   max-width: 850px;
 }
 
+.userJourneyHeader {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.user-journey-content {
+  padding-bottom: 3em;
+}
+
+.diagram-background {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
 .challengesHeader {
-  margin-bottom: -0.5em;
-  margin-top: 3em;
+  margin-bottom: 0;
   text-align: center;
   font-size: xx-large;
   text-decoration: underline;
@@ -181,7 +197,6 @@ img {
 .container__grey {
   width: 100%;
   background-color: #2C2C2C;
-  /* border-radius: 20px; */
 }
 
 
@@ -240,7 +255,12 @@ img {
 
 .challengeResponsive {
   display: flex;
-  /* align-items: center; */
+}
+
+@media (max-width: 1000px) {
+  .tiktok-duet-video {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -269,6 +289,4 @@ img {
   .technologies {
     justify-content: flex-start;
   }
-
-
 }

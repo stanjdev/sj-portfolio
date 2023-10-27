@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import Link from 'next/link'
 import Layout from '../../components/layout';
-// import Gist from 'react-gist';
+import Gist from 'react-gist';
 
 export default function Memoir() {
   return (
@@ -47,7 +47,7 @@ export default function Memoir() {
           </div>
 
           <div className=" projectInfo__block">
-            <h2>Team Size: 2</h2>
+            <h2>Team Size: Two</h2>
             <h3>Myself + <a style={{color: 'white', textDecoration: 'none'}} href="https://www.caseytang.me/memoir" target="_blank" rel="noopener noreferrer">1 Product Designer</a></h3>
           </div>
 
@@ -61,21 +61,17 @@ export default function Memoir() {
             <h3>5.9 Million views on <a style={{color: "lightblue", textDecoration: "none" }} href="https://www.tiktok.com/@memoir_moment" target="_blank" rel="noopener noreferrer">Tiktok</a><br></br> 158,000 followers</h3>
             <p></p>
           </div>
-
         </section>
-      </div>
-
-      <div className="container container__grey">
         <section className="readingWidth">
           <h2 className="technologiesHeader">Technologies Used:</h2>
           <div className="technologies">
-            <ul>
+            <ul className='technologies-list'>
               <li>React Native</li>
               <li>Expo</li>
               <li>JavaScript</li>
               <li>CSS</li>
             </ul>
-            <ul>
+            <ul className='technologies-list'>
               <li>Figma</li>
               <li>Google Firebase</li>
               <li>Apple Developer Program</li>
@@ -85,9 +81,7 @@ export default function Memoir() {
         </section>
       </div>
 
-
       <section className="container readingWidth">
-
         <h3 style={{textDecoration: "underline"}} >Memoir</h3>
           <p>
             This mobile app was developed to help ease the world&apos;s stress and anxiety.
@@ -96,8 +90,7 @@ export default function Memoir() {
             <li>Memoir promotes mindfulness and serenity through deep breathing and meditation exercises. Users can sign in with their Facebook, Apple ID, or email to save their favorite exercises and track their personal exercise progress.</li>
             <li>Users have a clean and simple-to-use UI to play and pause exercise videos, set timers, and save favorites.</li>
             <li>Users have access to a variety of breathing exercises and daily recommendations.</li>
-            {/* <li>Available on the iOS App Store and works on Android via <a href="https://expo.io/@stan.dev/projects/Memoir" target="_blank" rel="noopener noreferrer">Expo</a>.</li> */}
-            <li>Currently in beta testing on TestFlight for iOS, and works on Android via <a href="https://expo.io/@stan.dev/projects/Memoir" target="_blank" rel="noopener noreferrer">Expo</a>.</li>
+            <li>Available on the <a href="https://apps.apple.com/us/app/memoir-breathing/id1544869710" target="_blank" rel="noopener noreferrer">iOS App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.memoir.memoir" target="_blank" rel="noopener noreferrer">Google Play Store</a>.</li>
           </ul>
 
           <h3>Project Summary:</h3>
@@ -110,23 +103,40 @@ export default function Memoir() {
 
 
         <figure className="center" style={{margin: "5em 0 0 0"}}>
-          <img src="/project_images/memoir/memoir-exercises.jpeg" alt="realyzer rental property calculator" className="center"/>
+          <img src="/project_images/memoir/memoir-exercises.jpeg" alt="memoir exercises" className="center"/>
           <figcaption>Variety of Breathing Exercises Content</figcaption>
         </figure>
 
 
 
         <div style={{display: "flex", width: "100%", flexWrap: "wrap", margin: "5em 0 0 0", }}>
-          <Interaction fileName="Memoir Home Screen.mp4" caption="Home Screen"/>
-          <Interaction fileName="Memoir_Exercise 1.mp4" caption="Breathing Exercise Player"/>
-          <Interaction fileName="Memoir_Exercise 2.mp4" caption="Setting a Timer"/>
+          <Interaction fileName="Memoir_Home_Screen.mp4" caption="Home Screen"/>
+          <Interaction fileName="Memoir_Exercise_1.mp4" caption="Breathing Exercise Player"/>
+          <Interaction fileName="Memoir_Exercise_2.mp4" caption="Setting a Timer"/>
           <Interaction fileName="Memoir_Favorites.mp4" caption="Favorites Library"/>
           {/* <Interaction fileName="Memoir Meditation Dial.mp4" caption="Meditation Exercise Settings"/> */}
           <Interaction fileName="Memoir_Signup.mp4" caption="Delayed Signup Prompts"/>
-
           <Interaction fileName="Memoir_Stats.mp4" caption="Animated User Stats"/>
         </div>
+      </section>
 
+      <section className="container container__grey">
+        <div className='readingWidth user-journey-content'>
+          <h1 className="userJourneyHeader">User Journey</h1>
+          <img className="diagram-background center" src="/project_images/memoir/user-journey-memoir-architecture.png" alt="{name}" />
+          
+          <h2 className='center mg-top'>Guiding Customers to Create an Account</h2>
+          <p>
+            We delayed the account creation process to allow the customer to explore the app before committing to signing up.
+          </p>
+          <p>
+            We designed the app to allow customers to be able to try out the free exercises as they please, and would be prompted to create an account when visiting the favorites or profile pages.
+          </p>
+          <p>
+            This kept an incentive for the customer to create an account while reducing the chance of them leaving the app due to an early account creation request.
+          </p>
+          <img className="diagram-background center" src="/project_images/memoir/user-journey-new-customer-flow.png" alt="{name}" />
+        </div>
       </section>
 
 
@@ -145,7 +155,7 @@ export default function Memoir() {
                 <li>Firstly, the specifically requested <code>image</code> and <code>videoFile</code> assets are passed down as props to the individual <code>Exercise</code> components. </li>
                 <li><code>useState()</code> hooks are then initialized to set the actual image and videos to be rendered for later on. The <code>useEffect()</code> hook will run the initial caching function on mount. </li>
                 <li><code>cacheAsset</code> is an <code>async</code> function, that first checks if the file already exists within the cache to prevent unnecessary download requests, saving bandwidth.</li>
-                <li>If it wasn&apos;t cached, the download URL of the file is retrieved from Firebase Storage. The URL is used to download the file to the device’s cache using the Expo FileSystem API. The <code>useState()</code> states are then stored using the newly downloaded assets. </li>
+                <li>If it wasn&apos;t cached, the download URL of the file is retrieved from Firebase Storage. The URL is used to download the file to the device&apos;s cache using the Expo FileSystem API. The <code>useState()</code> states are then stored using the newly downloaded assets. </li>
                 <li>Finally, with the stored states, the <code>cachedImage</code> is used to render the exercise image. When you press on that image, it navigates to the <code>ExerciseVideo</code> screen along with the <code>cachedVideo</code> passed down as a <code>route.param</code>.</li>
               </ul>
             </div>
@@ -195,9 +205,9 @@ export default function Exercise({ image }) {
             </code>
           </pre> */}
 
-          {/* <Gist
+          <Gist
             id="261a720d9e4a16e982ffa518b7f916a4"
-          /> */}
+          />
 
         </div>
       </section>
@@ -272,7 +282,7 @@ useEffect(() => {
             </code>
           </pre> */}
 
-            {/* <Gist id="f8ce14bac0348f74e49facafc267e96b" /> */}
+            <Gist id="f8ce14bac0348f74e49facafc267e96b" />
         </div>
       </section>
 
@@ -289,14 +299,12 @@ useEffect(() => {
           </ul>
 
           <figure className="center">
-            <img width="500" src="https://miro.medium.com/max/2400/1*HFlYgB6gVLc4Su9HsB9MZg.png" className="center" alt="rental property calculator mapbox geocoding address to coordinates feature"/>
+            <img width="500" src="https://miro.medium.com/max/2400/1*HFlYgB6gVLc4Su9HsB9MZg.png" className="center" alt="memoir real time database google firebase"/>
             <img src="/project_images/memoir/realtime-database.png" className="center" alt="rental property calculator mapbox geocoding address to coordinates feature"/>
             <figcaption>Favorites and progress correspond to each user&lsquo;s unique user ID</figcaption>
           </figure>
         </div>
       </section>
-
-
 
 
 
@@ -316,7 +324,7 @@ useEffect(() => {
               <p>This homemade &quot;scroll wheel&quot; includes haptic feedback to ensure the user is interacting with the adjuster.</p>
               {/* <Interaction fileName="Memoir Meditation Dial.mp4" caption="Meditation Exercise Settings"/> */}
             </div>
-            <Interaction fileName="Memoir_Exercise 2.mp4" caption="Horizontal 'Wheel' to Set Timer"/>
+            <Interaction fileName="Memoir_Exercise_2.mp4" caption="Horizontal 'Wheel' to Set Timer"/>
           </div>
 
 
@@ -353,11 +361,24 @@ useEffect(() => {
             </code>
           </pre> */}
 
-          {/* <Gist id="f6c8bf50b88fa212377b626274ee1f1a"/> */}
+          <Gist id="f6c8bf50b88fa212377b626274ee1f1a"/>
         </div>
       </section>
 
-
+      <section className="container">
+        <figure className="center">
+          <video
+            autostart="true"
+            autoPlay
+            loop
+            muted
+            className='tiktok-duet-video'
+            style={{borderRadius: "7px"}}
+            src={`/project_images/memoir/memoir-tiktok-collage.mp4`}
+          />
+          <figcaption>TikTok &ldquo;duet&ldquo; trend: market validation</figcaption>
+        </figure>
+      </section>
 
 
       <section className="container">
