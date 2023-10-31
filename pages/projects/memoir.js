@@ -37,16 +37,14 @@ export default function Memoir() {
       </figure>
 
 
-
-      <div className="container container__grey">
+      <div className="container container__grey stats_section">
         <section className="projectInfo">
-
-          <div className=" projectInfo__block">
+          <div className="projectInfo__block">
             <h2>My Role:</h2>
             <h3>Lead Developer / Cofounder</h3>
           </div>
 
-          <div className=" projectInfo__block">
+          <div className="projectInfo__block">
             <h2>Team Size: Two</h2>
             <h3>Myself + <a style={{color: 'white', textDecoration: 'none'}} href="https://www.caseytang.me/memoir" target="_blank" rel="noopener noreferrer">1 Product Designer</a></h3>
           </div>
@@ -56,10 +54,19 @@ export default function Memoir() {
             <h3>November 2020 - March 2021: <br></br>{`> 200 Hours`}</h3>
           </div> */}
 
-          <div className=" projectInfo__block">
+          <div className="projectInfo__block">
             <h2>User Testing:</h2>
             <h3>5.9 Million views on <a style={{color: "lightblue", textDecoration: "none" }} href="https://www.tiktok.com/@memoir_moment" target="_blank" rel="noopener noreferrer">Tiktok</a><br></br> 158,000 followers</h3>
             <p></p>
+          </div>
+
+          <div className="projectInfo__block">
+            <h2 className='technologiesHeader'>Download:</h2>
+            <h3>
+              <a href="https://apps.apple.com/us/app/memoir-breathing/id1544869710" target="_blank" rel="noopener noreferrer">iOS App Store</a>
+              <br></br>
+              <a href="https://play.google.com/store/apps/details?id=com.memoir.memoir" target="_blank" rel="noopener noreferrer">Google Play Store</a>
+            </h3>
           </div>
         </section>
         <section className="readingWidth">
@@ -81,25 +88,32 @@ export default function Memoir() {
         </section>
       </div>
 
+      <section className="container">
+        <h1 className='header'>TikTok Marketing</h1>
+        <figure className="center">
+          <video
+            autostart="true"
+            autoPlay
+            loop
+            muted
+            className='tiktok-duet-video'
+            style={{borderRadius: "7px"}}
+            src={`/project_images/memoir/memoir-tiktok-collage.mp4`}
+          />
+          <figcaption>Viral TikTok &ldquo;duet&ldquo; trend</figcaption>
+        </figure>
+      </section>
+
       <section className="container readingWidth">
-        <h3 style={{textDecoration: "underline"}} >Memoir</h3>
-          <p>
-            This mobile app was developed to help ease the world&apos;s stress and anxiety.
-          </p>
+        <h3 style={{textDecoration: "underline"}}>Memoir Features</h3>
           <ul>
-            <li>Memoir promotes mindfulness and serenity through deep breathing and meditation exercises. Users can sign in with their Facebook, Apple ID, or email to save their favorite exercises and track their personal exercise progress.</li>
+            <li>Memoir promotes mindfulness and serenity through deep breathing and meditation exercises.</li>
+            <li>Users can sign in with their Facebook, Apple ID, or email to save their favorite exercises and track their personal exercise progress.</li>
             <li>Users have a clean and simple-to-use UI to play and pause exercise videos, set timers, and save favorites.</li>
-            <li>Users have access to a variety of breathing exercises and daily recommendations.</li>
-            <li>Available on the <a href="https://apps.apple.com/us/app/memoir-breathing/id1544869710" target="_blank" rel="noopener noreferrer">iOS App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.memoir.memoir" target="_blank" rel="noopener noreferrer">Google Play Store</a>.</li>
-          </ul>
-
-          <h3>Project Summary:</h3>
-          <ul>
-            <li>Memoir breathing exercises use visual cues to be followed by anyone in the world, regardless of language.</li>
-            <li>Beautiful designs and gestures enhance the overall customer experience.</li>
             <li>Personalized user progress tracking add to the user experience and help to build better habits.</li>
+            {/* <li>Memoir breathing exercises use visual cues to be followed by anyone in the world, regardless of language.</li> */}
+            {/* <li>Beautiful designs and gestures enhance the overall customer experience.</li> */}
           </ul>
-
 
 
         <figure className="center" style={{margin: "5em 0 0 0"}}>
@@ -282,7 +296,7 @@ useEffect(() => {
             </code>
           </pre> */}
 
-            <Gist id="f8ce14bac0348f74e49facafc267e96b" />
+          <Gist id="f8ce14bac0348f74e49facafc267e96b" />
         </div>
       </section>
 
@@ -363,21 +377,6 @@ useEffect(() => {
 
           <Gist id="f6c8bf50b88fa212377b626274ee1f1a"/>
         </div>
-      </section>
-
-      <section className="container">
-        <figure className="center">
-          <video
-            autostart="true"
-            autoPlay
-            loop
-            muted
-            className='tiktok-duet-video'
-            style={{borderRadius: "7px"}}
-            src={`/project_images/memoir/memoir-tiktok-collage.mp4`}
-          />
-          <figcaption>TikTok &ldquo;duet&ldquo; trend: market validation</figcaption>
-        </figure>
       </section>
 
 

@@ -199,9 +199,17 @@ img {
   background-color: #2C2C2C;
 }
 
+.stats_section {
+  padding-bottom: 2em;
+}
+
 
 .backToHome {
   margin: 3rem 0 0;
+}
+
+.project_info_tech_download {
+  justify-content: space-around;
 }
 
 .flex__horizontal {
@@ -288,5 +296,10 @@ img {
 
   .technologies {
     justify-content: flex-start;
+  }
+
+  .project_info_tech_download {
+    flex-direction: column;
+    align-items: center;
   }
 }
