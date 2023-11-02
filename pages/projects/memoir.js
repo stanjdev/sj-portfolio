@@ -66,6 +66,8 @@ export default function Memoir() {
               <a href="https://apps.apple.com/us/app/memoir-breathing/id1544869710" target="_blank" rel="noopener noreferrer">iOS App Store</a>
               <br></br>
               <a href="https://play.google.com/store/apps/details?id=com.memoir.memoir" target="_blank" rel="noopener noreferrer">Google Play Store</a>
+              <br></br>
+              <p>~1,000 downloads</p>
             </h3>
           </div>
         </section>
