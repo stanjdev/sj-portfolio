@@ -296,7 +296,7 @@ useEffect(() => {
             </code>
           </pre> */}
 
-          <Gist id="f8ce14bac0348f74e49facafc267e96b" />
+          {/* <Gist id="f8ce14bac0348f74e49facafc267e96b" /> */}
         </div>
       </section>
 
