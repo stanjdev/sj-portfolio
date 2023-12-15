@@ -49,7 +49,7 @@ export default function Projects() {
             title="REALYZER"
             name="realyzer"
             description={"A multi-variable calculator for real-estate investors."}
-            createdWith={"Made with the React, Redux, Next.js, JavaScript, CSS, Mapbox API, and Cheerio.js."}
+            createdWith={"Made with React, Redux, Next.js, JavaScript, CSS, Mapbox API, and Cheerio.js."}
             imgLink="gifs/realyzer-walkthrough.gif"
             linkAlt="Realyzer Real Estate Deal Analyzer project"
             imgAlt="Realyzer Real Estate Deal Analyzer gif image"

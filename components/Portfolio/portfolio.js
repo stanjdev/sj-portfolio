@@ -17,8 +17,8 @@ export const metadata = {
   },
 };
 
-const RESUME_LINK = "https://drive.google.com/file/d/1_4NeOkGlTbWTyMijgRHXQza93MgnB0Vb/view?usp=sharing";
-// GoogleDrive View Only Link = "https://docs.google.com/document/d/1JR8OtXLSfYqQdodWUOoOOwwICYwSxFn5g1LptM8H0j0/edit?usp=sharing"
+const RESUME_LINK = "https://drive.google.com/file/d/1NGlzSlS-sGoMDp8uDDkXLzqPaI0g443j/view?usp=sharing";
+
 
 export default function Portfolio() {
   // const { light } = useContext(LightContext);
