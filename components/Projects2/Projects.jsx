@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 // import './css/Projects.css';
 import AOS from 'aos';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -7,13 +7,33 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Link from 'next/link';
 
 export default function Projects() {
+  const [goodReadsLink, setGoodReadsLink] = useState('https://react-goodreads.herokuapp.com/');
 
   useEffect(() => {
     AOS.init({
       duration: 1500
     });
     AOS.refresh();
+
+
   }, [])
+
+      // fetch url, if 503 error here
+      fetch('https:/google.com/', {
+        method: "GET",
+        mode: 'cors',
+        headers: {
+          "Content-Type": "text/xml",
+          "X-PINGOTHER": "pingpong",
+        },
+        // credentials: 'include',
+        
+      }).then(function(response) {
+        console.log("result response: ", response)
+        // console.log(response.status = )
+      }).catch(function(err) {
+        console.error("error is: ", err)
+      })
 
   return(
       <div>
@@ -41,7 +61,7 @@ export default function Projects() {
             imgLink="memoir/memoir-thumbnail.gif"
             linkAlt="Memoir Breathing Meditation App Image Link"
             imgAlt="Memoir Breathing Meditation App Icon"
-            liveLink="https://expo.io/@stan.dev/projects/Memoir"
+            liveLink="https://apps.apple.com/us/app/memoir-breathing/id1544869710"
             ghLink="https://github.com/stanjdev/memoir"
           />
 
@@ -66,7 +86,6 @@ export default function Projects() {
             imgLink="gifs/goodreads-reviewing-books.gif"
             linkAlt="goodreads project"
             imgAlt="GoodReads Reviews GIF image"
-            liveLink="https://react-goodreads.herokuapp.com/"
             ghLink="https://github.com/stanjdev/goodreads"
           />
 
@@ -159,8 +178,8 @@ function ProjectComponent({ title, name, description, createdWith, imgLink, imgW
         <p>{description} <br/> {createdWith}</p>
         {name && <Link legacyBehavior href={`/projects/${name}`}><a><button className="caseStudyButton">Case Study</button></a></Link> || null}
         <p>
-          <a href={liveLink} target="_blank" rel="noopener noreferrer">Live</a> 
-          {ghLink && ' | '} 
+          <a href={liveLink} target="_blank" rel="noopener noreferrer">{liveLink && 'Live'}</a>
+          {liveLink && ghLink && ' | '} 
           <a href={ghLink} target="_blank" rel="noopener noreferrer">{ghLink && 'GitHub'}</a>
         </p>
       </div>

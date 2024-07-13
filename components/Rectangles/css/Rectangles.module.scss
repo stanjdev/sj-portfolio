@@ -30,7 +30,7 @@
 
 @keyframes rotate1 {
   8% {transform: rotate(360deg) scale(0.83, 0.77) translate(4%, 4%);}
-  66% {box-shadow: -10px 15px 3px rgba(67, 47, 47, 0.5);}
+  66% {box-shadow: -10px 15px 3px rgba(0,0,0,0.5);}
   100% {
     transform: rotate(360deg) scale(0.83, 0.77) translate(3%, 0%);
     box-shadow: -20px 20px 3px rgba(0,0,0,0.5);

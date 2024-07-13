@@ -29,7 +29,7 @@ export default function Memoir() {
         <h1>Memoir</h1>
         <h2>Deep Breathing &#38; Mindfulness on iOS and Android</h2>
         <blockquote style={{maxWidth: "700px"}}><em>&quot;A language-independent meditation app to help ease the world&apos;s anxiety&quot;</em></blockquote>
-        <p><a href="https://expo.io/@stan.dev/projects/Memoir" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/memoir" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p><a href="https://apps.apple.com/us/app/memoir-breathing/id1544869710" target="_blank" rel="noopener noreferrer">Live</a> | <a href="https://github.com/stanjdev/memoir" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
 
       <figure className="center">
