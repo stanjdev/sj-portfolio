@@ -7,7 +7,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Link from 'next/link';
 
 export default function Projects() {
-  const [goodReadsLink, setGoodReadsLink] = useState('https://react-goodreads.herokuapp.com/');
+  const GOODREADSURL = 'https://react-goodreads.herokuapp.com/'
+  const [goodReadsLink, setGoodReadsLink] = useState('');
 
   useEffect(() => {
     AOS.init({
@@ -15,25 +16,30 @@ export default function Projects() {
     });
     AOS.refresh();
 
-
+    checkForGoodReadsResponseStatus()
   }, [])
 
-      // fetch url, if 503 error here
-      fetch('https:/google.com/', {
-        method: "GET",
-        mode: 'cors',
-        headers: {
-          "Content-Type": "text/xml",
-          "X-PINGOTHER": "pingpong",
-        },
-        // credentials: 'include',
-        
-      }).then(function(response) {
-        console.log("result response: ", response)
-        // console.log(response.status = )
-      }).catch(function(err) {
-        console.error("error is: ", err)
-      })
+  const checkForGoodReadsResponseStatus = async () => {
+    // With cors-anywhere, you must temporarily unlock access to it by pressing button: https://cors-anywhere.herokuapp.com/corsdemo 
+    // fetch url, if 503 error here
+    await fetch(`https://cors-anywhere.herokuapp.com/${GOODREADSURL}`, {
+      mode: 'cors',
+      headers: {
+        "Content-Type": "text/xml",
+        "X-PINGOTHER": "pingpong",
+      },
+    }).then(function(response) {
+      console.log("result response: ", response)
+      console.log(response.status === 503)
+      if (response.status !== 200) {
+        setGoodReadsLink('')
+      } else {
+        setGoodReadsLink(GOODREADSURL)
+      }
+    }).catch(function(err) {
+      console.error("error is: ", err)
+    })
+  }
 
   return(
       <div>
@@ -79,6 +85,19 @@ export default function Projects() {
           />
 
           <ProjectComponent
+            title="NFT MARKETPLACE"
+            name=""
+            description={"A responsively-designed marketplace to discover digital art & collect NFTs."}
+            createdWith={"Made with React, TypeScript, CSS, and HTML."}
+            imgWidth={600}
+            imgLink="nft-marketplace.png"
+            linkAlt="nft-marketplace project"
+            imgAlt="nft-marketplace-image"
+            liveLink="https://nft-marketplace-anima.vercel.app/"
+            ghLink="https://github.com/stanjdev/nft-marketplace"
+          />
+
+          <ProjectComponent
             title="GOODREADS REVIEWS"
             name="goodreads"
             description={"Create an account, search for, and leave reviews for your favorite books."}
@@ -86,7 +105,9 @@ export default function Projects() {
             imgLink="gifs/goodreads-reviewing-books.gif"
             linkAlt="goodreads project"
             imgAlt="GoodReads Reviews GIF image"
+            liveLink={goodReadsLink}
             ghLink="https://github.com/stanjdev/goodreads"
+            reverseAlign
           />
 
           <ProjectComponent
@@ -99,7 +120,6 @@ export default function Projects() {
             imgAlt="Kelp GIF"
             liveLink="https://kelp-search.vercel.app/"
             ghLink="https://github.com/stanjdev/kelp"
-            reverseAlign
           />
 
           <ProjectComponent
@@ -112,6 +132,7 @@ export default function Projects() {
             imgAlt="talo apartments image"
             liveLink="https://talo-apartments.vercel.app/"
             ghLink="https://github.com/stanjdev/talo-real-estate"
+            reverseAlign
           />
 
           <ProjectComponent
@@ -124,7 +145,6 @@ export default function Projects() {
             imgAlt="Triplebyte image"
             liveLink="https://stanjdev.github.io/triplebyte/"
             ghLink="https://github.com/stanjdev/triplebyte"
-            reverseAlign
           />
 
 
