@@ -7,7 +7,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Link from 'next/link';
 
 export default function Projects() {
-  const GOODREADSURL = 'https://react-goodreads.herokuapp.com/'
+  const GOODREADSURL = 'https://goodreads-reviews.onrender.com'
   const [goodReadsLink, setGoodReadsLink] = useState('');
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function Projects() {
   const checkForGoodReadsResponseStatus = async () => {
     // With cors-anywhere, you must temporarily unlock access to it by pressing button: https://cors-anywhere.herokuapp.com/corsdemo 
     // fetch url, if 503 error here
-    await fetch(`https://cors-anywhere.herokuapp.com/${GOODREADSURL}`, {
+    await fetch(GOODREADSURL, {
       mode: 'cors',
       headers: {
         "Content-Type": "text/xml",
@@ -30,7 +30,7 @@ export default function Projects() {
       },
     }).then(function(response) {
       console.log("result response: ", response)
-      console.log(response.status === 503)
+      console.log(`response status code for goodreads link: ${response.status}`)
       if (response.status !== 200) {
         setGoodReadsLink('')
       } else {

@@ -1,9 +1,38 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import Layout from '../../components/layout';
-import { Fragment } from "react"
+import { useState, useEffect } from "react"
 
 export default function GoodReads() {
+  const GOODREADSURL = 'https://goodreads-reviews.onrender.com'
+  const [goodReadsLink, setGoodReadsLink] = useState('');
+
+  const checkForGoodReadsResponseStatus = async () => {
+    // With cors-anywhere, you must temporarily unlock access to it by pressing button: https://cors-anywhere.herokuapp.com/corsdemo 
+    // fetch url, if 503 error here
+    await fetch(GOODREADSURL, {
+      mode: 'cors',
+      headers: {
+        "Content-Type": "text/xml",
+        "X-PINGOTHER": "pingpong",
+      },
+    }).then(function(response) {
+      console.log("result response: ", response)
+      console.log(`response status code for goodreads link: ${response.status}`)
+      if (response.status !== 200) {
+        setGoodReadsLink('')
+      } else {
+        setGoodReadsLink(GOODREADSURL)
+      }
+    }).catch(function(err) {
+      console.error("error is: ", err)
+    })
+  }
+
+  useEffect(() => {
+    checkForGoodReadsResponseStatus()
+  }, [])
+
   return (
     <Layout>
       <Head>
@@ -14,7 +43,7 @@ export default function GoodReads() {
         <h1>GoodReads Reviews</h1>
         <h2>Book Reviews Web App</h2>
         <blockquote><em>&quot;Create an account, log in, search for, and leave reviews for your favorite books!&quot;</em></blockquote>
-        <p><a href="https://github.com/stanjdev/goodreads" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p><a href={goodReadsLink} target="_blank" rel="noopener noreferrer">{goodReadsLink && "Live"}</a> {goodReadsLink && "|"} <a href="https://github.com/stanjdev/goodreads" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </div>
 
       <figure className="center">
