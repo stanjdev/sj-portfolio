@@ -6,8 +6,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import Link from 'next/link';
 
+const GOODREADSURL = 'https://goodreads-reviews.onrender.com'
+
 export default function Projects() {
-  const GOODREADSURL = 'https://goodreads-reviews.onrender.com'
   const [goodReadsLink, setGoodReadsLink] = useState('');
 
   useEffect(() => {
@@ -101,11 +102,11 @@ export default function Projects() {
             title="GOODREADS REVIEWS"
             name="goodreads"
             description={"Create an account, search for, and leave reviews for your favorite books."}
-            createdWith={"PERN stack application built with the GoodReads API, React, Redux, Express.js, Node.js, PostgreSQL, Bootstrap, React Router, axios, and Heroku."}
+            createdWith={"PERN stack application built with the GoodReads API, React, Redux, Express.js, Node.js, PostgreSQL, Bootstrap, React Router, axios, Heroku, and Render."}
             imgLink="gifs/goodreads-reviewing-books.gif"
             linkAlt="goodreads project"
             imgAlt="GoodReads Reviews GIF image"
-            liveLink={goodReadsLink}
+            liveLink={GOODREADSURL}
             ghLink="https://github.com/stanjdev/goodreads"
             reverseAlign
           />
@@ -198,7 +199,7 @@ function ProjectComponent({ title, name, description, createdWith, imgLink, imgW
         <p>{description} <br/> {createdWith}</p>
         {name && <Link legacyBehavior href={`/projects/${name}`}><a><button className="caseStudyButton">Case Study</button></a></Link> || null}
         <p>
-          <a href={liveLink} target="_blank" rel="noopener noreferrer">{liveLink && 'Live'}</a>
+          <a href={liveLink} target="_blank" rel="noopener noreferrer">{liveLink && 'Live'}{liveLink === GOODREADSURL && <small style={{fontSize: 12}}> (may take 1 minute to load)</small>}</a>
           {liveLink && ghLink && ' | '} 
           <a href={ghLink} target="_blank" rel="noopener noreferrer">{ghLink && 'GitHub'}</a>
         </p>
