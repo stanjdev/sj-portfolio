@@ -199,7 +199,7 @@ function ProjectComponent({ title, name, description, createdWith, imgLink, imgW
         <p>{description} <br/> {createdWith}</p>
         {name && <Link legacyBehavior href={`/projects/${name}`}><a><button className="caseStudyButton">Case Study</button></a></Link> || null}
         <p>
-          <a href={liveLink} target="_blank" rel="noopener noreferrer">{liveLink && 'Live'}{liveLink === GOODREADSURL && <small style={{fontSize: 12}}> (may take 1 minute to load)</small>}</a>
+          <a href={liveLink} target="_blank" rel="noopener noreferrer">{liveLink && 'Live'}{liveLink === GOODREADSURL && <small style={{fontSize: 10}}> (may take 1 minute to load)</small>}</a>
           {liveLink && ghLink && ' | '} 
           <a href={ghLink} target="_blank" rel="noopener noreferrer">{ghLink && 'GitHub'}</a>
         </p>

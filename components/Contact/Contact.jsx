@@ -44,7 +44,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit} data-aos="fade-up" action="https://formspree.io/mjvpvlrr" method="POST">
               <div className="aboutMe">
                 <h2>About Me</h2>
-                <p>I'm Stan, a software developer from LA. I like turning ideas into reality with memorable user experiences. Currently focused on continual growth and improving the lives of others through programming.</p>
+                <p>I&apos;m Stan, a software developer from LA. I like turning ideas into reality with memorable user experiences. Currently focused on continual growth and improving the lives of others through programming.</p>
               </div>
               <div className="inputs">
                 <label htmlFor="name">Name: </label>
