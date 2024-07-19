@@ -173,7 +173,7 @@ export default function GoodReads() {
           {/*
           I needed to generate HTML for each page in advance, instead of having it all done by client-side JavaScript.
 
-          CSR SSR Static Page thing? Pre-rendering. Hydration
+          CSR SSR Static Page? Pre-rendering. Hydration
           This is because the app is not pre-rendered into static HTML
 
           In hindsight, I realized this problem of needing to fetch certain data to before loading and populating the HTML template page can be solved by using frameworks such as Next.js.
@@ -247,8 +247,6 @@ const pool = new Pool(process.env.NODE_ENV === "production" ? prodConfig : devCo
             <img src="/project_images/gifs/goodreads-reviewing-books.gif" alt="goodreads gif" className="caseStudyImage center"/>
         </figure>
       </section>
-
-
 
 
 

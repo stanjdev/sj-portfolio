@@ -27,7 +27,6 @@ export default function Portfolio() {
   useEffect(() => {
     let navButton = document.querySelector("#nav__button");
     let navMenu = document.querySelector("#nav__menu");
-    // console.log(styles)
 
     navButton.addEventListener('click', function() {
       navMenu.classList.toggle(styles.menu__expanded);
@@ -41,7 +40,6 @@ export default function Portfolio() {
 
       <Head>
         <link rel="icon" href="/sj.png" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
       <header className={styles.App__header} id="top">

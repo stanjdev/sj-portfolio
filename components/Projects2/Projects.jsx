@@ -206,4 +206,4 @@ function ProjectComponent({ title, name, description, createdWith, imgLink, imgW
       </div>
     </div>
   )
-}
+};
