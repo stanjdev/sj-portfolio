@@ -12,9 +12,15 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: #2C2C2C;
+  // background: #2C2C2C;
+  background: linear-gradient(to left, hsla(0, 0%, 25%, 0.8), #2C2C2C);
   // background: whitesmoke;
-  box-shadow: 15px 15px 3px rgba(0,0,0,0.5);
+  box-shadow: 12px 12px 3px rgba(0,0,0,0.5);
+  border-radius: 2px;
+  // color: white;
+  // display: flex;
+  // justify-content: flex-start;
+  // align-items: flex-end;
   // z-index: -1;
   // position: fixed;
   // animation: rotate 1s linear infinite;
@@ -98,11 +104,21 @@
 }
 .rect5 {
   animation: animateRects 0.9s ease 0.6s backwards normal;
+  -webkit-animation: animateRects 0.9s ease 0.6s backwards normal;
+  -moz-animation: animateRects 0.9s ease 0.6s backwards normal;
+  -ms-animation: animateRects 0.9s ease 0.6s backwards normal;
+  -o-animation: animateRects 0.9s ease 0.6s backwards normal;
   transform: translate(12%, -25%) rotate(-7deg);
+  -webkit-transform: translate(12%, -25%) rotate(-7deg);
 }
 .rect6 {
   animation: animateRects 0.9s ease 0.8s backwards normal;
+  -webkit-animation: animateRects 0.9s ease 0.8s backwards normal;
+  -moz-animation: animateRects 0.9s ease 0.8s backwards normal;
+  -ms-animation: animateRects 0.9s ease 0.8s backwards normal;
+  -o-animation: animateRects 0.9s ease 0.8s backwards normal;
   transform: translate(9%, -28%) rotate(-7deg);
+  -webkit-transform: translate(9%, -28%) rotate(-7deg);
 }
 
 
@@ -232,16 +248,46 @@
   
   
   
+  // .rect4 {
+  //   animation: animateRects 0.9s ease 0.4s backwards normal;
+  //   transform: translate(15%, -22%) rotate(-7deg);
+  // }
+  // .rect5 {
+  //   animation: animateRects 0.9s ease 0.6s backwards normal;
+  //   transform: translate(12%, -25%) rotate(-7deg);
+  // }
+  // .rect6 {
+  //   animation: animateRects 0.9s ease 0.8s backwards normal;
+  //   transform: translate(9%, -28%) rotate(-7deg);
+  // }
+
   .rect4 {
     animation: animateRects 0.9s ease 0.4s backwards normal;
+    -webkit-animation: animateRects 0.9s ease 0.4s backwards normal;
+    -moz-animation: animateRects 0.9s ease 0.4s backwards normal;
+    -ms-animation: animateRects 0.9s ease 0.4s backwards normal;
+    -o-animation: animateRects 0.9s ease 0.4s backwards normal;
     transform: translate(15%, -22%) rotate(-7deg);
+    -webkit-transform: translate(15%, -22%) rotate(-7deg);
   }
   .rect5 {
     animation: animateRects 0.9s ease 0.6s backwards normal;
+    -webkit-animation: animateRects 0.9s ease 0.6s backwards normal;
+    -moz-animation: animateRects 0.9s ease 0.6s backwards normal;
+    -ms-animation: animateRects 0.9s ease 0.6s backwards normal;
+    -o-animation: animateRects 0.9s ease 0.6s backwards normal;
     transform: translate(12%, -25%) rotate(-7deg);
+    -webkit-transform: translate(12%, -25%) rotate(-7deg);
   }
   .rect6 {
     animation: animateRects 0.9s ease 0.8s backwards normal;
+    -webkit-animation: animateRects 0.9s ease 0.8s backwards normal;
+    -moz-animation: animateRects 0.9s ease 0.8s backwards normal;
+    -ms-animation: animateRects 0.9s ease 0.8s backwards normal;
+    -o-animation: animateRects 0.9s ease 0.8s backwards normal;
     transform: translate(9%, -28%) rotate(-7deg);
+    -webkit-transform: translate(9%, -28%) rotate(-7deg);
   }
+  
+
 }

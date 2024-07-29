@@ -51,11 +51,8 @@ export default function Rectangles() {
       }
     }
 
-    window.onload = function() {
-      // console.log("window loaded!")
-      second.forEach(rect => rect.style.display = "none");
-      first.forEach(rect => rect.style.position = "fixed");
-    }
+    second.forEach(rect => rect.style.display = "none");
+    first.forEach(rect => rect.style.position = "fixed");
 
     // if (window.pageYOffset > 0) {
     //   setTimeout(() => {
@@ -66,8 +63,10 @@ export default function Rectangles() {
 
     window.addEventListener('scroll', switcheroo);
 
+    
     window.addEventListener('scroll', () => {
-      document.body.style.setProperty('--scroll', (window.pageYOffset / 1.2) / (document.body.offsetHeight - (window.innerHeight / 30)));
+      let value = (window.scrollY / 1.4) / (document.body.offsetHeight - (window.innerHeight / 40))
+      document.body.style.setProperty('--scroll', value);
     }, false);
 
   }, [])
