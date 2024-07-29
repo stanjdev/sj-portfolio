@@ -65,7 +65,7 @@ export default function Rectangles() {
 
     
     window.addEventListener('scroll', () => {
-      let value = (window.scrollY / 1.4) / (document.body.offsetHeight - (window.innerHeight / 40))
+      let value = (window.scrollY / 1.23) / (document.body.offsetHeight - (window.innerHeight / 40))
       document.body.style.setProperty('--scroll', value);
     }, false);
 
