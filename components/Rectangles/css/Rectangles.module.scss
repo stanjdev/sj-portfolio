@@ -68,7 +68,7 @@
   position: fixed;
   animation: rotate1 1s linear infinite;
   animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
+  animation-delay: calc(var(--scroll) * -1.28s);
 }
 
 .rect2 {
@@ -78,7 +78,7 @@
   position: fixed;
   animation: rotate2 1s linear infinite;
   animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1.15s);
+  animation-delay: calc(var(--scroll) * -1.28s);
 }
 
 .rect3 {
@@ -88,7 +88,7 @@
   position: fixed;
   animation: rotate3 1s linear infinite;
   animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1.3s);
+  animation-delay: calc(var(--scroll) * -1.28s);
 }
 
 
@@ -223,7 +223,7 @@
     position: fixed;
     animation: rotate1 1s linear infinite;
     animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
+    animation-delay: calc(var(--scroll) * -1.3s);
   }
   
   .rect2 {
@@ -233,7 +233,7 @@
     position: fixed;
     animation: rotate2 1s linear infinite;
     animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1.15s);
+    animation-delay: calc(var(--scroll) * -1.3s);
   }
   
   .rect3 {

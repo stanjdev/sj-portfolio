@@ -45,7 +45,7 @@ export default function Projects() {
   return(
       <div>
         <section className="Projects">
-          <h1 data-aos="fade-down" data-aos-delay="0">PROJECTS</h1>
+          <h1 style={{marginBottom: 0}} data-aos="fade-down" data-aos-delay="0">PROJECTS</h1>
 
           <ProjectComponent
             title="SHOPIFY, SHOP CASH"
@@ -148,6 +148,43 @@ export default function Projects() {
             ghLink="https://github.com/stanjdev/triplebyte"
           />
 
+          <ProjectComponent
+            title="JOURNEY"
+            name=""
+            description={"A responsively-designed landing page."}
+            createdWith={"Created with HTML and CSS."}
+            imgWidth={600}
+            imgLink="journey-responsive.png"
+            linkAlt="journey responsive page project"
+            imgAlt="journey responsive"
+            liveLink="https://stanjdev.github.io/journey-responsive/"
+            reverseAlign
+          />
+
+          <ProjectComponent
+            title="MOROCCO"
+            name=""
+            description={"A responsively-designed landing page"}
+            createdWith={"blog made with HTML and CSS."}
+            imgWidth={600}
+            imgLink="morocco.png"
+            linkAlt="morocco landing page project"
+            imgAlt="morocco-image"
+            liveLink="https://stanjdev.github.io/morocco-responsive/"
+          />
+
+          <ProjectComponent
+            title="COLMAR ACADEMY"
+            name=""
+            description={"A responsively-designed landing page using CSS Grid."}
+            createdWith={"Created with HTML and CSS."}
+            imgWidth={600}
+            imgLink="colmar-css-grid.png"
+            linkAlt="colmar academy landing page project"
+            imgAlt="colmar-academy-image"
+            liveLink="https://stanjdev.github.io/colmar-academy-responsive-design/"
+            reverseAlign
+          />
 
           <div className="getInTouchContainer" data-aos="fade-right">
             <AnchorLink className="getInTouch lightConnect" href="#contact" rel="noopener noreferrer" >
@@ -182,7 +219,7 @@ EXAMPLE:
 
 function ProjectComponent({ title, name, description, createdWith, imgLink, imgWidth, linkAlt, imgAlt, reverseAlign, liveLink, ghLink }) {
   return (
-    <div className={reverseAlign? "projectReverse" : "project"} data-aos="fade-up" data-aos-delay="350">
+    <div style={{marginTop: name === "shopify" && -100}} className={reverseAlign? "projectReverse" : "project"} data-aos="fade-up" data-aos-delay="350">
       <Link legacyBehavior href={name && `projects/${name}` || liveLink} alt={linkAlt}>
         <a target={!name ? "_blank" : undefined} rel="noopener noreferrer">
           <div className="projectImage re-deal-analyzer">
