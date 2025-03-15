@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import Link from 'next/link'
 import Layout from '../../components/layout';
-import Gist from 'react-gist';
+// import Gist from 'react-gist';
 
 export default function Memoir() {
   return (
@@ -219,9 +219,9 @@ export default function Exercise({ image }) {
             </code>
           </pre> */}
 
-          <Gist
+          {/* <Gist
             id="261a720d9e4a16e982ffa518b7f916a4"
-          />
+          /> */}
 
         </div>
       </section>
@@ -375,7 +375,7 @@ useEffect(() => {
             </code>
           </pre> */}
 
-          <Gist id="f6c8bf50b88fa212377b626274ee1f1a"/>
+          {/* <Gist id="f6c8bf50b88fa212377b626274ee1f1a"/> */}
         </div>
       </section>
 
