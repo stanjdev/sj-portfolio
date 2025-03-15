@@ -17,7 +17,7 @@ export const metadata = {
   },
 };
 
-const RESUME_LINK = "https://drive.google.com/file/d/1tJ0IZMqBrhrli6WDlgI2HFtHho4RA1E_/view?usp=share_link";
+const RESUME_LINK = "https://drive.google.com/file/d/1tT3T21VogLtDVbYn9RrN77DarHiL_w7j/view?usp=share_link";
 
 
 export default function Portfolio() {
